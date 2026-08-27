@@ -1,23 +1,21 @@
 ---
 import { agruparNavegacao, comBase, rotaDaAula, type Aula } from '../lib/aulas';
-const { aulas, currentPath } = Astro.props as { aulas: Aula[]; currentPath: string };
+const { aulas, currentPath, materiaAtual } = Astro.props as { aulas: Aula[]; currentPath: string; materiaAtual: string };
 const materias = agruparNavegacao(aulas);
+const materia = materias.get(materiaAtual);
 ---
 <aside id="navegacao" class="sidebar" data-open="false" aria-label="Navegação das matérias">
-  <p class="nav-title">Matérias e aulas</p>
+  <p class="nav-title">{materia?.nome ?? 'Aulas'}</p>
   <nav class="tree">
-    {Array.from(materias.entries()).map(([slug, materia]) => (
-      <details open={currentPath.includes(`/${slug}/`)}>
-        <summary>{materia.nome}</summary>
-        {Array.from(materia.semanas.entries()).map(([semana, aulasDaSemana]) => (
-          <details class="week" open={aulasDaSemana.some((aula) => rotaDaAula(aula) === currentPath)}>
-            <summary>Semana {semana}</summary>
-            {aulasDaSemana.map((aula) => {
-              const href = rotaDaAula(aula);
-              return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined}>{aula.data.aula.toUpperCase()} · {aula.data.titulo}</a>;
-            })}
-          </details>
-        ))}
+    <a class="tree-back" href={comBase(`/${materiaAtual}`)}>Voltar aos bimestres</a>
+    {materia && Array.from(materia.semanas.entries()).map(([semana, aulasDaSemana]) => (
+      <details class="week" open={currentPath.includes(`/semana-${semana}`)}>
+        <summary>Semana {semana}</summary>
+        <a class="tree-week-link" href={comBase(`/${materiaAtual}/3/semana-${semana}`)} aria-current={currentPath === `/${materiaAtual}/3/semana-${semana}` ? 'page' : undefined}>Visão da semana</a>
+        {aulasDaSemana.map((aula) => {
+          const href = rotaDaAula(aula);
+          return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined}>{aula.data.aula.toUpperCase()} · {aula.data.titulo}</a>;
+        })}
       </details>
     ))}
   </nav>

@@ -3,15 +3,16 @@ import '../styles/global.css';
 import Sidebar from './Sidebar.astro';
 import { todasAsAulas } from '../lib/aulas';
 
-const { title = 'Gabarito 3B', currentPath = '', wide = false } = Astro.props;
-const aulas = await todasAsAulas();
+const { title = 'Desenvolvimento de Sistemas', currentPath = '', wide = false, showSidebar = false } = Astro.props;
+const aulas = showSidebar ? await todasAsAulas() : [];
+const currentMateria = currentPath.split('/').filter(Boolean)[0] ?? '';
 ---
 <!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Consulta organizada de atividades práticas e gabaritos do 3º bimestre." />
+    <meta name="description" content="Consulta organizada de atividades práticas e gabaritos de Desenvolvimento de Sistemas." />
     <title>{title}</title>
     <script is:inline>
       const savedTheme = localStorage.getItem('gabarito-theme');
@@ -22,14 +23,14 @@ const aulas = await todasAsAulas();
     <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
     <div class="app-shell">
       <header class="topbar">
-        <a class="brand" href={import.meta.env.BASE_URL}>Gabarito<small>3º bimestre · consulta</small></a>
+        <a class="brand" href={import.meta.env.BASE_URL}>Desenvolvimento de Sistemas<small>Gabarito de consulta</small></a>
         <div class="topbar-actions">
-          <button class="button button-quiet mobile-only" type="button" data-nav-toggle aria-expanded="false" aria-controls="navegacao">Navegação</button>
+          {showSidebar && <button class="button button-quiet mobile-only" type="button" data-nav-toggle aria-expanded="false" aria-controls="navegacao">Navegação</button>}
           <button class="button button-quiet" type="button" data-theme-toggle aria-label="Alternar tema">Tema</button>
         </div>
       </header>
-      <div class="layout">
-        <Sidebar aulas={aulas} currentPath={currentPath} />
+      <div class:list={['layout', { 'layout--hub': !showSidebar }]}>
+        {showSidebar && <Sidebar aulas={aulas} currentPath={currentPath} materiaAtual={currentMateria} />}
         <main id="conteudo" class:list={['content', { 'content--wide': wide }]}><slot /></main>
       </div>
       <footer class="site-footer">Material de consulta. Adapte exemplos e registre apenas evidências próprias antes de qualquer entrega avaliativa.</footer>

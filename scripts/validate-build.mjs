@@ -5,6 +5,9 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('..', import.meta.url));
 const checks = [
   'dist/index.html',
+  'dist/back-end/index.html',
+  'dist/back-end/3/index.html',
+  'dist/back-end/3/semana-15/index.html',
   'dist/back-end/3/semana-15/a1/index.html',
   'dist/back-end/3/semana-15/q/index.html',
 ];

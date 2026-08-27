@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../components/BaseLayout.astro';
+import { comBase } from '../lib/aulas';
+
+export async function getStaticPaths() {
+  const aulas = await getCollection('aulas');
+  const materias = new Map(aulas.map((aula) => [aula.data.materiaSlug, aula.data.materia]));
+  return Array.from(materias.entries()).map(([materia, nome]) => ({ params: { materia }, props: { materia, nome, aulas } }));
+}
+
+const { materia, nome, aulas } = Astro.props;
+const bimestres = [...new Set(aulas.filter((aula) => aula.data.materiaSlug === materia).map((aula) => aula.data.bimestre))].sort();
+---
+<BaseLayout title={`${nome} · Desenvolvimento de Sistemas`} wide>
+  <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><span aria-current="page">{nome}</span></li></ol></nav>
+  <p class="eyebrow">Matéria</p>
+  <h1>{nome}</h1>
+  <p class="lede">Selecione um bimestre para ver as semanas disponíveis.</p>
+  <section class="bimestre-grid" aria-label="Bimestres disponíveis">
+    {bimestres.map((bimestre) => <a class="bimestre-card" href={comBase(`/${materia}/${bimestre}`)}><span>{bimestre}º</span><h2>Bimestre {bimestre}</h2><p>Ver semanas e aulas</p></a>)}
+  </section>
+</BaseLayout>

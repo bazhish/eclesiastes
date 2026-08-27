@@ -1,50 +1,68 @@
 ---
 import BaseLayout from '../components/BaseLayout.astro';
 import { comBase, rotaDaAula, todasAsAulas } from '../lib/aulas';
+
 const aulas = await todasAsAulas();
-const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, aula.data.materia])).entries());
+const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, aula.data.materia])).entries()).map(([slug, nome]) => ({
+  slug,
+  nome,
+  aulas: aulas.filter((aula) => aula.data.materiaSlug === slug),
+}));
 ---
-<BaseLayout title="Gabarito 3B · Consulta" wide>
-  <p class="eyebrow">Desenvolvimento de Sistemas</p>
-  <h1>Atividades e gabaritos do 3º bimestre</h1>
-  <p class="lede">Encontre uma matéria, semana ou assunto e abra a aula. O conteúdo é organizado para consulta, não como comprovante de envio ou avaliação.</p>
-  <aside class="notice">Antes de usar qualquer resposta avaliativa, adapte exemplos, execute o que o roteiro exigir e registre somente evidências próprias.</aside>
-  <form class="filters" data-filters>
-    <label class="field">Buscar por título ou assunto<input type="search" name="busca" placeholder="Ex.: CORS, Firebase, Kanban" /></label>
-    <label class="field">Matéria<select name="materia"><option value="">Todas</option>{materias.map(([slug, nome]) => <option value={slug}>{nome}</option>)}</select></label>
-    <label class="field">Semana<select name="semana"><option value="">Todas</option>{[15, 16, 17, 18, 19, 20, 21].map((semana) => <option value={semana}>Semana {semana}</option>)}</select></label>
-    <button class="button" type="reset">Limpar</button>
-  </form>
-  <p class="result-summary" data-result-count aria-live="polite">{aulas.length} aulas encontradas</p>
-  <section class="catalog" aria-label="Aulas do bimestre">
-    {aulas.map((aula) => <a class="catalog-card" href={comBase(rotaDaAula(aula))} data-card data-materia={aula.data.materiaSlug} data-semana={aula.data.semana} data-search={`${aula.data.titulo} ${aula.data.materia}`}>
-      <p>{aula.data.materia} · Semana {aula.data.semana}</p>
-      <h2>{aula.data.titulo}</h2>
-      <span class="tag">{aula.data.atividade ? 'Atividade prática' : `${aula.data.quizzes.length} questões`}</span>
+<BaseLayout title="Desenvolvimento de Sistemas" wide>
+  <p class="eyebrow">Hub de consulta</p>
+  <h1>Desenvolvimento de Sistemas</h1>
+  <p class="lede">Escolha uma matéria para navegar por bimestres, semanas e aulas.</p>
+
+  <section class="subject-grid" aria-label="Matérias">
+    {materias.map((materia) => <a class="subject-card" href={comBase(`/${materia.slug}`)}>
+      <p>Matéria</p>
+      <h2>{materia.nome}</h2>
+      <span>{materia.aulas.length} conteúdos disponíveis</span>
     </a>)}
   </section>
-  <p class="empty" data-empty>Nenhuma aula corresponde aos filtros. Remova um filtro ou use outro termo de busca.</p>
+
+  <section class="search-section" aria-labelledby="busca-global">
+    <h2 id="busca-global">Busca global</h2>
+    <form class="filters filters--search" data-filters>
+      <label class="field">Buscar por título ou assunto<input type="search" name="busca" placeholder="Ex.: CORS, Firebase, Kanban" /></label>
+      <button class="button" type="reset">Limpar</button>
+    </form>
+    <p class="result-summary" data-result-count aria-live="polite">Digite um termo para buscar aulas em todas as matérias.</p>
+    <section class="catalog" data-results hidden aria-label="Resultados da busca">
+      {aulas.map((aula) => <a class="catalog-card" href={comBase(rotaDaAula(aula))} data-card data-search={`${aula.data.titulo} ${aula.data.materia}`}>
+        <p>{aula.data.materia} · Semana {aula.data.semana}</p>
+        <h2>{aula.data.titulo}</h2>
+        <span class="tag">{aula.data.atividade ? 'Atividade prática' : `${aula.data.quizzes.length} questões`}</span>
+      </a>)}
+    </section>
+    <p class="empty" data-empty>Nenhuma aula corresponde à busca. Tente outro termo.</p>
+  </section>
   <script>
     const form = document.querySelector<HTMLFormElement>('[data-filters]');
     const cards = [...document.querySelectorAll<HTMLElement>('[data-card]')];
     const count = document.querySelector('[data-result-count]');
+    const results = document.querySelector<HTMLElement>('[data-results]');
     const empty = document.querySelector<HTMLElement>('[data-empty]');
     const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     const update = () => {
-      const data = new FormData(form ?? undefined);
-      const query = normalize(String(data.get('busca') ?? ''));
-      const materia = String(data.get('materia') ?? '');
-      const semana = String(data.get('semana') ?? '');
+      const query = normalize(String(new FormData(form ?? undefined).get('busca') ?? ''));
+      if (!query) {
+        results!.hidden = true;
+        empty!.style.display = 'none';
+        count!.textContent = 'Digite um termo para buscar aulas em todas as matérias.';
+        return;
+      }
+      results!.hidden = false;
       const shown = cards.filter((card) => {
-        const match = (!query || normalize(card.dataset.search ?? '').includes(query)) && (!materia || card.dataset.materia === materia) && (!semana || card.dataset.semana === semana);
+        const match = normalize(card.dataset.search ?? '').includes(query);
         card.hidden = !match;
         return match;
       }).length;
-      if (count) count.textContent = `${shown} ${shown === 1 ? 'aula encontrada' : 'aulas encontradas'}`;
-      if (empty) empty.style.display = shown ? 'none' : 'block';
+      count!.textContent = `${shown} ${shown === 1 ? 'aula encontrada' : 'aulas encontradas'}`;
+      empty!.style.display = shown ? 'none' : 'block';
     };
     form?.addEventListener('input', update);
-    form?.addEventListener('change', update);
     form?.addEventListener('reset', () => setTimeout(update));
   </script>
 </BaseLayout>

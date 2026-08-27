@@ -1,6 +1,6 @@
-# Gabarito 3B
+# Desenvolvimento de Sistemas
 
-Aplicação estática para consulta das atividades práticas e dos gabaritos “Pause e Responda” do 3º bimestre de Desenvolvimento de Sistemas. O projeto usa Astro, Markdown/MDX, TypeScript e Tailwind CSS.
+Aplicação estática para consulta das atividades práticas e dos gabaritos “Pause e Responda” de Desenvolvimento de Sistemas. O projeto usa Astro, Markdown/MDX, TypeScript e Tailwind CSS.
 
 ## O que está incluído
 

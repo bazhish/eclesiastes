@@ -4,12 +4,9 @@ const { quiz, index } = Astro.props;
 <section class="quiz-card" aria-labelledby={`quiz-${index}`}>
   <p class="eyebrow">Pause e Responda</p>
   <h2 id={`quiz-${index}`}>{quiz.pergunta}</h2>
-  <details>
-    <summary>Mostrar resposta</summary>
-    <div class="answer-reveal">
-      <strong>Resposta de referência</strong>
-      <span>{quiz.resposta}</span>
-      {quiz.justificativa && <p>{quiz.justificativa}</p>}
-    </div>
-  </details>
+  <div class="answer-reveal">
+    <strong>Resposta de referência</strong>
+    <span>{quiz.resposta}</span>
+    {quiz.justificativa && <p>{quiz.justificativa}</p>}
+  </div>
 </section>

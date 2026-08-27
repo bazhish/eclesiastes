@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../components/BaseLayout.astro';
+import { comBase } from '../../lib/aulas';
+
+export async function getStaticPaths() {
+  const aulas = await getCollection('aulas');
+  const paths = new Map<string, { materia: string; bimestre: string; nome: string; aulas: typeof aulas }>();
+  for (const aula of aulas) paths.set(`${aula.data.materiaSlug}/${aula.data.bimestre}`, { materia: aula.data.materiaSlug, bimestre: String(aula.data.bimestre), nome: aula.data.materia, aulas });
+  return Array.from(paths.values()).map(({ materia, bimestre, nome, aulas }) => ({ params: { materia, bimestre }, props: { materia, bimestre: Number(bimestre), nome, aulas } }));
+}
+
+const { materia, bimestre, nome, aulas } = Astro.props;
+const aulasDoBimestre = aulas.filter((aula) => aula.data.materiaSlug === materia && aula.data.bimestre === bimestre);
+const semanas = [...new Set(aulasDoBimestre.map((aula) => aula.data.semana))].sort().map((semana) => {
+  const itens = aulasDoBimestre.filter((aula) => aula.data.semana === semana);
+  return { semana, total: itens.length, praticas: itens.filter((aula) => aula.data.atividade).length, questoes: itens.reduce((total, aula) => total + aula.data.quizzes.length, 0) };
+});
+---
+<BaseLayout title={`${nome} · Bimestre ${bimestre} · Desenvolvimento de Sistemas`} wide>
+  <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><a href={comBase(`/${materia}`)}>{nome}</a></li><li><span aria-current="page">Bimestre {bimestre}</span></li></ol></nav>
+  <p class="eyebrow">{nome}</p>
+  <h1>Bimestre {bimestre}</h1>
+  <p class="lede">Abra uma semana para ver as aulas e usar a navegação lateral contextual.</p>
+  <section class="week-grid" aria-label="Semanas do bimestre">
+    {semanas.map((semana) => <a class="week-card" href={comBase(`/${materia}/${bimestre}/semana-${semana.semana}`)}>
+      <span>Semana {semana.semana}</span>
+      <h2>{semana.praticas} atividades práticas</h2>
+      <p>{semana.questoes ? `${semana.questoes} questões de revisão` : `${semana.total} aulas disponíveis`}</p>
+    </a>)}
+  </section>
+</BaseLayout>

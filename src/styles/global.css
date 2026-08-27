@@ -52,6 +52,7 @@ a:hover { color: var(--accent); }
 .button-primary:hover { background: var(--accent-strong); color: #101828; }
 .button-quiet { background: transparent; }
 .layout { display: grid; grid-template-columns: 17rem minmax(0, 1fr); }
+.layout--hub { display: block; }
 .sidebar { position: sticky; top: 4rem; height: calc(100vh - 4rem); overflow: auto; padding: 1rem; border-right: 1px solid var(--border); background: var(--surface-subtle); }
 .nav-title { margin: .25rem .5rem .8rem; color: var(--muted); font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .tree details { margin: .3rem 0; }
@@ -62,6 +63,8 @@ a:hover { color: var(--accent); }
 .tree a { display: block; margin: .2rem 0 .2rem .75rem; padding: .38rem .5rem; border-left: 3px solid transparent; border-radius: 0 7px 7px 0; color: var(--text); font-size: .89rem; text-decoration: none; }
 .tree a:hover { background: var(--surface); }
 .tree a[aria-current="page"] { border-left-color: var(--accent); background: var(--surface); color: var(--accent-strong); font-weight: 600; }
+.tree-back { margin-bottom: .75rem !important; color: var(--accent-strong) !important; font-weight: 600; }
+.tree-week-link { color: var(--muted) !important; font-size: .82rem !important; font-style: italic; }
 .content { width: min(100%, 69rem); padding: clamp(1.25rem, 4vw, 3.5rem); }
 .content--wide { width: min(100%, 78rem); }
 .breadcrumbs { margin: 0 0 1.25rem; color: var(--muted); font-size: .88rem; }
@@ -72,8 +75,8 @@ a:hover { color: var(--accent); }
 h1 { max-width: 25ch; margin: 0; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; letter-spacing: -.03em; }
 h2 { font-size: 1.38rem; line-height: 1.3; }
 .lede { max-width: 68ch; color: var(--muted); font-size: 1.1rem; }
-.notice { max-width: 75ch; margin: 1.5rem 0; padding: .9rem 1rem; border-left: 4px solid var(--warning); border-radius: 0 8px 8px 0; background: color-mix(in srgb, var(--warning) 10%, var(--surface)); }
 .filters { display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: .75rem; align-items: end; margin: 2rem 0 1rem; padding: 1rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); }
+.filters--search { grid-template-columns: minmax(0, 1fr) auto; margin: .75rem 0 1rem; }
 .field { display: grid; gap: .3rem; color: var(--muted); font-size: .85rem; font-weight: 600; }
 .field input, .field select { min-height: 2.6rem; padding: .55rem .65rem; border: 1px solid var(--border); border-radius: 8px; background: var(--canvas); color: var(--text); }
 .result-summary { margin: 1rem 0; color: var(--muted); }
@@ -84,6 +87,20 @@ h2 { font-size: 1.38rem; line-height: 1.3; }
 .catalog-card p { margin: 0; color: var(--muted); font-size: .9rem; }
 .tag { width: fit-content; margin-top: auto; padding: .15rem .5rem; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); font-size: .78rem; }
 .empty { display: none; margin-top: 1rem; padding: 1rem; border: 1px dashed var(--border); border-radius: 10px; color: var(--muted); }
+.subject-grid, .bimestre-grid, .week-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 2rem 0 3rem; }
+.subject-card, .bimestre-card, .week-card { display: flex; min-height: 11rem; flex-direction: column; justify-content: space-between; padding: 1.2rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); color: var(--text); text-decoration: none; }
+.subject-card:hover, .bimestre-card:hover, .week-card:hover { border-color: var(--accent); color: var(--text); transform: translateY(-2px); }
+.subject-card p, .week-card p, .bimestre-card p { margin: 0; color: var(--muted); }
+.subject-card h2, .bimestre-card h2, .week-card h2 { margin: .35rem 0; }
+.subject-card span, .week-card span { color: var(--accent-strong); font-size: .88rem; font-weight: 600; }
+.bimestre-card > span { color: var(--accent-strong); font-size: 2.2rem; font-weight: 600; line-height: 1; }
+.search-section { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.lesson-list { display: grid; gap: .7rem; margin-top: 1.5rem; }
+.lesson-list a { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: .75rem; align-items: center; padding: 1rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--text); text-decoration: none; }
+.lesson-list a:hover { border-color: var(--accent); color: var(--text); }
+.lesson-list > a > span { display: grid; place-items: center; min-height: 2.5rem; border-radius: 8px; background: var(--surface-subtle); color: var(--accent-strong); font-size: .85rem; font-weight: 700; }
+.lesson-list strong, .lesson-list small { display: block; }
+.lesson-list small { color: var(--muted); }
 .lesson-head { margin-bottom: 1.5rem; }
 .meta { color: var(--muted); font-size: .92rem; }
 .activity-card, .quiz-card { margin: 1rem 0; padding: clamp(1rem, 3vw, 1.5rem); border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); }
@@ -94,8 +111,6 @@ h2 { font-size: 1.38rem; line-height: 1.3; }
 pre { max-width: 100%; overflow: auto; padding: 1rem; border: 1px solid var(--border); border-radius: 8px; background: #111827; color: #edf3ff; font: .875rem/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; }
 .checklist { padding-left: 1.25rem; }
 .checklist li { margin: .35rem 0; }
-.quiz-card details { border-top: 1px solid var(--border); }
-.quiz-card summary { padding: .85rem 0 .25rem; color: var(--accent-strong); cursor: pointer; font-weight: 600; }
 .answer-reveal { margin-top: .7rem; padding: .85rem; border-left: 4px solid var(--success); background: color-mix(in srgb, var(--success) 10%, var(--surface)); }
 .answer-reveal strong { display: block; }
 .site-footer { padding: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .88rem; }
@@ -105,6 +120,7 @@ pre { max-width: 100%; overflow: auto; padding: 1rem; border: 1px solid var(--bo
   .sidebar { position: fixed; z-index: 10; top: 4rem; left: 0; width: min(20rem, 90vw); height: calc(100vh - 4rem); transform: translateX(-105%); transition: transform 160ms ease; box-shadow: var(--shadow); }
   .sidebar[data-open="true"] { transform: translateX(0); }
   .filters { grid-template-columns: 1fr; }
+  .filters--search { grid-template-columns: 1fr; }
   .content { padding: 1.25rem 1rem 2rem; }
   .mobile-only { display: inline-flex; }
 }

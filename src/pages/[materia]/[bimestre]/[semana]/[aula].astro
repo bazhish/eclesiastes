@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 const { aula } = Astro.props;
 const currentPath = rotaDaAula(aula);
 ---
-<BaseLayout title={`${aula.data.titulo} · Gabarito 3B`} currentPath={currentPath}>
+<BaseLayout title={`${aula.data.titulo} · Desenvolvimento de Sistemas`} currentPath={currentPath} showSidebar>
   <Breadcrumb aula={aula} />
   <header class="lesson-head">
     <p class="eyebrow">{aula.data.materia} · Semana {aula.data.semana}</p>

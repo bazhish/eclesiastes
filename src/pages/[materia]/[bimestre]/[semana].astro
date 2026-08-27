@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../components/BaseLayout.astro';
+import { comBase, rotaDaAula } from '../../../lib/aulas';
+
+export async function getStaticPaths() {
+  const aulas = await getCollection('aulas');
+  const paths = new Map<string, { materia: string; bimestre: string; semana: string; nome: string; aulas: typeof aulas }>();
+  for (const aula of aulas) paths.set(`${aula.data.materiaSlug}/${aula.data.bimestre}/semana-${aula.data.semana}`, { materia: aula.data.materiaSlug, bimestre: String(aula.data.bimestre), semana: `semana-${aula.data.semana}`, nome: aula.data.materia, aulas });
+  return Array.from(paths.values()).map(({ materia, bimestre, semana, nome, aulas }) => ({ params: { materia, bimestre, semana }, props: { materia, bimestre: Number(bimestre), semana: Number(semana.replace('semana-', '')), nome, aulas } }));
+}
+
+const { materia, bimestre, semana, nome, aulas } = Astro.props;
+const currentPath = `/${materia}/${bimestre}/semana-${semana}`;
+const itens = aulas.filter((aula) => aula.data.materiaSlug === materia && aula.data.bimestre === bimestre && aula.data.semana === semana).sort((a, b) => a.data.ordem - b.data.ordem);
+---
+<BaseLayout title={`${nome} · Semana ${semana} · Desenvolvimento de Sistemas`} currentPath={currentPath} showSidebar>
+  <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><a href={comBase(`/${materia}`)}>{nome}</a></li><li><a href={comBase(`/${materia}/${bimestre}`)}>Bimestre {bimestre}</a></li><li><span aria-current="page">Semana {semana}</span></li></ol></nav>
+  <p class="eyebrow">{nome} · Bimestre {bimestre}</p>
+  <h1>Semana {semana}</h1>
+  <p class="lede">Escolha uma aula. A navegação lateral mantém as semanas desta matéria acessíveis durante a consulta.</p>
+  <section class="lesson-list" aria-label={`Aulas da semana ${semana}`}>
+    {itens.map((aula) => <a href={comBase(rotaDaAula(aula))}><span>{aula.data.aula.toUpperCase()}</span><div><strong>{aula.data.titulo}</strong><small>{aula.data.atividade ? 'Atividade prática' : `${aula.data.quizzes.length} questões de revisão`}</small></div></a>)}
+  </section>
+</BaseLayout>
