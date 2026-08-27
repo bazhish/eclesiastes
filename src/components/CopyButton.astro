@@ -1,7 +1,7 @@
 ---
-const { targetId } = Astro.props;
+const { targetId, label = 'Copiar resposta' } = Astro.props;
 ---
-<button class="button" type="button" data-copy-target={targetId}>Copiar resposta</button>
+<button class="button" type="button" data-copy-target={targetId} data-copy-label={label}>{label}</button>
 <script>
   document.querySelectorAll<HTMLButtonElement>('[data-copy-target]').forEach((button) => {
     button.addEventListener('click', async () => {
@@ -10,7 +10,7 @@ const { targetId } = Astro.props;
       try {
         await navigator.clipboard.writeText(target.innerText);
         button.textContent = 'Copiado';
-        setTimeout(() => { button.textContent = 'Copiar resposta'; }, 1600);
+        setTimeout(() => { button.textContent = button.dataset.copyLabel ?? 'Copiar resposta'; }, 1600);
       } catch {
         button.textContent = 'Selecione o texto para copiar';
       }

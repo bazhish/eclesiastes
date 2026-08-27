@@ -1,6 +1,6 @@
 ---
 import { agruparNavegacao, comBase, rotaDaAula, type Aula } from '../lib/aulas';
-const { aulas, currentPath, materiaAtual } = Astro.props as { aulas: Aula[]; currentPath: string; materiaAtual: string };
+const { aulas, currentPath, materiaAtual, bimestreAtual } = Astro.props as { aulas: Aula[]; currentPath: string; materiaAtual: string; bimestreAtual: number };
 const materias = agruparNavegacao(aulas);
 const materia = materias.get(materiaAtual);
 ---
@@ -11,7 +11,7 @@ const materia = materias.get(materiaAtual);
     {materia && Array.from(materia.semanas.entries()).map(([semana, aulasDaSemana]) => (
       <details class="week" open={currentPath.includes(`/semana-${semana}`)}>
         <summary>Semana {semana}</summary>
-        <a class="tree-week-link" href={comBase(`/${materiaAtual}/3/semana-${semana}`)} aria-current={currentPath === `/${materiaAtual}/3/semana-${semana}` ? 'page' : undefined}>Visão da semana</a>
+        <a class="tree-week-link" href={comBase(`/${materiaAtual}/${bimestreAtual}/semana-${semana}`)} aria-current={currentPath === `/${materiaAtual}/${bimestreAtual}/semana-${semana}` ? 'page' : undefined}>Visão da semana</a>
         {aulasDaSemana.map((aula) => {
           const href = rotaDaAula(aula);
           return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined}>{aula.data.aula.toUpperCase()} · {aula.data.titulo}</a>;

@@ -1,0 +1,1559 @@
+{
+  "fonte": "Material",
+  "registros": [
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 15 - Fundamentos de Servidores e Seguranca/Atividade Pratica - Aula 2- Criacao de APIs seguras - 47278.docx",
+      "pagina": "src/content/aulas/back-end/semana-15/a2.mdx",
+      "rota": "/back-end/3/semana-15/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 15 - Fundamentos de Servidores e Seguranca/Atividade Pratica - Aula 3- Testes de seguranca em aplicacoes - 47280.docx",
+      "pagina": "src/content/aulas/back-end/semana-15/a3.mdx",
+      "rota": "/back-end/3/semana-15/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 16 - Configuracao e Seguranca de APIs/Atividade Pratica - Aula 1- Implementacao de Cross-Origin Resource Sharing (CORS) - 47284.docx",
+      "pagina": "src/content/aulas/back-end/semana-16/a1.mdx",
+      "rota": "/back-end/3/semana-16/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 16 - Configuracao e Seguranca de APIs/Atividade Pratica - Aula 2- Seguranca em autenticacao e autorizacao - 47285.docx",
+      "pagina": "src/content/aulas/back-end/semana-16/a2.mdx",
+      "rota": "/back-end/3/semana-16/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Atividade Pratica - Aula 1- Introducao aos frameworks back-end - 47292.docx",
+      "pagina": "src/content/aulas/back-end/semana-17/a1.mdx",
+      "rota": "/back-end/3/semana-17/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Atividade Pratica - Aula 2- Integracao com servicos de terceiros - 47293.docx",
+      "pagina": "src/content/aulas/back-end/semana-17/a2.mdx",
+      "rota": "/back-end/3/semana-17/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Atividade Pratica - Aula 3- Gerenciamento de dependencias - 47295.docx",
+      "pagina": "src/content/aulas/back-end/semana-17/a3.mdx",
+      "rota": "/back-end/3/semana-17/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 18 - Desenvolvimento de Microsservicos e Mensageria/Atividade Pratica - Aula 1- Desenvolvimento de microsservicos - 47300.docx",
+      "pagina": "src/content/aulas/back-end/semana-18/a1.mdx",
+      "rota": "/back-end/3/semana-18/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 18 - Desenvolvimento de Microsservicos e Mensageria/Atividade Pratica - Aula 3- Automacao de tarefas - 47302.docx",
+      "pagina": "src/content/aulas/back-end/semana-18/a3.mdx",
+      "rota": "/back-end/3/semana-18/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Atividade Pratica - Aula 1- Integracao continua e deploy continuo (CI-CD) - 47308.docx",
+      "pagina": "src/content/aulas/back-end/semana-19/a1.mdx",
+      "rota": "/back-end/3/semana-19/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Atividade Pratica - Aula 2- Implementacao de servidores web - 47309.docx",
+      "pagina": "src/content/aulas/back-end/semana-19/a2.mdx",
+      "rota": "/back-end/3/semana-19/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Atividade Pratica - Aula 3- Seguranca em banco de dados - 47310.docx",
+      "pagina": "src/content/aulas/back-end/semana-19/a3.mdx",
+      "rota": "/back-end/3/semana-19/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 20 - Arquitetura Serverless e Pagamentos/Atividade Pratica - Aula 2- Arquitetura serverless - 47317.docx",
+      "pagina": "src/content/aulas/back-end/semana-20/a2.mdx",
+      "rota": "/back-end/3/semana-20/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 20 - Arquitetura Serverless e Pagamentos/Atividade Pratica - Aula 3- Integracao com servicos de pagamento - 47318.docx",
+      "pagina": "src/content/aulas/back-end/semana-20/a3.mdx",
+      "rota": "/back-end/3/semana-20/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 21 - Gestao de Configuracoes e Monitoramento/Atividade Pratica - Aula 1- Gestao de configuracoes e segredos – Aula complementar - 47324.docx",
+      "pagina": "src/content/aulas/back-end/semana-21/a1.mdx",
+      "rota": "/back-end/3/semana-21/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Back-End/3° bimestre/Semana 21 - Gestao de Configuracoes e Monitoramento/Atividade Pratica - Aula 2- Monitoramento e logs – Aula complementar - 47327.docx",
+      "pagina": "src/content/aulas/back-end/semana-21/a2.mdx",
+      "rota": "/back-end/3/semana-21/a2"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 15 - Fundamentos de Servidores e Seguranca/Pause e Responda - Aula 1- Introducao aos servidores web - 047281.txt",
+      "pagina": "src/content/aulas/back-end/semana-15/q.mdx",
+      "rota": "/back-end/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 15 - Fundamentos de Servidores e Seguranca/Pause e Responda - Aula 1- Introducao aos servidores web - 047282.txt",
+      "pagina": "src/content/aulas/back-end/semana-15/q.mdx",
+      "rota": "/back-end/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 15 - Fundamentos de Servidores e Seguranca/Pause e Responda - Aula 1- Introducao aos servidores web - 047283.txt",
+      "pagina": "src/content/aulas/back-end/semana-15/q.mdx",
+      "rota": "/back-end/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 16 - Configuracao e Seguranca de APIs/Pause e Responda - Aula 3- Monitoramento de seguranca - 047289.txt",
+      "pagina": "src/content/aulas/back-end/semana-16/q.mdx",
+      "rota": "/back-end/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 16 - Configuracao e Seguranca de APIs/Pause e Responda - Aula 3- Monitoramento de seguranca - 047290.txt",
+      "pagina": "src/content/aulas/back-end/semana-16/q.mdx",
+      "rota": "/back-end/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 16 - Configuracao e Seguranca de APIs/Pause e Responda - Aula 3- Monitoramento de seguranca - 047291.txt",
+      "pagina": "src/content/aulas/back-end/semana-16/q.mdx",
+      "rota": "/back-end/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Pause e Responda - Aula 3- Gerenciamento de dependencias - 047297.txt",
+      "pagina": "src/content/aulas/back-end/semana-17/q.mdx",
+      "rota": "/back-end/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Pause e Responda - Aula 3- Gerenciamento de dependencias - 047298.txt",
+      "pagina": "src/content/aulas/back-end/semana-17/q.mdx",
+      "rota": "/back-end/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Pause e Responda - Aula 3- Gerenciamento de dependencias - 047299.txt",
+      "pagina": "src/content/aulas/back-end/semana-17/q.mdx",
+      "rota": "/back-end/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 18 - Desenvolvimento de Microsservicos e Mensageria/Pause e Responda - Aula 3- Automacao de tarefas - 047305.txt",
+      "pagina": "src/content/aulas/back-end/semana-18/q.mdx",
+      "rota": "/back-end/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 18 - Desenvolvimento de Microsservicos e Mensageria/Pause e Responda - Aula 3- Automacao de tarefas - 047306.txt",
+      "pagina": "src/content/aulas/back-end/semana-18/q.mdx",
+      "rota": "/back-end/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 18 - Desenvolvimento de Microsservicos e Mensageria/Pause e Responda - Aula 3- Automacao de tarefas - 047307.txt",
+      "pagina": "src/content/aulas/back-end/semana-18/q.mdx",
+      "rota": "/back-end/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Pause e Responda - Aula 3- Seguranca em banco de dados - 047313.txt",
+      "pagina": "src/content/aulas/back-end/semana-19/q.mdx",
+      "rota": "/back-end/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Pause e Responda - Aula 3- Seguranca em banco de dados - 047314.txt",
+      "pagina": "src/content/aulas/back-end/semana-19/q.mdx",
+      "rota": "/back-end/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Pause e Responda - Aula 3- Seguranca em banco de dados - 047315.txt",
+      "pagina": "src/content/aulas/back-end/semana-19/q.mdx",
+      "rota": "/back-end/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 20 - Arquitetura Serverless e Pagamentos/Pause e Responda - Aula 3- Integracao com servicos de pagamento - 047321.txt",
+      "pagina": "src/content/aulas/back-end/semana-20/q.mdx",
+      "rota": "/back-end/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 20 - Arquitetura Serverless e Pagamentos/Pause e Responda - Aula 3- Integracao com servicos de pagamento - 047322.txt",
+      "pagina": "src/content/aulas/back-end/semana-20/q.mdx",
+      "rota": "/back-end/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 20 - Arquitetura Serverless e Pagamentos/Pause e Responda - Aula 3- Integracao com servicos de pagamento - 047323.txt",
+      "pagina": "src/content/aulas/back-end/semana-20/q.mdx",
+      "rota": "/back-end/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 21 - Gestao de Configuracoes e Monitoramento/Pause e Responda - Aula 1- Gestao de configuracoes e segredos – Aula complementar - 047329.txt",
+      "pagina": "src/content/aulas/back-end/semana-21/q.mdx",
+      "rota": "/back-end/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 21 - Gestao de Configuracoes e Monitoramento/Pause e Responda - Aula 1- Gestao de configuracoes e segredos – Aula complementar - 047330.txt",
+      "pagina": "src/content/aulas/back-end/semana-21/q.mdx",
+      "rota": "/back-end/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Back-End/3° bimestre/Semana 21 - Gestao de Configuracoes e Monitoramento/Pause e Responda - Aula 1- Gestao de configuracoes e segredos – Aula complementar - 047331.txt",
+      "pagina": "src/content/aulas/back-end/semana-21/q.mdx",
+      "rota": "/back-end/3/semana-21/q"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Atividade Pratica - Aula 1- Introducao aos SGBDs relacionais - 47213.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/a1.mdx",
+      "rota": "/banco-de-dados/3/semana-15/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Atividade Pratica - Aula 2- Modelagem de dados relacional - 47214.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/a2.mdx",
+      "rota": "/banco-de-dados/3/semana-15/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Atividade Pratica - Aula 4- SQL basico para SGBD relacional - 47217.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/a4.mdx",
+      "rota": "/banco-de-dados/3/semana-15/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Atividade Pratica - Aula 1- Chaves primarias e estrangeiras - 47222.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/a1.mdx",
+      "rota": "/banco-de-dados/3/semana-16/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Atividade Pratica - Aula 3- Transacoes em bancos de dados relacionais - 47225.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/a3.mdx",
+      "rota": "/banco-de-dados/3/semana-16/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Atividade Pratica - Aula 4- Vistas em bancos de dados relacionais - 47226.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/a4.mdx",
+      "rota": "/banco-de-dados/3/semana-16/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Atividade Pratica - Aula 2- Clausula Select com funcoes de agregacao - 47233.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-17/a2.mdx",
+      "rota": "/banco-de-dados/3/semana-17/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Atividade Pratica - Aula 3- Clausula Select com juncoes - 47234.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-17/a3.mdx",
+      "rota": "/banco-de-dados/3/semana-17/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Atividade Pratica - Aula 4- Subconsultas e consultas aninhadas - 47235.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-17/a4.mdx",
+      "rota": "/banco-de-dados/3/semana-17/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Atividade Pratica - Aula 1- Clausula Select com funcoes de janela - 47240.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/a1.mdx",
+      "rota": "/banco-de-dados/3/semana-18/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Atividade Pratica - Aula 2- Clausula Select com Common Table Expressions (CTE) - 47242.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/a2.mdx",
+      "rota": "/banco-de-dados/3/semana-18/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Atividade Pratica - Aula 3- Clausula Select com UNION e UNION ALL - 47243.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/a3.mdx",
+      "rota": "/banco-de-dados/3/semana-18/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Atividade Pratica - Aula 4- Clausula Select com CASE - 47244.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/a4.mdx",
+      "rota": "/banco-de-dados/3/semana-18/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Atividade Pratica - Aula 1- Diferencas entre DDL e DML – Aula complementar - 47249.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/a1.mdx",
+      "rota": "/banco-de-dados/3/semana-19/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Atividade Pratica - Aula 2- Comandos DDL – Aula complementar - 47251.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/a2.mdx",
+      "rota": "/banco-de-dados/3/semana-19/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Atividade Pratica - Aula 3- Comandos DML – Aula complementar - 47252.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/a3.mdx",
+      "rota": "/banco-de-dados/3/semana-19/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Atividade Pratica - Aula 4- Transacoes com DML – Aula complementar - 47253.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/a4.mdx",
+      "rota": "/banco-de-dados/3/semana-19/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Atividade Pratica - Aula 1- Backup e recuperacao de dados - 47258.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-20/a1.mdx",
+      "rota": "/banco-de-dados/3/semana-20/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Atividade Pratica - Aula 2- Monitoramento de performance - 47260.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-20/a2.mdx",
+      "rota": "/banco-de-dados/3/semana-20/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Atividade Pratica - Aula 3- Seguranca em bancos de dados relacionais - 47261.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-20/a3.mdx",
+      "rota": "/banco-de-dados/3/semana-20/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Atividade Pratica - Aula 1- Migracao de dados - 47267.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-21/a1.mdx",
+      "rota": "/banco-de-dados/3/semana-21/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Atividade Pratica - Aula 2- Indexacao avancada - 47269.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-21/a2.mdx",
+      "rota": "/banco-de-dados/3/semana-21/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Atividade Pratica - Aula 4- Topicos avancados em sgbds relacionais - 47272.docx",
+      "pagina": "src/content/aulas/banco-de-dados/semana-21/a4.mdx",
+      "rota": "/banco-de-dados/3/semana-21/a4"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Pause e Responda - Aula 3- Normalizacao de banco de dados - 047219.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/q.mdx",
+      "rota": "/banco-de-dados/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Pause e Responda - Aula 3- Normalizacao de banco de dados - 047220.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/q.mdx",
+      "rota": "/banco-de-dados/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Pause e Responda - Aula 3- Normalizacao de banco de dados - 047221.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/q.mdx",
+      "rota": "/banco-de-dados/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Pause e Responda - Aula 2- Indices em bancos de dados relacionais - 047228.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/q.mdx",
+      "rota": "/banco-de-dados/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Pause e Responda - Aula 2- Indices em bancos de dados relacionais - 047229.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/q.mdx",
+      "rota": "/banco-de-dados/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Pause e Responda - Aula 2- Indices em bancos de dados relacionais - 047230.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/q.mdx",
+      "rota": "/banco-de-dados/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Pause e Responda - Aula 1- Clausula Select basica - 047237.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-17/q.mdx",
+      "rota": "/banco-de-dados/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Pause e Responda - Aula 1- Clausula Select basica - 047238.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-17/q.mdx",
+      "rota": "/banco-de-dados/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Pause e Responda - Aula 1- Clausula Select basica - 047239.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-17/q.mdx",
+      "rota": "/banco-de-dados/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Pause e Responda - Aula 1- Clausula Select com funcoes de janela - 047246.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/q.mdx",
+      "rota": "/banco-de-dados/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Pause e Responda - Aula 1- Clausula Select com funcoes de janela - 047247.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/q.mdx",
+      "rota": "/banco-de-dados/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Pause e Responda - Aula 1- Clausula Select com funcoes de janela - 047248.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/q.mdx",
+      "rota": "/banco-de-dados/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Pause e Responda - Aula 1- Diferencas entre DDL e DML – Aula complementar - 047255.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/q.mdx",
+      "rota": "/banco-de-dados/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Pause e Responda - Aula 1- Diferencas entre DDL e DML – Aula complementar - 047256.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/q.mdx",
+      "rota": "/banco-de-dados/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Pause e Responda - Aula 1- Diferencas entre DDL e DML – Aula complementar - 047257.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/q.mdx",
+      "rota": "/banco-de-dados/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Pause e Responda - Aula 1- Backup e recuperacao de dados - 047264.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-20/q.mdx",
+      "rota": "/banco-de-dados/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Pause e Responda - Aula 1- Backup e recuperacao de dados - 047265.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-20/q.mdx",
+      "rota": "/banco-de-dados/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Pause e Responda - Aula 1- Backup e recuperacao de dados - 047266.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-20/q.mdx",
+      "rota": "/banco-de-dados/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Pause e Responda - Aula 1- Migracao de dados - 047273.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-21/q.mdx",
+      "rota": "/banco-de-dados/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Pause e Responda - Aula 1- Migracao de dados - 047274.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-21/q.mdx",
+      "rota": "/banco-de-dados/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Pause e Responda - Aula 1- Migracao de dados - 047275.txt",
+      "pagina": "src/content/aulas/banco-de-dados/semana-21/q.mdx",
+      "rota": "/banco-de-dados/3/semana-21/q"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Atividade Pratica - Aula 1- CSS grid e layouts responsivos - 47395.docx",
+      "pagina": "src/content/aulas/front-end/semana-15/a1.mdx",
+      "rota": "/front-end/3/semana-15/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Atividade Pratica - Aula 2- Ferramentas de desenvolvimento front-end - 47396.docx",
+      "pagina": "src/content/aulas/front-end/semana-15/a2.mdx",
+      "rota": "/front-end/3/semana-15/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Atividade Pratica - Aula 3- Performance de aplicacoes web - 47397.docx",
+      "pagina": "src/content/aulas/front-end/semana-15/a3.mdx",
+      "rota": "/front-end/3/semana-15/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 16 - Animacoes e Pre-processadores CSS/Atividade Pratica - Aula 1- Animacoes avancadas com CSS e JavaScript - 47403.docx",
+      "pagina": "src/content/aulas/front-end/semana-16/a1.mdx",
+      "rota": "/front-end/3/semana-16/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 16 - Animacoes e Pre-processadores CSS/Atividade Pratica - Aula 2- Pre-processadores CSS - 47405.docx",
+      "pagina": "src/content/aulas/front-end/semana-16/a2.mdx",
+      "rota": "/front-end/3/semana-16/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Atividade Pratica - Aula 1- Integracao com APIs externas - 47411.docx",
+      "pagina": "src/content/aulas/front-end/semana-17/a1.mdx",
+      "rota": "/front-end/3/semana-17/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Atividade Pratica - Aula 2- WebSockets e comunicacao em tempo real - 47413.docx",
+      "pagina": "src/content/aulas/front-end/semana-17/a2.mdx",
+      "rota": "/front-end/3/semana-17/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Atividade Pratica - Aula 3- GraphQL no front-end - 47415.docx",
+      "pagina": "src/content/aulas/front-end/semana-17/a3.mdx",
+      "rota": "/front-end/3/semana-17/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 18 - CI-CD e Testes Automatizados/Atividade Pratica - Aula 1- CI-CD para front-end - 47419.docx",
+      "pagina": "src/content/aulas/front-end/semana-18/a1.mdx",
+      "rota": "/front-end/3/semana-18/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 18 - CI-CD e Testes Automatizados/Atividade Pratica - Aula 3- Testes de performance para front-end - 47422.docx",
+      "pagina": "src/content/aulas/front-end/semana-18/a3.mdx",
+      "rota": "/front-end/3/semana-18/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Atividade Pratica - Aula 1- Tecnicas avancadas de CSS - 47427.docx",
+      "pagina": "src/content/aulas/front-end/semana-19/a1.mdx",
+      "rota": "/front-end/3/semana-19/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Atividade Pratica - Aula 2- Desenvolvimento mobile-first - 47429.docx",
+      "pagina": "src/content/aulas/front-end/semana-19/a2.mdx",
+      "rota": "/front-end/3/semana-19/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Atividade Pratica - Aula 3- Gerenciamento de estado com Redux - 47430.docx",
+      "pagina": "src/content/aulas/front-end/semana-19/a3.mdx",
+      "rota": "/front-end/3/semana-19/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Atividade Pratica - Aula 1- Acessibilidade em aplicacoes web – Aula complementar - 47435.docx",
+      "pagina": "src/content/aulas/front-end/semana-20/a1.mdx",
+      "rota": "/front-end/3/semana-20/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Atividade Pratica - Aula 2- Animacoes e interacoes avancadas – Aula complementar - 47437.docx",
+      "pagina": "src/content/aulas/front-end/semana-20/a2.mdx",
+      "rota": "/front-end/3/semana-20/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Atividade Pratica - Aula 3- Testes de acessibilidade automatizados – Aula complementar - 47438.docx",
+      "pagina": "src/content/aulas/front-end/semana-20/a3.mdx",
+      "rota": "/front-end/3/semana-20/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 21 - Servicos de Autenticacao e Monitoramento/Atividade Pratica - Aula 1- Integracao com servicos de autenticacao - 47443.docx",
+      "pagina": "src/content/aulas/front-end/semana-21/a1.mdx",
+      "rota": "/front-end/3/semana-21/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Front-End/3° bimestre/Semana 21 - Servicos de Autenticacao e Monitoramento/Atividade Pratica - Aula 2- Monitoramento e logs para front-end - 47445.docx",
+      "pagina": "src/content/aulas/front-end/semana-21/a2.mdx",
+      "rota": "/front-end/3/semana-21/a2"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Pause e Responda - Aula 3- Performance de aplicacoes web - 047400.txt",
+      "pagina": "src/content/aulas/front-end/semana-15/q.mdx",
+      "rota": "/front-end/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Pause e Responda - Aula 3- Performance de aplicacoes web - 047401.txt",
+      "pagina": "src/content/aulas/front-end/semana-15/q.mdx",
+      "rota": "/front-end/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Pause e Responda - Aula 3- Performance de aplicacoes web - 047402.txt",
+      "pagina": "src/content/aulas/front-end/semana-15/q.mdx",
+      "rota": "/front-end/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 16 - Animacoes e Pre-processadores CSS/Pause e Responda - Aula 2- Pre-processadores CSS - 047408.txt",
+      "pagina": "src/content/aulas/front-end/semana-16/q.mdx",
+      "rota": "/front-end/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 16 - Animacoes e Pre-processadores CSS/Pause e Responda - Aula 2- Pre-processadores CSS - 047409.txt",
+      "pagina": "src/content/aulas/front-end/semana-16/q.mdx",
+      "rota": "/front-end/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 16 - Animacoes e Pre-processadores CSS/Pause e Responda - Aula 2- Pre-processadores CSS - 047410.txt",
+      "pagina": "src/content/aulas/front-end/semana-16/q.mdx",
+      "rota": "/front-end/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Pause e Responda - Aula 1- Integracao com APIs externas - 047416.txt",
+      "pagina": "src/content/aulas/front-end/semana-17/q.mdx",
+      "rota": "/front-end/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Pause e Responda - Aula 1- Integracao com APIs externas - 047417.txt",
+      "pagina": "src/content/aulas/front-end/semana-17/q.mdx",
+      "rota": "/front-end/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Pause e Responda - Aula 1- Integracao com APIs externas - 047418.txt",
+      "pagina": "src/content/aulas/front-end/semana-17/q.mdx",
+      "rota": "/front-end/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 18 - CI-CD e Testes Automatizados/Pause e Responda - Aula 1- CI-CD para front-end - 047424.txt",
+      "pagina": "src/content/aulas/front-end/semana-18/q.mdx",
+      "rota": "/front-end/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 18 - CI-CD e Testes Automatizados/Pause e Responda - Aula 1- CI-CD para front-end - 047425.txt",
+      "pagina": "src/content/aulas/front-end/semana-18/q.mdx",
+      "rota": "/front-end/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 18 - CI-CD e Testes Automatizados/Pause e Responda - Aula 1- CI-CD para front-end - 047426.txt",
+      "pagina": "src/content/aulas/front-end/semana-18/q.mdx",
+      "rota": "/front-end/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Pause e Responda - Aula 1- Tecnicas avancadas de CSS - 047432.txt",
+      "pagina": "src/content/aulas/front-end/semana-19/q.mdx",
+      "rota": "/front-end/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Pause e Responda - Aula 1- Tecnicas avancadas de CSS - 047433.txt",
+      "pagina": "src/content/aulas/front-end/semana-19/q.mdx",
+      "rota": "/front-end/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Pause e Responda - Aula 1- Tecnicas avancadas de CSS - 047434.txt",
+      "pagina": "src/content/aulas/front-end/semana-19/q.mdx",
+      "rota": "/front-end/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Pause e Responda - Aula 1- Acessibilidade em aplicacoes web – Aula complementar - 047440.txt",
+      "pagina": "src/content/aulas/front-end/semana-20/q.mdx",
+      "rota": "/front-end/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Pause e Responda - Aula 1- Acessibilidade em aplicacoes web – Aula complementar - 047441.txt",
+      "pagina": "src/content/aulas/front-end/semana-20/q.mdx",
+      "rota": "/front-end/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Pause e Responda - Aula 1- Acessibilidade em aplicacoes web – Aula complementar - 047442.txt",
+      "pagina": "src/content/aulas/front-end/semana-20/q.mdx",
+      "rota": "/front-end/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 21 - Servicos de Autenticacao e Monitoramento/Pause e Responda - Aula 1- Integracao com servicos de autenticacao - 047448.txt",
+      "pagina": "src/content/aulas/front-end/semana-21/q.mdx",
+      "rota": "/front-end/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 21 - Servicos de Autenticacao e Monitoramento/Pause e Responda - Aula 1- Integracao com servicos de autenticacao - 047449.txt",
+      "pagina": "src/content/aulas/front-end/semana-21/q.mdx",
+      "rota": "/front-end/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Front-End/3° bimestre/Semana 21 - Servicos de Autenticacao e Monitoramento/Pause e Responda - Aula 1- Integracao com servicos de autenticacao - 047450.txt",
+      "pagina": "src/content/aulas/front-end/semana-21/q.mdx",
+      "rota": "/front-end/3/semana-21/q"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 15 - Introducao a IA – historia, areas e impacto/Atividade Pratica - Aula 3- Evolucao da IA – 1950 → hoje - 84109.docx",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-15/a3.mdx",
+      "rota": "/inteligencia-artificial/3/semana-15/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 16 - Aprendizado supervisionado – pipeline de ML/Atividade Pratica - Aula 3- Ferramenta scikit-learn – Fluxo Basico - 84110.docx",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-16/a3.mdx",
+      "rota": "/inteligencia-artificial/3/semana-16/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 17 - Pre‑Processamento e Feature Engineering/Atividade Pratica - Aula 3- Selecao e criacao de Features - 83835.docx",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-17/a3.mdx",
+      "rota": "/inteligencia-artificial/3/semana-17/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 18 - Do Modelo a Acao- Introducao aos Agentes/Atividade Pratica - Aula 3- Arquiteturas reativas vs deliberativas - 83039.docx",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-18/a3.mdx",
+      "rota": "/inteligencia-artificial/3/semana-18/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 19 - Etica e Governanca em Sistemas Agenticos/Atividade Pratica - Aula 3- Alinhamento de Objetivos (Goal Alignment) - 82988.docx",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-19/a3.mdx",
+      "rota": "/inteligencia-artificial/3/semana-19/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 20 - Agentes com RAG e Memoria/Atividade Pratica - Aula 2- Bancos de Vetores - 82920.docx",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/a2.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 20 - Agentes com RAG e Memoria/Atividade Pratica - Aula 3- Persistencia de Memoria - 82925.docx",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/a3.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/a3"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 15 - Introducao a IA – historia, areas e impacto/Pause e Responda - Aula 1- Evolucao da IA – 1950 → hoje - 080473.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-15/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 15 - Introducao a IA – historia, areas e impacto/Pause e Responda - Aula 2- Evolucao da IA – 1950 → hoje - 080475.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-15/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 15 - Introducao a IA – historia, areas e impacto/Pause e Responda - Aula 3- Evolucao da IA – 1950 → hoje - 080474.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-15/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 16 - Aprendizado supervisionado – pipeline de ML/Pause e Responda - Aula 1- Etapas do pipeline (Dataset → Modelo → Metrica) - 080484.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-16/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 16 - Aprendizado supervisionado – pipeline de ML/Pause e Responda - Aula 2- Conjunto de dados – Qualidade e labeling - 080486.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-16/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 16 - Aprendizado supervisionado – pipeline de ML/Pause e Responda - Aula 3- Ferramenta scikit-learn – Fluxo Basico - 080485.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-16/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 17 - Pre‑Processamento e Feature Engineering/Pause e Responda - Aula 1- Normalizacao e padronizacao - 083828.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-17/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 17 - Pre‑Processamento e Feature Engineering/Pause e Responda - Aula 2- Codificacao de variaveis categoricas - 083831.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-17/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 17 - Pre‑Processamento e Feature Engineering/Pause e Responda - Aula 3- Selecao e criacao de Features - 083836.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-17/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 18 - Do Modelo a Acao- Introducao aos Agentes/Pause e Responda - Aula 1- O que define um agente de IA-​ - 083032.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-18/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 18 - Do Modelo a Acao- Introducao aos Agentes/Pause e Responda - Aula 2- Raciocinio (reasoning) e planejamento - 083035.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-18/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 18 - Do Modelo a Acao- Introducao aos Agentes/Pause e Responda - Aula 3- Arquiteturas reativas vs deliberativas - 083040.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-18/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 19 - Etica e Governanca em Sistemas Agenticos/Pause e Responda - Aula 1- Autonomia e Responsabilidade Juridica - 082982.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-19/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 19 - Etica e Governanca em Sistemas Agenticos/Pause e Responda - Aula 2- Vieses em Acoes Autonomas - 083136.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-19/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 19 - Etica e Governanca em Sistemas Agenticos/Pause e Responda - Aula 3- Alinhamento de Objetivos (Goal Alignment) - 082989.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-19/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 20 - Agentes com RAG e Memoria/Pause e Responda - Aula 1- Arquitetura RAG - 082917.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 20 - Agentes com RAG e Memoria/Pause e Responda - Aula 2- Bancos de Vetores - 082921.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Inteligência Artificial/3° bimestre/Semana 20 - Agentes com RAG e Memoria/Pause e Responda - Aula 3- Persistencia de Memoria - 082926.txt",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/q.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/q"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Atividade Pratica - Aula 2- Animacoes avancadas - 47333.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-15/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Atividade Pratica - Aula 3- Gerenciamento de estados complexos - 47335.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/a3.mdx",
+      "rota": "/programacao-mobile/3/semana-15/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Atividade Pratica - Aula 4- Integracao com APIs graficas - 47337.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/a4.mdx",
+      "rota": "/programacao-mobile/3/semana-15/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Atividade Pratica - Aula 1- Principios de acessibilidade - 47341.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-16/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Atividade Pratica - Aula 3- Ferramentas de acessibilidade - 47344.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/a3.mdx",
+      "rota": "/programacao-mobile/3/semana-16/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Atividade Pratica - Aula 4- Interface adaptativa - 47346.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/a4.mdx",
+      "rota": "/programacao-mobile/3/semana-16/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Atividade Pratica - Aula 1- Banco de dados relacional vs. NoSQL - 47350.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-17/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Atividade Pratica - Aula 2- Firebase para armazenamento de dados - 47352.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-17/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Atividade Pratica - Aula 4- Criptografia de dados - 47355.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/a4.mdx",
+      "rota": "/programacao-mobile/3/semana-17/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Atividade Pratica - Aula 1- Integracao com APIs externas - 47359.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-18/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Atividade Pratica - Aula 2- Utilizacao de servicos de back-end como servico (BaaS) - 47361.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-18/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Atividade Pratica - Aula 3- Integracao com servicos de mensageria - 47362.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/a3.mdx",
+      "rota": "/programacao-mobile/3/semana-18/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Atividade Pratica - Aula 1- Armazenamento de dados em nuvem – Aula complementar - 47368.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-19/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Atividade Pratica - Aula 2- Integracao com AWS S3 – Aula complementar - 47370.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-19/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Atividade Pratica - Aula 3- Seguranca de dados em nuvem – Aula complementar - 47372.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/a3.mdx",
+      "rota": "/programacao-mobile/3/semana-19/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Atividade Pratica - Aula 4- Backup e recuperacao de dados na nuvem – Aula complementar - 47373.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/a4.mdx",
+      "rota": "/programacao-mobile/3/semana-19/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Atividade Pratica - Aula 2- Prototipagem e wireframes - 47378.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-20/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-20/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Atividade Pratica - Aula 3- Design de interacao - 47380.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-20/a3.mdx",
+      "rota": "/programacao-mobile/3/semana-20/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Atividade Pratica - Aula 4- Testes de usabilidade com usuarios reais - 47382.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-20/a4.mdx",
+      "rota": "/programacao-mobile/3/semana-20/a4"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Atividade Pratica - Aula 1- Refatoracao de codigo - 47386.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-21/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Atividade Pratica - Aula 3- Feedback continuo e iteracao - 47388.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/a3.mdx",
+      "rota": "/programacao-mobile/3/semana-21/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Atividade Pratica - Aula 4- Projeto de interface de usuario - 47390.docx",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/a4.mdx",
+      "rota": "/programacao-mobile/3/semana-21/a4"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Pause e Responda - Aula 3- Gerenciamento de estados complexos - 047338.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/q.mdx",
+      "rota": "/programacao-mobile/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Pause e Responda - Aula 3- Gerenciamento de estados complexos - 047339.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/q.mdx",
+      "rota": "/programacao-mobile/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Pause e Responda - Aula 3- Gerenciamento de estados complexos - 047340.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/q.mdx",
+      "rota": "/programacao-mobile/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Pause e Responda - Aula 3- Ferramentas de acessibilidade - 047347.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/q.mdx",
+      "rota": "/programacao-mobile/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Pause e Responda - Aula 3- Ferramentas de acessibilidade - 047348.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/q.mdx",
+      "rota": "/programacao-mobile/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Pause e Responda - Aula 3- Ferramentas de acessibilidade - 047349.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/q.mdx",
+      "rota": "/programacao-mobile/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Pause e Responda - Aula 2- Firebase para armazenamento de dados - 047356.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/q.mdx",
+      "rota": "/programacao-mobile/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Pause e Responda - Aula 2- Firebase para armazenamento de dados - 047357.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/q.mdx",
+      "rota": "/programacao-mobile/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Pause e Responda - Aula 2- Firebase para armazenamento de dados - 047358.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/q.mdx",
+      "rota": "/programacao-mobile/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Pause e Responda - Aula 4- Monitoramento e logs - 047365.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/q.mdx",
+      "rota": "/programacao-mobile/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Pause e Responda - Aula 4- Monitoramento e logs - 047366.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/q.mdx",
+      "rota": "/programacao-mobile/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Pause e Responda - Aula 4- Monitoramento e logs - 047367.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/q.mdx",
+      "rota": "/programacao-mobile/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Pause e Responda - Aula 2- Integracao com AWS S3 – Aula complementar - 047374.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/q.mdx",
+      "rota": "/programacao-mobile/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Pause e Responda - Aula 2- Integracao com AWS S3 – Aula complementar - 047375.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/q.mdx",
+      "rota": "/programacao-mobile/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Pause e Responda - Aula 2- Integracao com AWS S3 – Aula complementar - 047376.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/q.mdx",
+      "rota": "/programacao-mobile/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Pause e Responda - Aula 2- Prototipagem e wireframes - 047383.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-20/q.mdx",
+      "rota": "/programacao-mobile/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Pause e Responda - Aula 2- Prototipagem e wireframes - 047384.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-20/q.mdx",
+      "rota": "/programacao-mobile/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Pause e Responda - Aula 2- Prototipagem e wireframes - 047385.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-20/q.mdx",
+      "rota": "/programacao-mobile/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Pause e Responda - Aula 3- Feedback continuo e iteracao - 047392.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/q.mdx",
+      "rota": "/programacao-mobile/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Pause e Responda - Aula 3- Feedback continuo e iteracao - 047393.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/q.mdx",
+      "rota": "/programacao-mobile/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Pause e Responda - Aula 3- Feedback continuo e iteracao - 047394.txt",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/q.mdx",
+      "rota": "/programacao-mobile/3/semana-21/q"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 15 - Desenvolvimento de MVP (Parte 1)/Atividade Pratica - Aula 2- Planejamento do MVP - 47452.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 15 - Desenvolvimento de MVP (Parte 1)/Atividade Pratica - Aula 3- Desenvolvimento do MVP (parte 1) - 47454.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/a3.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Atividade Pratica - Aula 1- Desenvolvimento do MVP (parte 2) - 47459.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Atividade Pratica - Aula 2- Desenvolvimento do MVP (parte 3) - 47460.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Atividade Pratica - Aula 3- Retrospectiva - 47462.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a3.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Atividade Pratica - Aula 1- Coleta de feedback - 47467.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Atividade Pratica - Aula 2- Analise de feedback - 47468.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Atividade Pratica - Aula 3- Desempenho de produto, processo e pessoas - 47469.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a3.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Atividade Pratica - Aula 1- Inovando com sustentabilidade (Objetivos de Desenvolvimento Sustentavel – ODS) - 47475.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Atividade Pratica - Aula 2- Sustentabilidade aplicada ao MVP - 47476.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Atividade Pratica - Aula 3- Retrospectiva - 47478.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a3.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Atividade Pratica - Aula 1- Metodologias inovadoras – Aula complementar - 47483.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Atividade Pratica - Aula 2- Ferramentas de inovacao (parte 1) – Aula complementar - 47484.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Atividade Pratica - Aula 3- Ferramentas de inovacao (parte 2) – Aula complementar - 47485.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a3.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Atividade Pratica - Aula 1- Refinamento do MVP - 47491.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Atividade Pratica - Aula 2- Ajustes finais do MVP - 47492.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Atividade Pratica - Aula 3- Retrospectiva - 47495.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a3.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Atividade Pratica - Aula 1- Revisao completa do MVP - 47499.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/a1"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Atividade Pratica - Aula 2- Acompanhamento e monitoramento do MVP - 47500.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Atividade Pratica - Aula 3- Avaliacao final e documentacao do MVP - 47501.docx",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a3.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/a3"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 15 - Desenvolvimento de MVP (Parte 1)/Pause e Responda - Aula 3- Desenvolvimento do MVP (parte 1) - 047456.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 15 - Desenvolvimento de MVP (Parte 1)/Pause e Responda - Aula 3- Desenvolvimento do MVP (parte 1) - 047457.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 15 - Desenvolvimento de MVP (Parte 1)/Pause e Responda - Aula 3- Desenvolvimento do MVP (parte 1) - 047458.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Pause e Responda - Aula 3- Retrospectiva - 047464.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Pause e Responda - Aula 3- Retrospectiva - 047465.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Pause e Responda - Aula 3- Retrospectiva - 047466.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Pause e Responda - Aula 3- Desempenho de produto, processo e pessoas - 047472.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Pause e Responda - Aula 3- Desempenho de produto, processo e pessoas - 047473.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Pause e Responda - Aula 3- Desempenho de produto, processo e pessoas - 047474.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Pause e Responda - Aula 3- Retrospectiva - 047480.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Pause e Responda - Aula 3- Retrospectiva - 047481.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Pause e Responda - Aula 3- Retrospectiva - 047482.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Pause e Responda - Aula 3- Ferramentas de inovacao (parte 2) – Aula complementar - 047488.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Pause e Responda - Aula 3- Ferramentas de inovacao (parte 2) – Aula complementar - 047489.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Pause e Responda - Aula 3- Ferramentas de inovacao (parte 2) – Aula complementar - 047490.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Pause e Responda - Aula 2- Ajustes finais do MVP - 047496.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Pause e Responda - Aula 2- Ajustes finais do MVP - 047497.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Pause e Responda - Aula 2- Ajustes finais do MVP - 047498.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Pause e Responda - Aula 3- Avaliacao final e documentacao do MVP - 047504.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Pause e Responda - Aula 3- Avaliacao final e documentacao do MVP - 047505.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Pause e Responda - Aula 3- Avaliacao final e documentacao do MVP - 047506.txt",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/q.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/q"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 15 - Git Basico – repositorio, commit e historico/Atividade Pratica - Aula 2- Visualizacao de historico e reversao - 84122.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-15/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 15 - Git Basico – repositorio, commit e historico/Atividade Pratica - Aula 3- .gitignore e boas praticas - 84123.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/a3.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-15/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 16 - Branching e estrategias de fluxo (Git Flow, Trunk Based)/Atividade Pratica - Aula 2- Estrategia Git Flow - 84124.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-16/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 16 - Branching e estrategias de fluxo (Git Flow, Trunk Based)/Atividade Pratica - Aula 3- Trunk Based Development - 84125.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/a3.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-16/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 17 - Colaboracao remota – Pull Request, Code Review/Atividade Pratica - Aula 2- Tecnicas de Code Review - 83722.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-17/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 17 - Colaboracao remota – Pull Request, Code Review/Atividade Pratica - Aula 3- Resolvendo conflitos complexos - 83727.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/a3.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-17/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 18 - Tagging, releases e versionamento semantico/Atividade Pratica - Aula 2- Versionamento semantico (SemVer) - 83062.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-18/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 18 - Tagging, releases e versionamento semantico/Atividade Pratica - Aula 3- Geracao de changelog automatico - 83067.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/a3.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-18/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 19 - Fundamentos de mensageria – conceitos de fila, topico e garantias/Atividade Pratica - Aula 2- Comparacao RabbitMQ × Kafka × SQS - 82972.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-19/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 19 - Fundamentos de mensageria – conceitos de fila, topico e garantias/Atividade Pratica - Aula 3- Modelagem de dominio orientada a eventos - 82977.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/a3.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-19/a3"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 20 - RabbitMQ – conceitos e operacao basica/Atividade Pratica - Aula 2- ACK, NACK e Redrive Policy - 82907.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-20/a2"
+    },
+    {
+      "tipo": "atividade",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 20 - RabbitMQ – conceitos e operacao basica/Atividade Pratica - Aula 3- Ferramenta Management UI - 82912.docx",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/a3.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-20/a3"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 15 - Git Basico – repositorio, commit e historico/Pause e Responda - Aula 1- Inicializacao e snapshot de arquivos - 078937.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 15 - Git Basico – repositorio, commit e historico/Pause e Responda - Aula 2- Visualizacao de historico e reversao - 078938.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 15 - Git Basico – repositorio, commit e historico/Pause e Responda - Aula 3- .gitignore e boas praticas - 078939.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-15/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 16 - Branching e estrategias de fluxo (Git Flow, Trunk Based)/Pause e Responda - Aula 1- Branch, merge e fast-forward - 080319.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 16 - Branching e estrategias de fluxo (Git Flow, Trunk Based)/Pause e Responda - Aula 2- Estrategia Git Flow - 080321.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 16 - Branching e estrategias de fluxo (Git Flow, Trunk Based)/Pause e Responda - Aula 3- Trunk Based Development - 080320.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-16/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 17 - Colaboracao remota – Pull Request, Code Review/Pause e Responda - Aula 1- Fork, Push e Pull Request - 083719.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 17 - Colaboracao remota – Pull Request, Code Review/Pause e Responda - Aula 2- Tecnicas de Code Review - 083723.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 17 - Colaboracao remota – Pull Request, Code Review/Pause e Responda - Aula 3- Resolvendo conflitos complexos - 083728.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-17/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 18 - Tagging, releases e versionamento semantico/Pause e Responda - Aula 1- git tag annotated × lightweight - 083059.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 18 - Tagging, releases e versionamento semantico/Pause e Responda - Aula 2- Versionamento semantico (SemVer) - 083063.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 18 - Tagging, releases e versionamento semantico/Pause e Responda - Aula 3- Geracao de changelog automatico - 083068.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-18/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 19 - Fundamentos de mensageria – conceitos de fila, topico e garantias/Pause e Responda - Aula 1- Produtor, consumidor e corretor - 082969.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 19 - Fundamentos de mensageria – conceitos de fila, topico e garantias/Pause e Responda - Aula 2- Comparacao RabbitMQ × Kafka × SQS - 082973.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 19 - Fundamentos de mensageria – conceitos de fila, topico e garantias/Pause e Responda - Aula 3- Modelagem de dominio orientada a eventos - 082978.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-19/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 20 - RabbitMQ – conceitos e operacao basica/Pause e Responda - Aula 1- Exchanges, Filas e Estrtegias de Roteamento - 082904.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 20 - RabbitMQ – conceitos e operacao basica/Pause e Responda - Aula 2- ACK, NACK e Redrive Policy - 082908.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-20/q"
+    },
+    {
+      "tipo": "pause",
+      "fonte": "Material/Versionamento de Código/3° bimestre/Semana 20 - RabbitMQ – conceitos e operacao basica/Pause e Responda - Aula 3- Ferramenta Management UI - 082913.txt",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/q.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-20/q"
+    }
+  ]
+}

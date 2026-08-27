@@ -1,7 +1,7 @@
-"""Migrate the concise R3B study records into short, static Astro content paths.
+"""Create the static site content directly from the original Material files.
 
-The source repository is read-only for this migration. It creates one MDX record
-per activity and one record for the weekly "Pause e Responda" answer key.
+The generated MDX records retain the original subject, week, title, text and
+source path. No old generated answer or code artifact is used as a source.
 """
 
 from __future__ import annotations
@@ -9,111 +9,182 @@ from __future__ import annotations
 import json
 import re
 import shutil
+import unicodedata
+from collections import defaultdict
 from pathlib import Path
+
+from docx import Document
 
 
 PROJECT = Path(__file__).resolve().parents[1]
-SOURCE = PROJECT.parent / "R3B" / "materias"
+SOURCE = PROJECT.parent / "Material"
 CONTENT = PROJECT / "src" / "content" / "aulas"
 PUBLIC_ARTIFACTS = PROJECT / "public" / "artefatos"
+INDEX = PROJECT / "docs" / "source-index.json"
+
+# Positions checked against local lesson PDFs. They are ordered by original TXT filename.
+QUIZ_ANSWER_POSITIONS = {
+    "Back-End": [4, 1, 4, 2, 2, 3, 3, 4, 3, 2, 4, 1, 4, 4, 2, 2, 1, 4, 4, 4, 1],
+    "Banco de dados": [1, 1, 4, 3, 3, 3, 3, 4, 3, 1, 4, 1, 2, 1, 4, 2, 3, 3, 1, 4, 4],
+    "Front-End": [2, 2, 4, 2, 1, 3, 1, 1, 4, 2, 3, 2, 4, 2, 4, 3, 3, 3, 3, 3, 3],
+    "Inteligência Artificial": [1, 4, 3, 1, 2, 3, 2, 4, 3, 3, 2, 4, 4, 4, 1, 4, 1, 3],
+    "Programação Mobile": [4, 3, 3, 2, 3, 3, 4, 3, 4, 2, 3, 2, 3, 2, 3, 3, 3, 3, 2, 3, 1],
+    "Projeto Multidisciplinar": [3, 3, 3, 4, 2, 4, 3, 3, 3, 3, 4, 1, 4, 2, 2, 3, 4, 3, 1, 3, 4],
+    "Versionamento de Código": [2, 2, 2, 1, 1, 3, 4, 1, 1, 2, 3, 1, 4, 3, 3, 1, 4, 1],
+}
+
+# Answers are present only when the roteiro supplies enough fixed information.
+# Execution- and data-dependent work stays explicitly practical.
+WRITTEN_ANSWERS = {
+    "47278": "Autenticação confirma a identidade de quem chama a API, por exemplo com JWT. Autorização verifica o que essa identidade pode acessar. HTTPS protege os dados em trânsito contra interceptação, e a criptografia em repouso reduz a exposição se o armazenamento for comprometido.",
+    "47280": "Teste de penetração simula tentativas reais de ataque antes do lançamento. Ferramentas como OWASP ZAP ajudam a localizar falhas em endpoints; a verificação deve cobrir injeção de SQL, XSS e exposição de dados sensíveis. Testes contínuos detectam regressões de segurança a cada mudança.",
+    "47217": "Antes de DELETE ou UPDATE, confirme o alvo com uma consulta SELECT usando a mesma condição WHERE, faça backup ou trabalhe em transação quando possível e evite comandos sem WHERE. Assim a alteração pode ser conferida e, se necessário, revertida.",
+    "83039": "Moderador em tempo real: arquitetura reativa, pois precisa responder em poucos milissegundos. Diagnóstico médico: deliberativa, porque exige análise de hipóteses e justificativas. Robô de armazém: híbrida, unindo reação imediata a obstáculos e planejamento de rota. A escolha depende de latência, explicabilidade, precisão e planejamento exigidos.",
+    "83062": "Correção de arredondamento altera PATCH: 1.2.3 para 1.2.4. A nova função compatível altera MINOR: 1.3.0. Exigir o novo parâmetro quebra clientes antigos, portanto altera MAJOR: 2.0.0. Tags marcam referências imutáveis de release; mudar MAJOR sem necessidade dificulta a leitura de compatibilidade.",
+    "83067": "Changelog v1.3.0: Features: cálculo de imposto e exportação em PDF. Correções: arredondamento. Melhorias internas: refatoração de organização. Documentação: atualização do README. É MINOR porque acrescenta funcionalidades compatíveis, sem quebra de API. Mensagens padronizadas permitem classificar e gerar esse documento automaticamente.",
+    "82907": "ACK manual só deve ocorrer depois do processamento concluído, pois confirmar antes pode perder a mensagem em caso de falha. NACK não precisa apagar a mensagem: ela pode ser reenfileirada ou isolada. Falhas temporárias justificam nova tentativa; falhas definitivas devem seguir para uma dead-letter queue. Use direct para uma fila específica, fanout para todos os serviços inscritos e topic para padrões como pedido.*.",
+    "82912": "Quando a entrada supera a saída e há muitas mensagens não confirmadas, o indício principal é consumo lento ou sobrecarregado. Um pré-fetch alto pode concentrar mensagens em um consumidor; reduzi-lo ajuda a distribuir a carga, mas não substitui investigar o processamento e a quantidade de consumidores. A Management UI permite relacionar filas, taxas, consumidores e confirmações; direct atende uma fila, fanout replica para várias e topic usa padrões de chave.",
+}
 
 
-def clean(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip()
+def normalize(value: str) -> str:
+    lines = [re.sub(r"[ \t]+", " ", line).strip() for line in value.replace("\r", "").split("\n")]
+    compact: list[str] = []
+    for line in lines:
+        if line or (compact and compact[-1]):
+            compact.append(line)
+    return "\n".join(compact).strip()
 
 
-def plain_markdown(value: str) -> str:
-    value = re.sub(r"^#{1,6}\s+", "", value, flags=re.MULTILINE)
-    value = re.sub(r"\*\*(.*?)\*\*", r"\1", value)
-    value = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", value)
-    value = re.sub(r"^[-*]\s+", "• ", value, flags=re.MULTILINE)
-    return value.strip()
+def slugify(value: str) -> str:
+    value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii").lower()
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", value)).strip("-")
 
 
-def section(text: str, start: str, end: str | None = None) -> str:
-    pattern = rf"^## {re.escape(start)}\s*$([\s\S]*?)(?=^## {re.escape(end)}\s*$|\Z)" if end else rf"^## {re.escape(start)}\s*$([\s\S]*)"
-    match = re.search(pattern, text, re.MULTILINE)
-    return match.group(1).strip() if match else ""
+def number_from(value: str, label: str) -> int:
+    match = re.search(rf"{label}\s*(\d+)", value, re.IGNORECASE)
+    if not match:
+        raise RuntimeError(f"Não foi possível localizar {label} em: {value}")
+    return int(match.group(1))
 
 
-def activity_data(path: Path, subject_slug: str, week: int, order: int) -> dict:
-    text = path.read_text(encoding="utf-8")
-    title_match = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
-    source_match = re.search(r"Roteiro analisado:\s*(.+)$", text, re.MULTILINE)
-    artifact_match = re.search(r"\[[^\]]+\]\(codigo/([^)]+)\)", text)
-    artifact = None
-    if artifact_match:
-        original = path.parent / "codigo" / artifact_match.group(1)
-        if original.is_file():
-            short_name = f"a{order}{original.suffix.lower()}"
-            relative_public = Path(subject_slug) / str(week) / short_name
-            destination = PUBLIC_ARTIFACTS / relative_public
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(original, destination)
-            language = {".js": "javascript", ".jsx": "jsx", ".py": "python", ".sql": "sql", ".html": "html", ".css": "css", ".ts": "typescript", ".sh": "bash"}.get(original.suffix.lower(), "text")
-            artifact = {"linguagem": language, "conteudo": original.read_text(encoding="utf-8"), "url": f"/artefatos/{relative_public.as_posix()}"}
-    return {
-        "bimestre": 3,
-        "semana": week,
-        "ordem": order,
-        "aula": f"a{order}",
-        "titulo": title_match.group(1).strip() if title_match else path.stem,
-        "atividade": {
-            "enunciado": clean(f"Roteiro analisado: {source_match.group(1) if source_match else path.name}. {plain_markdown(section(text, 'Solução proposta', 'Perguntas do roteiro e respostas'))}"),
-            "resposta": plain_markdown(section(text, "Perguntas do roteiro e respostas", "Artefato técnico")) or "Consulte o roteiro da atividade e registre sua própria evidência de execução.",
-            **({"artefato": artifact} if artifact else {}),
-        },
-        "quizzes": [],
-    }
+def read_docx(path: Path) -> str:
+    document = Document(path)
+    blocks = [paragraph.text for paragraph in document.paragraphs if paragraph.text.strip()]
+    for table in document.tables:
+        for row in table.rows:
+            cells = [cell.text.strip() for cell in row.cells if cell.text.strip()]
+            if cells:
+                blocks.append(" | ".join(cells))
+    return normalize("\n\n".join(blocks))
 
 
-def quiz_data(path: Path, week: int, order: int) -> dict:
-    text = path.read_text(encoding="utf-8")
-    subject_match = re.search(r"^# Pause e Responda — (.+?) — Semana", text, re.MULTILINE)
-    quizzes = []
-    for block in re.split(r"^##\s+.+$", text, flags=re.MULTILINE)[1:]:
-        question = re.search(r"\*\*Pergunta:\*\*\s*(.+?)(?=\n\s*\*\*|\Z)", block, re.DOTALL)
-        answer = re.search(r"\*\*Resposta correta:\*\*\s*(.+?)(?=\n\s*---|\Z)", block, re.DOTALL)
-        if question and answer:
-            quizzes.append({"pergunta": clean(question.group(1)), "resposta": clean(answer.group(1))})
-    if not quizzes:
-        raise RuntimeError(f"Nenhuma questão encontrada em {path}")
-    return {"bimestre": 3, "semana": week, "ordem": order, "aula": "q", "titulo": "Pause e Responda", "quizzes": quizzes, "_materia_nome": subject_match.group(1) if subject_match else path.parent.parent.name}
+def title_from(text: str, fallback: str) -> str:
+    for pattern in (r"(?:Título da atividade|Atividade)\s*:\s*([^\n]+)", r"Título\s*:\s*([^\n]+)"):
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            return normalize(match.group(1))
+    return re.sub(r"\s*-\s*\d+$", "", fallback.replace("Atividade Pratica - ", "")).strip()
 
 
-def write_mdx(data: dict, destination: Path, subject_name: str, subject_slug: str) -> None:
-    data["materia"] = subject_name
-    data["materiaSlug"] = subject_slug
-    data.pop("_materia_nome", None)
+def source_path(path: Path) -> str:
+    return path.relative_to(PROJECT.parent).as_posix()
+
+
+def write_mdx(data: dict, destination: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
-    body = "## Registro de consulta\n\nEste conteúdo foi migrado dos registros do 3º bimestre. Use-o para estudar, revisar e adaptar a atividade ao próprio contexto.\n"
-    destination.write_text(f"---\n{json.dumps(data, ensure_ascii=False)}\n---\n\n{body}", encoding="utf-8")
+    destination.write_text(f"---\n{json.dumps(data, ensure_ascii=False)}\n---\n", encoding="utf-8")
+
+
+def reset_generated_directory(path: Path) -> None:
+    resolved = path.resolve()
+    allowed = {CONTENT.resolve(), PUBLIC_ARTIFACTS.resolve()}
+    if resolved not in allowed or PROJECT.resolve() not in resolved.parents:
+        raise RuntimeError(f"Diretório gerado inválido: {path}")
+    if path.exists():
+        shutil.rmtree(path)
+    path.mkdir(parents=True, exist_ok=True)
+
+
+def quiz_from_txt(path: Path, answer_position: int) -> dict:
+    lines = [line.strip() for line in path.read_text(encoding="utf-8-sig").splitlines()]
+    try:
+        start = next(index for index, line in enumerate(lines) if line.startswith("Fonte:")) + 1
+    except StopIteration as error:
+        raise RuntimeError(f"Fonte ausente em {path}") from error
+    payload = [line for line in lines[start:] if line]
+    if len(payload) < 3:
+        raise RuntimeError(f"Questão incompleta em {path}")
+    question, alternatives = payload[0], payload[1:]
+    if not 1 <= answer_position <= len(alternatives):
+        raise RuntimeError(f"Posição de resposta inválida em {path}")
+    return {
+        "pergunta": question,
+        "alternativas": alternatives,
+        "resposta": alternatives[answer_position - 1],
+        "fonte": source_path(path),
+    }
 
 
 def main() -> None:
     if not SOURCE.is_dir():
         raise RuntimeError(f"Fonte não encontrada: {SOURCE}")
-    activity_count = quiz_count = question_count = 0
+    reset_generated_directory(CONTENT)
+    reset_generated_directory(PUBLIC_ARTIFACTS)
+    records: list[dict] = []
+    activity_count = quiz_page_count = question_count = practical_count = written_count = 0
+
     for subject_dir in sorted(path for path in SOURCE.iterdir() if path.is_dir()):
-        subject_slug = subject_dir.name
-        for week_dir in sorted(subject_dir.glob("semana-*"), key=lambda path: int(path.name.split("-")[1])):
-            week = int(week_dir.name.split("-")[1])
-            activities = sorted(path for path in week_dir.glob("*.md") if path.name not in {"README.md", "pause-e-responda.md"})
-            subject_name = None
-            for order, activity in enumerate(activities, 1):
-                record = activity_data(activity, subject_slug, week, order)
-                header = re.search(r"^> Matéria:\s*(.+?)\s*$", activity.read_text(encoding="utf-8"), re.MULTILINE)
-                subject_name = header.group(1).strip() if header else subject_slug
-                write_mdx(record, CONTENT / subject_slug / f"semana-{week}" / f"a{order}.mdx", subject_name, subject_slug)
+        subject = subject_dir.name
+        subject_slug = slugify(subject)
+        term_dirs = [path for path in subject_dir.iterdir() if path.is_dir() and path.name.startswith("3")]
+        if len(term_dirs) != 1:
+            raise RuntimeError(f"Bimestre 3 ambíguo para {subject}: {term_dirs}")
+        quiz_files_by_week: dict[int, list[Path]] = defaultdict(list)
+        week_dirs = sorted((path for path in term_dirs[0].iterdir() if path.is_dir()), key=lambda path: number_from(path.name, "Semana"))
+        for week_dir in week_dirs:
+            week = number_from(week_dir.name, "Semana")
+            activity_files = sorted(week_dir.glob("Atividade Pratica*.docx"), key=lambda path: number_from(path.name, "Aula"))
+            for activity_file in activity_files:
+                order = number_from(activity_file.name, "Aula")
+                text = read_docx(activity_file)
+                source_id = re.search(r"(\d+)\.docx$", activity_file.name)
+                fixed_answer = WRITTEN_ANSWERS.get(source_id.group(1) if source_id else "")
+                activity = {
+                    "tipo": "resposta" if fixed_answer else "pratica",
+                    "enunciado": text,
+                    "resposta": fixed_answer or "O roteiro não traz uma resposta escrita pronta. A entrega solicitada é prática: siga o procedimento original e registre a sua execução.",
+                    "fonte": source_path(activity_file),
+                }
+                data = {"materia": subject, "materiaSlug": subject_slug, "bimestre": 3, "semana": week, "ordem": order, "aula": f"a{order}", "titulo": title_from(text, activity_file.stem), "atividade": activity, "quizzes": []}
+                output = CONTENT / subject_slug / f"semana-{week}" / f"a{order}.mdx"
+                write_mdx(data, output)
+                records.append({"tipo": "atividade", "fonte": activity["fonte"], "pagina": output.relative_to(PROJECT).as_posix(), "rota": f"/{subject_slug}/3/semana-{week}/a{order}"})
                 activity_count += 1
-            pause = week_dir / "pause-e-responda.md"
-            if pause.is_file():
-                record = quiz_data(pause, week, len(activities) + 1)
-                subject_name = subject_name or record["_materia_nome"]
-                question_count += len(record["quizzes"])
-                write_mdx(record, CONTENT / subject_slug / f"semana-{week}" / "q.mdx", subject_name, subject_slug)
-                quiz_count += 1
-    print(f"Atividades: {activity_count}; gabaritos: {quiz_count}; questões: {question_count}")
+                written_count += bool(fixed_answer)
+                practical_count += not bool(fixed_answer)
+            quiz_files_by_week[week].extend(sorted(week_dir.glob("Pause e Responda*.txt")))
+
+        positions = QUIZ_ANSWER_POSITIONS.get(subject)
+        quiz_files = [file for week in sorted(quiz_files_by_week) for file in quiz_files_by_week[week]]
+        if positions is None or len(positions) != len(quiz_files):
+            raise RuntimeError(f"Mapa de respostas incompleto para {subject}: {len(positions or [])}/{len(quiz_files)}")
+        grouped_quizzes: dict[int, list[dict]] = defaultdict(list)
+        for quiz_file, answer_position in zip(quiz_files, positions, strict=True):
+            week = number_from(quiz_file.parent.name, "Semana")
+            grouped_quizzes[week].append(quiz_from_txt(quiz_file, answer_position))
+            question_count += 1
+        for week, quizzes in grouped_quizzes.items():
+            activities_in_week = list((CONTENT / subject_slug / f"semana-{week}").glob("a*.mdx"))
+            data = {"materia": subject, "materiaSlug": subject_slug, "bimestre": 3, "semana": week, "ordem": len(activities_in_week) + 1, "aula": "q", "titulo": "Pause e Responda", "quizzes": quizzes}
+            output = CONTENT / subject_slug / f"semana-{week}" / "q.mdx"
+            write_mdx(data, output)
+            records.extend({"tipo": "pause", "fonte": quiz["fonte"], "pagina": output.relative_to(PROJECT).as_posix(), "rota": f"/{subject_slug}/3/semana-{week}/q"} for quiz in quizzes)
+            quiz_page_count += 1
+
+    INDEX.parent.mkdir(parents=True, exist_ok=True)
+    INDEX.write_text(json.dumps({"fonte": "Material", "registros": records}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Atividades: {activity_count}; práticas: {practical_count}; respostas escritas: {written_count}; pausas: {quiz_page_count}; questões: {question_count}")
 
 
 if __name__ == "__main__":
