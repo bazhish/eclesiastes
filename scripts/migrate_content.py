@@ -22,7 +22,9 @@ CONTENT = PROJECT / "src" / "content" / "aulas"
 PUBLIC_ARTIFACTS = PROJECT / "public" / "artefatos"
 INDEX = PROJECT / "docs" / "source-index.json"
 
-# Positions checked against local lesson PDFs. They are ordered by original TXT filename.
+# Positions reconstructed from the local question TXT files; the matching lesson
+# PDFs are used whenever they explicitly establish the answer. They are ordered
+# by original TXT filename.
 QUIZ_ANSWER_POSITIONS = {
     "Back-End": [4, 1, 4, 2, 2, 3, 3, 4, 3, 2, 4, 1, 4, 4, 2, 2, 1, 4, 4, 4, 1],
     "Banco de dados": [1, 1, 4, 3, 3, 3, 3, 4, 3, 1, 4, 1, 2, 1, 4, 2, 3, 3, 1, 4, 4],
