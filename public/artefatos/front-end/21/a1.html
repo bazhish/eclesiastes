@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Integração de serviços de autenticação em uma aplicação front-end</title></head>
+  <body>
+    <main>
+      <h1>Integração de serviços de autenticação em uma aplicação front-end</h1>
+      <p id="status" aria-live="polite">Aguardando validação.</p>
+      <button type="button" id="validar">Registrar evidência</button>
+    </main>
+    <script>
+      document.querySelector('#validar').addEventListener('click', () => {
+        document.querySelector('#status').textContent = 'Evidência registrada em ambiente controlado.';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+---
+import CopyButton from './CopyButton.astro';
+const { atividade, id } = Astro.props;
+---
+<section class="activity-card" aria-labelledby={`${id}-title`}>
+  <p class="eyebrow">Atividade prática</p>
+  <h2 id={`${id}-title`}>Solução para consulta</h2>
+  <p>{atividade.enunciado}</p>
+  <div id={`${id}-response`} class="response">{atividade.resposta}</div>
+  <div class="card-actions"><CopyButton targetId={`${id}-response`} />{atividade.artefato?.url && <a class="button" href={atividade.artefato.url} download>Baixar artefato</a>}</div>
+  {atividade.artefato && <>
+    <span class="code-label">Artefato técnico · {atividade.artefato.linguagem}</span>
+    <pre><code>{atividade.artefato.conteudo}</code></pre>
+  </>}
+  <h3>Checklist de validação</h3>
+  <ul class="checklist">
+    <li>Confirme que a solução corresponde ao cenário pedido.</li>
+    <li>Execute e registre o resultado real no ambiente pertinente.</li>
+    <li>Remova dados pessoais, credenciais e evidências de terceiros.</li>
+  </ul>
+</section>

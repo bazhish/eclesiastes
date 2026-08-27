@@ -1,0 +1,53 @@
+---
+import '../styles/global.css';
+import Sidebar from './Sidebar.astro';
+import { todasAsAulas } from '../lib/aulas';
+
+const { title = 'Gabarito 3B', currentPath = '', wide = false } = Astro.props;
+const aulas = await todasAsAulas();
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Consulta organizada de atividades práticas e gabaritos do 3º bimestre." />
+    <title>{title}</title>
+    <script is:inline>
+      const savedTheme = localStorage.getItem('gabarito-theme');
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="/">Gabarito<small>3º bimestre · consulta</small></a>
+        <div class="topbar-actions">
+          <button class="button button-quiet mobile-only" type="button" data-nav-toggle aria-expanded="false" aria-controls="navegacao">Navegação</button>
+          <button class="button button-quiet" type="button" data-theme-toggle aria-label="Alternar tema">Tema</button>
+        </div>
+      </header>
+      <div class="layout">
+        <Sidebar aulas={aulas} currentPath={currentPath} />
+        <main id="conteudo" class:list={['content', { 'content--wide': wide }]}><slot /></main>
+      </div>
+      <footer class="site-footer">Material de consulta. Adapte exemplos e registre apenas evidências próprias antes de qualquer entrega avaliativa.</footer>
+    </div>
+    <script>
+      const toggle = document.querySelector('[data-theme-toggle]');
+      toggle?.addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        localStorage.setItem('gabarito-theme', next);
+      });
+      const nav = document.querySelector('#navegacao');
+      const navToggle = document.querySelector('[data-nav-toggle]');
+      navToggle?.addEventListener('click', () => {
+        const open = nav?.getAttribute('data-open') !== 'true';
+        nav?.setAttribute('data-open', String(open));
+        navToggle.setAttribute('aria-expanded', String(open));
+      });
+    </script>
+  </body>
+</html>

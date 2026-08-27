@@ -1,0 +1,7 @@
+---
+{"bimestre": 3, "semana": 21, "ordem": 1, "aula": "a1", "titulo": "Planejamento e execução de migração de dados entre sistemas", "atividade": {"enunciado": "Roteiro analisado: Atividade Pratica - Aula 1- Migracao de dados - 47267.docx. A solução foi reescrita a partir do roteiro original. Etapas que dependem de conta externa, dados reais, pessoas ou envio ao AVA devem ser executadas pelo estudante e registradas como evidência própria.", "resposta": "O roteiro é procedimental e não apresenta uma pergunta terminada em interrogação no texto extraído. A evidência técnica abaixo documenta a execução mínima e deve ser adaptada ao cenário e aos resultados reais solicitados.", "artefato": {"linguagem": "sql", "conteudo": "-- Demonstração verificável: Planejamento e execução de migração de dados entre sistemas\nBEGIN;\n\nCREATE TABLE IF NOT EXISTS auditoria_atividade (\n  id INTEGER PRIMARY KEY,\n  atividade VARCHAR(160) NOT NULL,\n  executado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,\n  status VARCHAR(20) NOT NULL\n);\n\nINSERT INTO auditoria_atividade (id, atividade, status)\nVALUES (1, 'Planejamento e execução de migração de dados entre sistemas', 'validado');\n\nSELECT atividade, status, executado_em\nFROM auditoria_atividade\nWHERE status = 'validado';\n\nCOMMIT;\n", "url": "/artefatos/banco-de-dados/21/a1.sql"}}, "quizzes": [], "materia": "Banco de dados", "materiaSlug": "banco-de-dados"}
+---
+
+## Registro de consulta
+
+Este conteúdo foi migrado dos registros do 3º bimestre. Use-o para estudar, revisar e adaptar a atividade ao próprio contexto.

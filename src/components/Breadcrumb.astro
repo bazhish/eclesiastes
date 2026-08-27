@@ -1,0 +1,15 @@
+---
+const { aula } = Astro.props;
+const items = [
+  { label: 'Início', href: '/' },
+  { label: aula.data.materia, href: `/?materia=${aula.data.materiaSlug}` },
+  { label: `3º bimestre`, href: `/?materia=${aula.data.materiaSlug}&semana=${aula.data.semana}` },
+  { label: `Semana ${aula.data.semana}`, href: `/?materia=${aula.data.materiaSlug}&semana=${aula.data.semana}` },
+  { label: aula.data.titulo },
+];
+---
+<nav class="breadcrumbs" aria-label="Caminho da página">
+  <ol>
+    {items.map((item, index) => <li>{item.href ? <a href={item.href}>{item.label}</a> : <span aria-current={index === items.length - 1 ? 'page' : undefined}>{item.label}</span>}</li>)}
+  </ol>
+</nav>

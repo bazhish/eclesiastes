@@ -1,0 +1,19 @@
+---
+const { targetId } = Astro.props;
+---
+<button class="button" type="button" data-copy-target={targetId}>Copiar resposta</button>
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy-target]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const target = document.getElementById(button.dataset.copyTarget ?? '');
+      if (!target) return;
+      try {
+        await navigator.clipboard.writeText(target.innerText);
+        button.textContent = 'Copiado';
+        setTimeout(() => { button.textContent = 'Copiar resposta'; }, 1600);
+      } catch {
+        button.textContent = 'Selecione o texto para copiar';
+      }
+    });
+  });
+</script>

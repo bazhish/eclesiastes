@@ -1,0 +1,24 @@
+---
+import { agruparNavegacao, rotaDaAula, type Aula } from '../lib/aulas';
+const { aulas, currentPath } = Astro.props as { aulas: Aula[]; currentPath: string };
+const materias = agruparNavegacao(aulas);
+---
+<aside id="navegacao" class="sidebar" data-open="false" aria-label="Navegação das matérias">
+  <p class="nav-title">Matérias e aulas</p>
+  <nav class="tree">
+    {Array.from(materias.entries()).map(([slug, materia]) => (
+      <details open={currentPath.includes(`/${slug}/`)}>
+        <summary>{materia.nome}</summary>
+        {Array.from(materia.semanas.entries()).map(([semana, aulasDaSemana]) => (
+          <details class="week" open={aulasDaSemana.some((aula) => rotaDaAula(aula) === currentPath)}>
+            <summary>Semana {semana}</summary>
+            {aulasDaSemana.map((aula) => {
+              const href = rotaDaAula(aula);
+              return <a href={href} aria-current={href === currentPath ? 'page' : undefined}>{aula.data.aula.toUpperCase()} · {aula.data.titulo}</a>;
+            })}
+          </details>
+        ))}
+      </details>
+    ))}
+  </nav>
+</aside>

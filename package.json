@@ -1,0 +1,25 @@
+{
+  "name": "gabarito-3b",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "check": "astro check",
+    "test": "node scripts/validate-content.mjs",
+    "verify": "npm run test && npm run build && node scripts/validate-build.mjs",
+    "preview": "astro preview",
+    "migrate:content": "python scripts/migrate_content.py"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/mdx": "^7.0.8",
+    "astro": "^7.2.8",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
