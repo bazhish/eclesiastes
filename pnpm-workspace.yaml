@@ -1,4 +1,0 @@
-allowBuilds:
-  esbuild: set this to true or false
-minimumReleaseAgeExclude:
-  - astro@7.2.8
