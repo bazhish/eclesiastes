@@ -1,5 +1,5 @@
 ---
-import { agruparNavegacao, rotaDaAula, type Aula } from '../lib/aulas';
+import { agruparNavegacao, comBase, rotaDaAula, type Aula } from '../lib/aulas';
 const { aulas, currentPath } = Astro.props as { aulas: Aula[]; currentPath: string };
 const materias = agruparNavegacao(aulas);
 ---
@@ -14,7 +14,7 @@ const materias = agruparNavegacao(aulas);
             <summary>Semana {semana}</summary>
             {aulasDaSemana.map((aula) => {
               const href = rotaDaAula(aula);
-              return <a href={href} aria-current={href === currentPath ? 'page' : undefined}>{aula.data.aula.toUpperCase()} · {aula.data.titulo}</a>;
+              return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined}>{aula.data.aula.toUpperCase()} · {aula.data.titulo}</a>;
             })}
           </details>
         ))}

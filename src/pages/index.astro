@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../components/BaseLayout.astro';
-import { rotaDaAula, todasAsAulas } from '../lib/aulas';
+import { comBase, rotaDaAula, todasAsAulas } from '../lib/aulas';
 const aulas = await todasAsAulas();
 const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, aula.data.materia])).entries());
 ---
@@ -17,7 +17,7 @@ const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, 
   </form>
   <p class="result-summary" data-result-count aria-live="polite">{aulas.length} aulas encontradas</p>
   <section class="catalog" aria-label="Aulas do bimestre">
-    {aulas.map((aula) => <a class="catalog-card" href={rotaDaAula(aula)} data-card data-materia={aula.data.materiaSlug} data-semana={aula.data.semana} data-search={`${aula.data.titulo} ${aula.data.materia}`}>
+    {aulas.map((aula) => <a class="catalog-card" href={comBase(rotaDaAula(aula))} data-card data-materia={aula.data.materiaSlug} data-semana={aula.data.semana} data-search={`${aula.data.titulo} ${aula.data.materia}`}>
       <p>{aula.data.materia} · Semana {aula.data.semana}</p>
       <h2>{aula.data.titulo}</h2>
       <span class="tag">{aula.data.atividade ? 'Atividade prática' : `${aula.data.quizzes.length} questões`}</span>

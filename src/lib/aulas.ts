@@ -15,6 +15,11 @@ export function rotaDaAula(aula: Aula) {
   return `/${aula.data.materiaSlug}/${aula.data.bimestre}/semana-${aula.data.semana}/${aula.data.aula}`;
 }
 
+export function comBase(path: string) {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  return `${base}${path}`;
+}
+
 export function agruparNavegacao(aulas: Aula[]) {
   const materias = new Map<string, { nome: string; semanas: Map<number, Aula[]> }>();
   for (const aula of aulas) {

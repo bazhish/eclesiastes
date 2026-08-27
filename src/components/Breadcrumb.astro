@@ -1,10 +1,11 @@
 ---
+import { comBase } from '../lib/aulas';
 const { aula } = Astro.props;
 const items = [
-  { label: 'Início', href: '/' },
-  { label: aula.data.materia, href: `/?materia=${aula.data.materiaSlug}` },
-  { label: `3º bimestre`, href: `/?materia=${aula.data.materiaSlug}&semana=${aula.data.semana}` },
-  { label: `Semana ${aula.data.semana}`, href: `/?materia=${aula.data.materiaSlug}&semana=${aula.data.semana}` },
+  { label: 'Início', href: comBase('/') },
+  { label: aula.data.materia, href: comBase(`/?materia=${aula.data.materiaSlug}`) },
+  { label: `3º bimestre`, href: comBase(`/?materia=${aula.data.materiaSlug}&semana=${aula.data.semana}`) },
+  { label: `Semana ${aula.data.semana}`, href: comBase(`/?materia=${aula.data.materiaSlug}&semana=${aula.data.semana}`) },
   { label: aula.data.titulo },
 ];
 ---

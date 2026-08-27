@@ -7,7 +7,7 @@ const { atividade, id } = Astro.props;
   <h2 id={`${id}-title`}>Solução para consulta</h2>
   <p>{atividade.enunciado}</p>
   <div id={`${id}-response`} class="response">{atividade.resposta}</div>
-  <div class="card-actions"><CopyButton targetId={`${id}-response`} />{atividade.artefato?.url && <a class="button" href={atividade.artefato.url} download>Baixar artefato</a>}</div>
+  <div class="card-actions"><CopyButton targetId={`${id}-response`} />{atividade.artefato?.url && <a class="button" href={`${import.meta.env.BASE_URL}${atividade.artefato.url.slice(1)}`} download>Baixar artefato</a>}</div>
   {atividade.artefato && <>
     <span class="code-label">Artefato técnico · {atividade.artefato.linguagem}</span>
     <pre><code>{atividade.artefato.conteudo}</code></pre>
