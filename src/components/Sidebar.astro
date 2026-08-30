@@ -14,7 +14,9 @@ const materia = materias.get(materiaAtual);
         <a class="tree-week-link" href={comBase(`/${materiaAtual}/${bimestreAtual}/semana-${semana}`)} aria-current={currentPath === `/${materiaAtual}/${bimestreAtual}/semana-${semana}` ? 'page' : undefined}>Visão da semana</a>
         {aulasDaSemana.map((aula) => {
           const href = rotaDaAula(aula);
-          return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined}>{aula.data.aula.toUpperCase()} · {aula.data.titulo}</a>;
+          const tipo = aula.data.aula.startsWith('q') ? 'Pausa' : 'Aula';
+          const numero = aula.data.aula.slice(1);
+          return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined}>{tipo} {numero} · {aula.data.titulo}</a>;
         })}
       </details>
     ))}

@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 const { materia, nome, aulas } = Astro.props;
 const bimestres = [...new Set(aulas.filter((aula) => aula.data.materiaSlug === materia).map((aula) => aula.data.bimestre))].sort();
 ---
-<BaseLayout title={`${nome} · Desenvolvimento de Sistemas`} wide>
+<BaseLayout title={`${nome} · Eclesiastes`} wide>
   <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><span aria-current="page">{nome}</span></li></ol></nav>
   <p class="eyebrow">Matéria</p>
   <h1>{nome}</h1>

@@ -1,16 +1,22 @@
 ---
+import { comBase } from '../lib/aulas';
 import CopyButton from './CopyButton.astro';
 const { atividade, id } = Astro.props;
 ---
 <section class="activity-card" aria-labelledby={`${id}-title`}>
-  <p class="eyebrow">Atividade prática</p>
-  <h2 id={`${id}-title`}>{atividade.tipo === 'resposta' ? 'Resposta de referência' : 'Roteiro de execução'}</h2>
-  <div id={`${id}-response`} class="response">{atividade.resposta}</div>
-  <div class="card-actions"><CopyButton targetId={`${id}-response`} /></div>
+  <div class="card-heading">
+    <p class="eyebrow">Roteiro prático</p>
+    <h2 id={`${id}-title`}>Resposta e orientação de consulta</h2>
+  </div>
+  <div class="response" id={`${id}-response`}>{atividade.resposta}</div>
+  <div class="card-actions">
+    <CopyButton targetId={`${id}-response`} />
+    {atividade.artefato && <a class="button button-primary" href={comBase(`/${atividade.artefato.href}`)} download>{atividade.artefato.nome} <span aria-hidden="true">↓</span><span class="sr-only"> ({atividade.artefato.arquivos} arquivos)</span></a>}
+  </div>
   <details class="source-details">
-    <summary>Ver roteiro original</summary>
-    <div id={`${id}-source`} class="source-text">{atividade.enunciado}</div>
-    <div class="card-actions"><CopyButton targetId={`${id}-source`} label="Copiar roteiro" /></div>
+    <summary>Ver conteúdo revisado completo</summary>
+    <div id={`${id}-source`} class="source-text">{atividade.conteudo}</div>
+    <div class="card-actions"><CopyButton targetId={`${id}-source`} label="Copiar conteúdo" /></div>
   </details>
   <p class="source-note">Fonte: <code>{atividade.fonte}</code></p>
 </section>

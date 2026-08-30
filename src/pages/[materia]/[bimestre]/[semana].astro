@@ -14,12 +14,12 @@ const { materia, bimestre, semana, nome, aulas } = Astro.props;
 const currentPath = `/${materia}/${bimestre}/semana-${semana}`;
 const itens = aulas.filter((aula) => aula.data.materiaSlug === materia && aula.data.bimestre === bimestre && aula.data.semana === semana).sort((a, b) => a.data.ordem - b.data.ordem);
 ---
-<BaseLayout title={`${nome} · Semana ${semana} · Desenvolvimento de Sistemas`} currentPath={currentPath} showSidebar>
+<BaseLayout title={`${nome} · Semana ${semana} · Eclesiastes`} currentPath={currentPath} showSidebar>
   <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><a href={comBase(`/${materia}`)}>{nome}</a></li><li><a href={comBase(`/${materia}/${bimestre}`)}>Bimestre {bimestre}</a></li><li><span aria-current="page">Semana {semana}</span></li></ol></nav>
   <p class="eyebrow">{nome} · Bimestre {bimestre}</p>
   <h1>Semana {semana}</h1>
   <p class="lede">Escolha uma aula. A navegação lateral mantém as semanas desta matéria acessíveis durante a consulta.</p>
   <section class="lesson-list" aria-label={`Aulas da semana ${semana}`}>
-    {itens.map((aula) => <a href={comBase(rotaDaAula(aula))}><span>{aula.data.aula.toUpperCase()}</span><div><strong>{aula.data.titulo}</strong><small>{aula.data.atividade ? 'Atividade prática' : `${aula.data.quizzes.length} questões de revisão`}</small></div></a>)}
+    {itens.map((aula) => <a href={comBase(rotaDaAula(aula))}><span>{aula.data.aula.startsWith('q') ? `Q${aula.data.aula.slice(1)}` : aula.data.aula.toUpperCase()}</span><div><strong>{aula.data.titulo}</strong><small>{aula.data.atividade ? 'Roteiro prático' : `${aula.data.quizzes.length} questões de revisão`}</small></div></a>)}
   </section>
 </BaseLayout>

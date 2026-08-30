@@ -1,23 +1,46 @@
 ---
 import '../styles/global.css';
 import Sidebar from './Sidebar.astro';
-import { todasAsAulas } from '../lib/aulas';
+import { comBase, todasAsAulas } from '../lib/aulas';
 
-const { title = 'Desenvolvimento de Sistemas', currentPath = '', wide = false, showSidebar = false } = Astro.props;
+const {
+  title = 'Eclesiastes',
+  description = 'Consulta organizada de roteiros práticos, respostas e artefatos de Desenvolvimento de Sistemas.',
+  currentPath = '',
+  wide = false,
+  showSidebar = false,
+} = Astro.props;
 const aulas = showSidebar ? await todasAsAulas() : [];
 const pathParts = currentPath.split('/').filter(Boolean);
 const currentMateria = pathParts[0] ?? '';
 const currentBimestre = Number(pathParts[1]) || 3;
+const canonical = Astro.url;
+const socialImage = new URL(comBase('/og-eclesiastes.png'), Astro.site).href;
 ---
 <!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Consulta organizada de atividades práticas e gabaritos de Desenvolvimento de Sistemas." />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={comBase('/favicon.svg')} type="image/svg+xml" />
+    <link rel="alternate icon" href={comBase('/favicon.ico')} sizes="any" />
+    <link rel="apple-touch-icon" href={comBase('/apple-touch-icon.png')} />
+    <link rel="manifest" href={comBase('/site.webmanifest')} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Eclesiastes" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
     <title>{title}</title>
     <script is:inline>
-      const savedTheme = localStorage.getItem('gabarito-theme');
+      const savedTheme = localStorage.getItem('eclesiastes-theme');
       if (savedTheme) document.documentElement.dataset.theme = savedTheme;
     </script>
   </head>
@@ -25,27 +48,30 @@ const currentBimestre = Number(pathParts[1]) || 3;
     <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
     <div class="app-shell">
       <header class="topbar">
-        <a class="brand" href={import.meta.env.BASE_URL}>Desenvolvimento de Sistemas<small>Gabarito de consulta</small></a>
+        <a class="brand" href={import.meta.env.BASE_URL} aria-label="Eclesiastes — início">
+          <img class="brand-mark" src={comBase('/brand.svg')} alt="" width="40" height="40" />
+          <span>Eclesiastes<small>Conhecimento em rede</small></span>
+        </a>
         <div class="topbar-actions">
           {showSidebar && <button class="button button-quiet mobile-only" type="button" data-nav-toggle aria-expanded="false" aria-controls="navegacao">Navegação</button>}
-          <button class="button button-quiet" type="button" data-theme-toggle aria-label="Alternar tema">Tema</button>
+          <button class="button button-quiet" type="button" data-theme-toggle aria-label="Alternar entre tema claro e escuro">Tema</button>
         </div>
       </header>
       <div class:list={['layout', { 'layout--hub': !showSidebar }]}>
         {showSidebar && <Sidebar aulas={aulas} currentPath={currentPath} materiaAtual={currentMateria} bimestreAtual={currentBimestre} />}
         <main id="conteudo" class:list={['content', { 'content--wide': wide }]}><slot /></main>
       </div>
-      <footer class="site-footer">Material de consulta. Adapte exemplos e registre apenas evidências próprias antes de qualquer entrega avaliativa.</footer>
+      <footer class="site-footer">Eclesiastes é material de consulta. Adapte os exemplos e registre apenas evidências próprias antes de qualquer entrega avaliativa.</footer>
     </div>
     <script>
-      const toggle = document.querySelector('[data-theme-toggle]');
+      const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
       toggle?.addEventListener('click', () => {
         const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         document.documentElement.dataset.theme = next;
-        localStorage.setItem('gabarito-theme', next);
+        localStorage.setItem('eclesiastes-theme', next);
       });
       const nav = document.querySelector('#navegacao');
-      const navToggle = document.querySelector('[data-nav-toggle]');
+      const navToggle = document.querySelector<HTMLButtonElement>('[data-nav-toggle]');
       navToggle?.addEventListener('click', () => {
         const open = nav?.getAttribute('data-open') !== 'true';
         nav?.setAttribute('data-open', String(open));

@@ -9,10 +9,10 @@ const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, 
   aulas: aulas.filter((aula) => aula.data.materiaSlug === slug),
 }));
 ---
-<BaseLayout title="Desenvolvimento de Sistemas" wide>
-  <p class="eyebrow">Hub de consulta</p>
-  <h1>Desenvolvimento de Sistemas</h1>
-  <p class="lede">Escolha uma matéria para navegar por bimestres, semanas e aulas.</p>
+<BaseLayout title="Eclesiastes · Desenvolvimento de Sistemas" wide>
+  <p class="eyebrow">Conhecimento em rede</p>
+  <h1>Eclesiastes</h1>
+  <p class="lede">Roteiros, respostas e artefatos organizados para consultar, adaptar e construir em Desenvolvimento de Sistemas.</p>
 
   <section class="subject-grid" aria-label="Matérias">
     {materias.map((materia) => <a class="subject-card" href={comBase(`/${materia.slug}`)}>
@@ -33,7 +33,7 @@ const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, 
       {aulas.map((aula) => <a class="catalog-card" href={comBase(rotaDaAula(aula))} data-card data-search={`${aula.data.titulo} ${aula.data.materia}`}>
         <p>{aula.data.materia} · Semana {aula.data.semana}</p>
         <h2>{aula.data.titulo}</h2>
-        <span class="tag">{aula.data.atividade ? 'Atividade prática' : `${aula.data.quizzes.length} questões`}</span>
+        <span class="tag">{aula.data.atividade ? 'Roteiro prático' : `${aula.data.quizzes.length} ${aula.data.quizzes.length === 1 ? 'questão' : 'questões'}`}</span>
       </a>)}
     </section>
     <p class="empty" data-empty>Nenhuma aula corresponde à busca. Tente outro termo.</p>

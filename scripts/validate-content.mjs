@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -14,36 +14,55 @@ function filesAt(directory) {
 }
 
 const files = filesAt(contentRoot).filter((file) => file.endsWith('.mdx'));
-let activities = 0;
-let answerKeys = 0;
-let questions = 0;
 const sourceReferences = [];
+const routes = new Set();
+let activities = 0;
+let pauses = 0;
+let questions = 0;
+let artifacts = 0;
+
 for (const file of files) {
   const text = readFileSync(file, 'utf8');
   const match = text.match(/^---\r?\n([\s\S]+?)\r?\n---/);
   if (!match) throw new Error(`Frontmatter ausente: ${relative(root, file)}`);
   const data = JSON.parse(match[1]);
-  if (!/^a\d+$|^q$/.test(data.aula)) throw new Error(`Identificador de aula inválido: ${relative(root, file)}`);
+  if (!/^(?:a|q)\d+$/.test(data.aula)) throw new Error(`Identificador inválido: ${relative(root, file)}`);
+
+  const route = `/${data.materiaSlug}/${data.bimestre}/semana-${data.semana}/${data.aula}`;
+  if (routes.has(route)) throw new Error(`Rota duplicada: ${route}`);
+  routes.add(route);
+
   if (data.atividade) {
     activities += 1;
-    if (!data.atividade.fonte.startsWith('Material/')) throw new Error(`Fonte inválida: ${relative(root, file)}`);
+    if (!data.atividade.fonte.startsWith('gabarito/')) throw new Error(`Fonte inválida: ${relative(root, file)}`);
     sourceReferences.push(data.atividade.fonte);
+    if (data.atividade.artefato) {
+      artifacts += 1;
+      const artifact = join(root, 'public', data.atividade.artefato.href);
+      if (!existsSync(artifact)) throw new Error(`ZIP ausente: ${relative(root, artifact)}`);
+    }
   }
   if (data.quizzes.length) {
-    answerKeys += 1;
+    pauses += 1;
     questions += data.quizzes.length;
+    const quizSources = new Set();
     for (const quiz of data.quizzes) {
-      if (!quiz.fonte.startsWith('Material/')) throw new Error(`Fonte inválida: ${relative(root, file)}`);
-      if (!quiz.alternativas.includes(quiz.resposta)) throw new Error(`Resposta fora das alternativas: ${relative(root, file)}`);
-      sourceReferences.push(quiz.fonte);
+      if (!quiz.fonte.startsWith('gabarito/')) throw new Error(`Fonte inválida: ${relative(root, file)}`);
+      quizSources.add(quiz.fonte);
     }
+    if (quizSources.size !== 1) throw new Error(`Bloco de pausa com fontes misturadas: ${relative(root, file)}`);
+    sourceReferences.push([...quizSources][0]);
   }
 }
 
-if (activities !== 118) throw new Error(`Esperadas 118 atividades; encontradas ${activities}.`);
-if (answerKeys !== 47) throw new Error(`Esperadas 47 páginas de pausas; encontradas ${answerKeys}.`);
-if (questions !== 141) throw new Error(`Esperadas 141 questões; encontradas ${questions}.`);
-if (sourceReferences.length !== sourceIndex.registros.length) throw new Error('Índice de fontes incompleto.');
+const records = sourceIndex.registros;
+if (files.length !== records.length) throw new Error(`Cobertura incompleta: ${files.length}/${records.length} documentos.`);
+if (activities !== sourceIndex.contagens.roteiros) throw new Error(`Roteiros divergentes: ${activities}.`);
+if (pauses !== sourceIndex.contagens.pausas) throw new Error(`Pausas divergentes: ${pauses}.`);
+if (questions !== sourceIndex.contagens.questoes) throw new Error(`Questões divergentes: ${questions}.`);
 if (new Set(sourceReferences).size !== sourceReferences.length) throw new Error('Uma fonte foi associada a mais de uma página.');
-if (new Set(sourceIndex.registros.map((record) => record.fonte)).size !== sourceIndex.registros.length) throw new Error('O índice contém fonte duplicada.');
-console.log(`Conteúdo validado: ${activities} atividades, ${answerKeys} páginas de pausas, ${questions} questões e ${sourceReferences.length} fontes rastreáveis.`);
+if (new Set(records.map((record) => record.fonte)).size !== records.length) throw new Error('O índice contém fonte duplicada.');
+if (new Set(records.map((record) => record.rota)).size !== records.length) throw new Error('O índice contém rota duplicada.');
+if (artifacts !== records.filter((record) => record.artefato).length) throw new Error('Cobertura de artefatos divergente.');
+
+console.log(`Conteúdo validado: ${activities} roteiros, ${pauses} pausas, ${questions} questões, ${artifacts} ZIPs e ${files.length} documentos.`);

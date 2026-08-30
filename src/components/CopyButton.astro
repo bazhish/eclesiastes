@@ -2,17 +2,22 @@
 const { targetId, label = 'Copiar resposta' } = Astro.props;
 ---
 <button class="button" type="button" data-copy-target={targetId} data-copy-label={label}>{label}</button>
+<span class="sr-only" data-copy-status aria-live="polite"></span>
 <script>
   document.querySelectorAll<HTMLButtonElement>('[data-copy-target]').forEach((button) => {
     button.addEventListener('click', async () => {
       const target = document.getElementById(button.dataset.copyTarget ?? '');
+      const status = button.parentElement?.querySelector<HTMLElement>('[data-copy-status]')
+        ?? button.nextElementSibling as HTMLElement | null;
       if (!target) return;
       try {
         await navigator.clipboard.writeText(target.innerText);
         button.textContent = 'Copiado';
+        status?.replaceChildren('Conteúdo copiado para a área de transferência.');
         setTimeout(() => { button.textContent = button.dataset.copyLabel ?? 'Copiar resposta'; }, 1600);
       } catch {
         button.textContent = 'Selecione o texto para copiar';
+        status?.replaceChildren('Não foi possível copiar automaticamente. Selecione o texto para copiar.');
       }
     });
   });

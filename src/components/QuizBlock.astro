@@ -1,19 +1,15 @@
 ---
 const { quiz, index } = Astro.props as {
-  quiz: { pergunta: string; alternativas: string[]; resposta: string; justificativa?: string; fonte: string };
+  quiz: { pergunta: string; resposta: string; fonte: string };
   index: number;
 };
 ---
 <section class="quiz-card" aria-labelledby={`quiz-${index}`}>
-  <p class="eyebrow">Pause e Responda</p>
+  <p class="eyebrow">Pausa e Responda</p>
   <h2 id={`quiz-${index}`}>{quiz.pergunta}</h2>
-  <ol class="quiz-options">
-    {quiz.alternativas.map((alternativa) => <li class:list={{ 'is-correct': alternativa === quiz.resposta }}>{alternativa}</li>)}
-  </ol>
   <div class="answer-reveal">
-    <strong>Alternativa correta</strong>
+    <strong>Resposta de referência</strong>
     <span>{quiz.resposta}</span>
-    {quiz.justificativa && <p>{quiz.justificativa}</p>}
   </div>
   <p class="source-note">Fonte: <code>{quiz.fonte}</code></p>
 </section>

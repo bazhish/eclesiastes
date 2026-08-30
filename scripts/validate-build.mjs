@@ -9,15 +9,17 @@ const checks = [
   'dist/back-end/3/index.html',
   'dist/back-end/3/semana-15/index.html',
   'dist/back-end/3/semana-15/a2/index.html',
-  'dist/back-end/3/semana-15/q/index.html',
-  'dist/programacao-mobile/3/semana-15/a2/index.html',
-  'dist/versionamento-de-codigo/3/semana-20/q/index.html',
+  'dist/back-end/3/semana-15/q1/index.html',
+  'dist/inteligencia-artificial/3/semana-15/q1/index.html',
+  'dist/front-end/3/semana-21/q1/index.html',
+  'dist/artefatos/back-end/semana-15/a2.zip',
 ];
 
 for (const relativePath of checks) {
   const file = join(root, relativePath);
-  if (!existsSync(file)) throw new Error(`Página não gerada: ${relativePath}`);
-  const html = readFileSync(file, 'utf8');
-  if (!html.includes('Gabarito')) throw new Error(`Conteúdo esperado ausente: ${relativePath}`);
+  if (!existsSync(file)) throw new Error(`Saída ausente: ${relativePath}`);
+  if (relativePath.endsWith('.html') && !readFileSync(file, 'utf8').includes('Eclesiastes')) {
+    throw new Error(`Marca esperada ausente: ${relativePath}`);
+  }
 }
-console.log(`Build validado: ${checks.length} páginas de referência existem e contêm a interface.`);
+console.log(`Build validado: ${checks.length} saídas representativas existem e contêm a marca correta.`);
