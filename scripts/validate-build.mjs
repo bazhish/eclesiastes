@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -12,7 +12,6 @@ const checks = [
   'dist/back-end/3/semana-15/q1/index.html',
   'dist/inteligencia-artificial/3/semana-15/q1/index.html',
   'dist/front-end/3/semana-21/q1/index.html',
-  'dist/artefatos/back-end/semana-15/a2.zip',
 ];
 
 for (const relativePath of checks) {
@@ -22,4 +21,19 @@ for (const relativePath of checks) {
     throw new Error(`Marca esperada ausente: ${relativePath}`);
   }
 }
-console.log(`Build validado: ${checks.length} saídas representativas existem e contêm a marca correta.`);
+for (const file of [join(root, 'dist')]) {
+  const pages = [];
+  const walk = (directory) => {
+    for (const entry of readdirSync(directory, { withFileTypes: true })) {
+      const target = join(directory, entry.name);
+      if (entry.isDirectory()) walk(target);
+      else if (entry.name.endsWith('.html')) pages.push(target);
+    }
+  };
+  walk(file);
+  for (const page of pages) {
+    const html = readFileSync(page, 'utf8');
+    if (html.includes('site-footer') || html.includes('Busca global') || html.includes('busca-global')) throw new Error(`Superfície removida encontrada: ${page}`);
+  }
+}
+console.log(`Build validado: ${checks.length} saídas representativas existem e contêm a marca correta; sem ZIPs, rodapé ou busca global.`);

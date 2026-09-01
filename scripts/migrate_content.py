@@ -1,7 +1,7 @@
 """Generate the Eclesiastes content collection from the reviewed Gabarito.
 
-The source is deliberately read-only. Generated MDX, downloadable ZIP artifacts
-and the audit index stay inside this repository.
+The source is deliberately read-only. Generated MDX and the audit index stay
+inside this repository; code is embedded as text rather than zipped.
 """
 
 from __future__ import annotations
@@ -11,7 +11,6 @@ import os
 import re
 import shutil
 import unicodedata
-import zipfile
 from collections import defaultdict
 from pathlib import Path
 
@@ -20,7 +19,6 @@ PROJECT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = PROJECT.parent.parent / "Desenvolvimento de Sistemas - Gabarito" / "gabarito"
 SOURCE = Path(os.environ.get("ECLESIASTES_SOURCE_DIR", DEFAULT_SOURCE)).expanduser()
 CONTENT = PROJECT / "src" / "content" / "aulas"
-PUBLIC_ARTIFACTS = PROJECT / "public" / "artefatos"
 INDEX = PROJECT / "docs" / "source-index.json"
 
 WEEK_RE = re.compile(r"Semana\s*(\d+)", re.IGNORECASE)
@@ -127,7 +125,7 @@ def write_mdx(data: dict, destination: Path) -> None:
 
 def reset_generated_directory(path: Path) -> None:
     resolved = path.resolve()
-    allowed = {CONTENT.resolve(), PUBLIC_ARTIFACTS.resolve()}
+    allowed = {CONTENT.resolve()}
     if resolved not in allowed or PROJECT.resolve() not in resolved.parents:
         raise RuntimeError(f"Diretório gerado inválido: {path}")
     if path.exists():
@@ -135,20 +133,30 @@ def reset_generated_directory(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
 
-def archive_artifact(directory: Path, subject_slug: str, week: int, lesson: int) -> dict[str, str | int]:
-    files = sorted(path for path in directory.rglob("*") if path.is_file())
-    if not files:
-        raise RuntimeError(f"Artefato vazio: {directory}")
-    destination = PUBLIC_ARTIFACTS / subject_slug / f"semana-{week}" / f"a{lesson}.zip"
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(destination, "w", zipfile.ZIP_DEFLATED) as archive:
-        for file in files:
-            archive.write(file, file.relative_to(directory).as_posix())
-    return {
-        "nome": f"Artefatos da Aula {lesson}",
-        "href": f"artefatos/{subject_slug}/semana-{week}/a{lesson}.zip",
-        "arquivos": len(files),
-    }
+LANGUAGES = {".js":"javascript", ".jsx":"jsx", ".ts":"typescript", ".tsx":"tsx", ".py":"python", ".sql":"sql", ".html":"html", ".css":"css", ".scss":"scss", ".json":"json", ".md":"markdown", ".yml":"yaml", ".yaml":"yaml", ".txt":"text", ".ps1":"powershell", ".sh":"shell", ".toml":"toml", ".ini":"ini"}
+
+
+def inline_code(directory: Path) -> tuple[list[dict[str, str]], int]:
+    files: list[dict[str, str]] = []
+    excluded = 0
+    for path in sorted(directory.rglob("*")):
+        if not path.is_file():
+            continue
+        relative = path.relative_to(directory).as_posix()
+        if ".git" in relative.split("/") or "__pycache__" in relative.split("/") or relative.endswith(".pyc"):
+            excluded += 1
+            continue
+        raw = path.read_bytes()
+        if b"\x00" in raw:
+            excluded += 1
+            continue
+        try:
+            content = raw.decode("utf-8-sig")
+        except UnicodeDecodeError:
+            excluded += 1
+            continue
+        files.append({"caminho": relative, "linguagem": LANGUAGES.get(path.suffix.lower(), "text"), "conteudo": content})
+    return files, excluded
 
 
 def main() -> None:
@@ -159,10 +167,10 @@ def main() -> None:
         )
 
     reset_generated_directory(CONTENT)
-    reset_generated_directory(PUBLIC_ARTIFACTS)
     records: list[dict[str, str | int | bool]] = []
-    expected_artifacts: set[str] = set()
-    archived_artifacts: set[str] = set()
+    expected_code_dirs: set[str] = set()
+    mapped_code_dirs: set[str] = set()
+    excluded_code_entries = 0
     counts = defaultdict(int)
 
     for subject_dir in sorted(path for path in SOURCE.iterdir() if path.is_dir()):
@@ -195,12 +203,12 @@ def main() -> None:
 
                 if kind == "roteiro prático":
                     artifact_dir = week_dir / "codigo" / f"aula-{lesson}"
-                    artifact = None
+                    arquivos, excluded = inline_code(artifact_dir) if artifact_dir.is_dir() else ([], 0)
                     if artifact_dir.is_dir():
                         key = source_path(artifact_dir)
-                        expected_artifacts.add(key)
-                        artifact = archive_artifact(artifact_dir, subject_slug, week, lesson)
-                        archived_artifacts.add(key)
+                        expected_code_dirs.add(key)
+                        mapped_code_dirs.add(key)
+                        excluded_code_entries += excluded
                     enunciado, resposta, conteudo = parse_practical(markdown)
                     data = {
                         "materia": subject,
@@ -215,8 +223,9 @@ def main() -> None:
                             "resposta": resposta,
                             "conteudo": conteudo,
                             "fonte": source,
-                            **({"artefato": artifact} if artifact else {}),
+                            "arquivos": arquivos,
                         },
+                        "tipo": "roteiro",
                         "quizzes": [],
                     }
                     output = destination_root / f"a{lesson}.mdx"
@@ -226,7 +235,7 @@ def main() -> None:
                         "fonte": source,
                         "pagina": output.relative_to(PROJECT).as_posix(),
                         "rota": f"/{subject_slug}/3/semana-{week}/a{lesson}",
-                        "artefato": bool(artifact),
+                        "arquivosCodigo": len(arquivos),
                     })
                     counts["roteiros"] += 1
                     counts["documentos"] += 1
@@ -240,6 +249,7 @@ def main() -> None:
                         "ordem": lesson * 10 + 5,
                         "aula": f"q{lesson}",
                         "titulo": f"{topic} · Pausa e Responda · Aula {lesson}",
+                        "tipo": "pausa",
                         "quizzes": quizzes,
                     }
                     output = destination_root / f"q{lesson}.mdx"
@@ -255,22 +265,22 @@ def main() -> None:
                     counts["questoes"] += len(quizzes)
                     counts["documentos"] += 1
 
-    all_artifact_dirs = {
+    all_code_dirs = {
         source_path(path)
         for path in SOURCE.rglob("aula-*")
         if path.is_dir() and path.parent.name == "codigo"
     }
-    if all_artifact_dirs != expected_artifacts or expected_artifacts != archived_artifacts:
-        missing = sorted(all_artifact_dirs - archived_artifacts)
-        unexpected = sorted(archived_artifacts - all_artifact_dirs)
-        raise RuntimeError(f"Mapeamento de artefatos inconsistente. Ausentes: {missing}; inesperados: {unexpected}")
+    if all_code_dirs != expected_code_dirs or expected_code_dirs != mapped_code_dirs:
+        missing = sorted(all_code_dirs - mapped_code_dirs)
+        unexpected = sorted(mapped_code_dirs - all_code_dirs)
+        raise RuntimeError(f"Mapeamento de código inconsistente. Ausentes: {missing}; inesperados: {unexpected}")
 
     INDEX.parent.mkdir(parents=True, exist_ok=True)
     INDEX.write_text(
         json.dumps(
             {
                 "fonte": str(SOURCE),
-                "contagens": dict(counts),
+                "contagens": {**dict(counts), "atividadesComCodigo": sum(1 for item in records if item.get("arquivosCodigo", 0)), "arquivosCodigo": sum(int(item.get("arquivosCodigo", 0)) for item in records), "entradasTecnicasExcluidas": excluded_code_entries, "entradasExcluidas": excluded_code_entries},
                 "registros": records,
             },
             ensure_ascii=False,
@@ -282,7 +292,7 @@ def main() -> None:
     print(
         f"Documentos: {counts['documentos']}; roteiros: {counts['roteiros']}; "
         f"pausas: {counts['pausas']}; questões: {counts['questoes']}; "
-        f"artefatos: {len(archived_artifacts)}"
+        f"atividades com código: {sum(1 for item in records if item.get('arquivosCodigo', 0))}; arquivos inline: {sum(int(item.get('arquivosCodigo', 0)) for item in records)}; entradas excluídas: {excluded_code_entries}"
     )
 
 

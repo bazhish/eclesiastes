@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../components/BaseLayout.astro';
-import { comBase } from '../lib/aulas';
+import WeekCheckpointList from '../components/WeekCheckpointList.astro';
+import { semanasPorBimestre } from '../lib/aulas';
 
 export async function getStaticPaths() {
   const aulas = await getCollection('aulas');
@@ -10,14 +11,12 @@ export async function getStaticPaths() {
 }
 
 const { materia, nome, aulas } = Astro.props;
-const bimestres = [...new Set(aulas.filter((aula) => aula.data.materiaSlug === materia).map((aula) => aula.data.bimestre))].sort();
+const grupos = semanasPorBimestre(aulas.filter((aula) => aula.data.materiaSlug === materia));
 ---
 <BaseLayout title={`${nome} · Eclesiastes`} wide>
   <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><span aria-current="page">{nome}</span></li></ol></nav>
   <p class="eyebrow">Matéria</p>
   <h1>{nome}</h1>
-  <p class="lede">Selecione um bimestre para ver as semanas disponíveis.</p>
-  <section class="bimestre-grid" aria-label="Bimestres disponíveis">
-    {bimestres.map((bimestre) => <a class="bimestre-card" href={comBase(`/${materia}/${bimestre}`)}><span>{bimestre}º</span><h2>Bimestre {bimestre}</h2><p>Ver semanas e aulas</p></a>)}
-  </section>
+  <p class="lede">Escolha uma semana para consultar as aulas e acompanhar seu progresso local.</p>
+  <WeekCheckpointList materia={materia} grupos={grupos} />
 </BaseLayout>

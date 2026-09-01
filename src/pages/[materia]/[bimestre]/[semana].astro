@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../components/BaseLayout.astro';
+import ContentTypeIcon from '../../../components/ContentTypeIcon.astro';
 import { comBase, rotaDaAula } from '../../../lib/aulas';
 
 export async function getStaticPaths() {
@@ -19,7 +20,29 @@ const itens = aulas.filter((aula) => aula.data.materiaSlug === materia && aula.d
   <p class="eyebrow">{nome} · Bimestre {bimestre}</p>
   <h1>Semana {semana}</h1>
   <p class="lede">Escolha uma aula. A navegação lateral mantém as semanas desta matéria acessíveis durante a consulta.</p>
-  <section class="lesson-list" aria-label={`Aulas da semana ${semana}`}>
-    {itens.map((aula) => <a href={comBase(rotaDaAula(aula))}><span>{aula.data.aula.startsWith('q') ? `Q${aula.data.aula.slice(1)}` : aula.data.aula.toUpperCase()}</span><div><strong>{aula.data.titulo}</strong><small>{aula.data.atividade ? 'Roteiro prático' : `${aula.data.quizzes.length} questões de revisão`}</small></div></a>)}
+  <section class="lesson-list" data-scroll-spy aria-label={`Aulas da semana ${semana}`}>
+    {itens.map((aula) => <article class="lesson-list__item" id={`secao-${aula.data.aula}`} data-scroll-section={aula.data.aula} data-scroll-route={rotaDaAula(aula)}>
+      <a href={comBase(rotaDaAula(aula))}><span class="lesson-list__badge"><ContentTypeIcon tipo={aula.data.tipo} label={false} />{aula.data.aula.toUpperCase()}</span><div><strong>{aula.data.titulo}</strong><small>{aula.data.atividade ? 'Roteiro prático' : `${aula.data.quizzes.length} questões de revisão`}</small></div><span class="lesson-list__arrow" aria-hidden="true">→</span></a>
+    </article>)}
   </section>
 </BaseLayout>
+<script>
+  const sections = [...document.querySelectorAll<HTMLElement>('[data-scroll-section]')];
+  const routeLinks = new Map([...document.querySelectorAll<HTMLAnchorElement>('[data-sidebar-route]')].map((link) => [link.dataset.sidebarRoute, link]));
+  let pending: HTMLElement | undefined;
+  let frame = 0;
+  const highlight = () => {
+    frame = 0;
+    if (!pending) return;
+    document.querySelectorAll('[data-scroll-active]').forEach((link) => link.removeAttribute('data-scroll-active'));
+    routeLinks.get(pending.dataset.scrollRoute ?? '')?.setAttribute('data-scroll-active', 'true');
+  };
+  const observer = new IntersectionObserver((entries) => {
+    const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+    if (visible[0]) {
+      pending = visible[0].target as HTMLElement;
+      if (!frame) frame = requestAnimationFrame(highlight);
+    }
+  }, { rootMargin: '-18% 0px -64% 0px', threshold: [0, .01] });
+  sections.forEach((section) => observer.observe(section));
+</script>

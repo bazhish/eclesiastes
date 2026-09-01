@@ -4,7 +4,11 @@
     "pausas": 71,
     "questoes": 141,
     "documentos": 189,
-    "roteiros": 118
+    "roteiros": 118,
+    "atividadesComCodigo": 72,
+    "arquivosCodigo": 197,
+    "entradasTecnicasExcluidas": 46,
+    "entradasExcluidas": 46
   },
   "registros": [
     {
@@ -19,28 +23,28 @@
       "fonte": "gabarito/Back-End/3° bimestre/Semana 15 - Fundamentos de Servidores e Seguranca/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/back-end/semana-15/a2.mdx",
       "rota": "/back-end/3/semana-15/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 15 - Fundamentos de Servidores e Seguranca/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/back-end/semana-15/a3.mdx",
       "rota": "/back-end/3/semana-15/a3",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 16 - Configuracao e Seguranca de APIs/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/back-end/semana-16/a1.mdx",
       "rota": "/back-end/3/semana-16/a1",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 16 - Configuracao e Seguranca de APIs/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/back-end/semana-16/a2.mdx",
       "rota": "/back-end/3/semana-16/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -54,14 +58,14 @@
       "fonte": "gabarito/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/back-end/semana-17/a1.mdx",
       "rota": "/back-end/3/semana-17/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/back-end/semana-17/a2.mdx",
       "rota": "/back-end/3/semana-17/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -75,14 +79,14 @@
       "fonte": "gabarito/Back-End/3° bimestre/Semana 17 - Introducao aos Frameworks e Integracao/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/back-end/semana-17/a3.mdx",
       "rota": "/back-end/3/semana-17/a3",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 18 - Desenvolvimento de Microsservicos e Mensageria/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/back-end/semana-18/a1.mdx",
       "rota": "/back-end/3/semana-18/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -96,21 +100,21 @@
       "fonte": "gabarito/Back-End/3° bimestre/Semana 18 - Desenvolvimento de Microsservicos e Mensageria/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/back-end/semana-18/a3.mdx",
       "rota": "/back-end/3/semana-18/a3",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/back-end/semana-19/a1.mdx",
       "rota": "/back-end/3/semana-19/a1",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/back-end/semana-19/a2.mdx",
       "rota": "/back-end/3/semana-19/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -124,14 +128,14 @@
       "fonte": "gabarito/Back-End/3° bimestre/Semana 19 - Servidores Web Avancados/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/back-end/semana-19/a3.mdx",
       "rota": "/back-end/3/semana-19/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 20 - Arquitetura Serverless e Pagamentos/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/back-end/semana-20/a2.mdx",
       "rota": "/back-end/3/semana-20/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -145,7 +149,7 @@
       "fonte": "gabarito/Back-End/3° bimestre/Semana 20 - Arquitetura Serverless e Pagamentos/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/back-end/semana-20/a3.mdx",
       "rota": "/back-end/3/semana-20/a3",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -159,28 +163,28 @@
       "fonte": "gabarito/Back-End/3° bimestre/Semana 21 - Gestao de Configuracoes e Monitoramento/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/back-end/semana-21/a1.mdx",
       "rota": "/back-end/3/semana-21/a1",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Back-End/3° bimestre/Semana 21 - Gestao de Configuracoes e Monitoramento/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/back-end/semana-21/a2.mdx",
       "rota": "/back-end/3/semana-21/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-15/a1.mdx",
       "rota": "/banco-de-dados/3/semana-15/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-15/a2.mdx",
       "rota": "/banco-de-dados/3/semana-15/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -194,14 +198,14 @@
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15 - SGBD Relacional/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-15/a4.mdx",
       "rota": "/banco-de-dados/3/semana-15/a4",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-16/a1.mdx",
       "rota": "/banco-de-dados/3/semana-16/a1",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -215,14 +219,14 @@
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-16/a3.mdx",
       "rota": "/banco-de-dados/3/semana-16/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 16 - SGBD Relacional/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-16/a4.mdx",
       "rota": "/banco-de-dados/3/semana-16/a4",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -236,21 +240,21 @@
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-17/a2.mdx",
       "rota": "/banco-de-dados/3/semana-17/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-17/a3.mdx",
       "rota": "/banco-de-dados/3/semana-17/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 17 - Clausulas Select/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-17/a4.mdx",
       "rota": "/banco-de-dados/3/semana-17/a4",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -264,28 +268,28 @@
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-18/a1.mdx",
       "rota": "/banco-de-dados/3/semana-18/a1",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-18/a2.mdx",
       "rota": "/banco-de-dados/3/semana-18/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-18/a3.mdx",
       "rota": "/banco-de-dados/3/semana-18/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 18 - Clausulas Select/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-18/a4.mdx",
       "rota": "/banco-de-dados/3/semana-18/a4",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -299,28 +303,28 @@
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-19/a1.mdx",
       "rota": "/banco-de-dados/3/semana-19/a1",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-19/a2.mdx",
       "rota": "/banco-de-dados/3/semana-19/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-19/a3.mdx",
       "rota": "/banco-de-dados/3/semana-19/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 19 - DDL X DML/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-19/a4.mdx",
       "rota": "/banco-de-dados/3/semana-19/a4",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -334,21 +338,21 @@
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-20/a1.mdx",
       "rota": "/banco-de-dados/3/semana-20/a1",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-20/a2.mdx",
       "rota": "/banco-de-dados/3/semana-20/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 20 - SGBD Relacional/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-20/a3.mdx",
       "rota": "/banco-de-dados/3/semana-20/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -362,35 +366,35 @@
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-21/a1.mdx",
       "rota": "/banco-de-dados/3/semana-21/a1",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-21/a2.mdx",
       "rota": "/banco-de-dados/3/semana-21/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Banco de dados/3° bimestre/Semana 21 - SGBD Relacional/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-21/a4.mdx",
       "rota": "/banco-de-dados/3/semana-21/a4",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/front-end/semana-15/a1.mdx",
       "rota": "/front-end/3/semana-15/a1",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/front-end/semana-15/a2.mdx",
       "rota": "/front-end/3/semana-15/a2",
-      "artefato": true
+      "arquivosCodigo": 6
     },
     {
       "tipo": "pausa",
@@ -404,14 +408,14 @@
       "fonte": "gabarito/Front-End/3° bimestre/Semana 15 - Estilizacao e Performance de Paginas Web/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/front-end/semana-15/a3.mdx",
       "rota": "/front-end/3/semana-15/a3",
-      "artefato": true
+      "arquivosCodigo": 5
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 16 - Animacoes e Pre-processadores CSS/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/front-end/semana-16/a1.mdx",
       "rota": "/front-end/3/semana-16/a1",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "pausa",
@@ -425,7 +429,7 @@
       "fonte": "gabarito/Front-End/3° bimestre/Semana 16 - Animacoes e Pre-processadores CSS/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/front-end/semana-16/a2.mdx",
       "rota": "/front-end/3/semana-16/a2",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "pausa",
@@ -439,21 +443,21 @@
       "fonte": "gabarito/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/front-end/semana-17/a1.mdx",
       "rota": "/front-end/3/semana-17/a1",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/front-end/semana-17/a2.mdx",
       "rota": "/front-end/3/semana-17/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 17 - Integracao com APIs Externas/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/front-end/semana-17/a3.mdx",
       "rota": "/front-end/3/semana-17/a3",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -467,14 +471,14 @@
       "fonte": "gabarito/Front-End/3° bimestre/Semana 18 - CI-CD e Testes Automatizados/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/front-end/semana-18/a1.mdx",
       "rota": "/front-end/3/semana-18/a1",
-      "artefato": true
+      "arquivosCodigo": 5
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 18 - CI-CD e Testes Automatizados/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/front-end/semana-18/a3.mdx",
       "rota": "/front-end/3/semana-18/a3",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "pausa",
@@ -488,21 +492,21 @@
       "fonte": "gabarito/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/front-end/semana-19/a1.mdx",
       "rota": "/front-end/3/semana-19/a1",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/front-end/semana-19/a2.mdx",
       "rota": "/front-end/3/semana-19/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 19 - Tecnicas Avancadas de CSS e Mobile-First/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/front-end/semana-19/a3.mdx",
       "rota": "/front-end/3/semana-19/a3",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -516,21 +520,21 @@
       "fonte": "gabarito/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/front-end/semana-20/a1.mdx",
       "rota": "/front-end/3/semana-20/a1",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/front-end/semana-20/a2.mdx",
       "rota": "/front-end/3/semana-20/a2",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 20 - Acessibilidade e Animacoes Interativas/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/front-end/semana-20/a3.mdx",
       "rota": "/front-end/3/semana-20/a3",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "pausa",
@@ -544,14 +548,14 @@
       "fonte": "gabarito/Front-End/3° bimestre/Semana 21 - Servicos de Autenticacao e Monitoramento/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/front-end/semana-21/a1.mdx",
       "rota": "/front-end/3/semana-21/a1",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Front-End/3° bimestre/Semana 21 - Servicos de Autenticacao e Monitoramento/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/front-end/semana-21/a2.mdx",
       "rota": "/front-end/3/semana-21/a2",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "pausa",
@@ -579,7 +583,7 @@
       "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15 - Introducao a IA – historia, areas e impacto/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-15/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-15/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -607,7 +611,7 @@
       "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16 - Aprendizado supervisionado – pipeline de ML/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-16/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-16/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -635,7 +639,7 @@
       "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17 - Pre‑Processamento e Feature Engineering/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-17/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-17/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -663,7 +667,7 @@
       "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18 - Do Modelo a Acao- Introducao aos Agentes/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-18/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-18/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -691,7 +695,7 @@
       "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19 - Etica e Governanca em Sistemas Agenticos/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-19/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-19/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -712,7 +716,7 @@
       "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20 - Agentes com RAG e Memoria/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-20/a2.mdx",
       "rota": "/inteligencia-artificial/3/semana-20/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -726,14 +730,14 @@
       "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20 - Agentes com RAG e Memoria/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-20/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-20/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-15/a2.mdx",
       "rota": "/programacao-mobile/3/semana-15/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -747,21 +751,21 @@
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-15/a3.mdx",
       "rota": "/programacao-mobile/3/semana-15/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15 - Componentes Avancados de Interface/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-15/a4.mdx",
       "rota": "/programacao-mobile/3/semana-15/a4",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-16/a1.mdx",
       "rota": "/programacao-mobile/3/semana-16/a1",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -775,21 +779,21 @@
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-16/a3.mdx",
       "rota": "/programacao-mobile/3/semana-16/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16 - Acessibilidade e Usabilidade/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-16/a4.mdx",
       "rota": "/programacao-mobile/3/semana-16/a4",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-17/a1.mdx",
       "rota": "/programacao-mobile/3/semana-17/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -803,35 +807,35 @@
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-17/a2.mdx",
       "rota": "/programacao-mobile/3/semana-17/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17 - Banco de Dados Avancados/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-17/a4.mdx",
       "rota": "/programacao-mobile/3/semana-17/a4",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-18/a1.mdx",
       "rota": "/programacao-mobile/3/semana-18/a1",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-18/a2.mdx",
       "rota": "/programacao-mobile/3/semana-18/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18 - Integracao com Servicos de Terceiros/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-18/a3.mdx",
       "rota": "/programacao-mobile/3/semana-18/a3",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "pausa",
@@ -845,7 +849,7 @@
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-19/a1.mdx",
       "rota": "/programacao-mobile/3/semana-19/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -859,21 +863,21 @@
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-19/a2.mdx",
       "rota": "/programacao-mobile/3/semana-19/a2",
-      "artefato": true
+      "arquivosCodigo": 2
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-19/a3.mdx",
       "rota": "/programacao-mobile/3/semana-19/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19 - Armazenamento em Nuvem/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-19/a4.mdx",
       "rota": "/programacao-mobile/3/semana-19/a4",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -887,28 +891,28 @@
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-20/a2.mdx",
       "rota": "/programacao-mobile/3/semana-20/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-20/a3.mdx",
       "rota": "/programacao-mobile/3/semana-20/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20 - Design e Experiencia do Usuario (UX)/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-20/a4.mdx",
       "rota": "/programacao-mobile/3/semana-20/a4",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-21/a1.mdx",
       "rota": "/programacao-mobile/3/semana-21/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -922,21 +926,21 @@
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-21/a3.mdx",
       "rota": "/programacao-mobile/3/semana-21/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21 - Implementacao e Melhoria Continua/Gabarito - Roteiro Prático Aula 4.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-21/a4.mdx",
       "rota": "/programacao-mobile/3/semana-21/a4",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15 - Desenvolvimento de MVP (Parte 1)/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/a2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-15/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -950,21 +954,21 @@
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15 - Desenvolvimento de MVP (Parte 1)/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-15/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a1.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-16/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-16/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -978,21 +982,21 @@
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16 - Desenvolvimento de MVP (Parte 2)/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-16/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a1.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-17/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-17/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1006,21 +1010,21 @@
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17 - Pesquisa e melhoria continua/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-17/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a1.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-18/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-18/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1034,21 +1038,21 @@
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18 - Sustentabilidade e inovacao/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-18/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a1.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-19/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-19/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1062,14 +1066,14 @@
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19 - Praticas Inovadoras em Gestao de Projetos/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-19/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a1.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-20/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1083,28 +1087,28 @@
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-20/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20 - Refinamento e Implementacao de Melhorias/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-20/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Gabarito - Roteiro Prático Aula 1.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a1.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-21/a1",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-21/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1118,7 +1122,7 @@
       "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21 - Execucao e Avaliacao Final de MVP/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-21/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1139,7 +1143,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15 - Git Basico – repositorio, commit e historico/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/a2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-15/a2",
-      "artefato": true
+      "arquivosCodigo": 4
     },
     {
       "tipo": "pausa",
@@ -1153,7 +1157,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15 - Git Basico – repositorio, commit e historico/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-15/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1174,7 +1178,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16 - Branching e estrategias de fluxo (Git Flow, Trunk Based)/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/a2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-16/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1188,7 +1192,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16 - Branching e estrategias de fluxo (Git Flow, Trunk Based)/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-16/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1209,7 +1213,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17 - Colaboracao remota – Pull Request, Code Review/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/a2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-17/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -1223,7 +1227,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17 - Colaboracao remota – Pull Request, Code Review/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-17/a3",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -1244,7 +1248,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18 - Tagging, releases e versionamento semantico/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/a2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-18/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -1258,7 +1262,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18 - Tagging, releases e versionamento semantico/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-18/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1279,7 +1283,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19 - Fundamentos de mensageria – conceitos de fila, topico e garantias/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/a2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-19/a2",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1293,7 +1297,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19 - Fundamentos de mensageria – conceitos de fila, topico e garantias/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-19/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
@@ -1314,7 +1318,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20 - RabbitMQ – conceitos e operacao basica/Gabarito - Roteiro Prático Aula 2.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/a2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-20/a2",
-      "artefato": true
+      "arquivosCodigo": 3
     },
     {
       "tipo": "pausa",
@@ -1328,7 +1332,7 @@
       "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20 - RabbitMQ – conceitos e operacao basica/Gabarito - Roteiro Prático Aula 3.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-20/a3",
-      "artefato": false
+      "arquivosCodigo": 0
     }
   ]
 }

@@ -1,15 +1,21 @@
 ---
+import CopyButton from './CopyButton.astro';
+import ContentTypeIcon from './ContentTypeIcon.astro';
+import { markdownToPlainText, renderMarkdown } from '../lib/markdown';
+
 const { quiz, index } = Astro.props as {
   quiz: { pergunta: string; resposta: string; fonte: string };
-  index: number;
+  index: string;
 };
+const answerId = `quiz-answer-${index}`;
+const renderedAnswer = await renderMarkdown(quiz.resposta);
 ---
-<section class="quiz-card" aria-labelledby={`quiz-${index}`}>
-  <p class="eyebrow">Pausa e Responda</p>
+<section class="quiz-card content-card content-card--pausa" aria-labelledby={`quiz-${index}`}>
+  <header class="content-card__header"><ContentTypeIcon tipo="pausa" /><CopyButton targetId={answerId} label="Copiar resposta" /></header>
   <h2 id={`quiz-${index}`}>{quiz.pergunta}</h2>
-  <div class="answer-reveal">
+  <div class="answer-reveal" id={answerId} data-copy-value={markdownToPlainText(quiz.resposta)}>
     <strong>Resposta de referência</strong>
-    <span>{quiz.resposta}</span>
+    <div set:html={renderedAnswer} />
   </div>
   <p class="source-note">Fonte: <code>{quiz.fonte}</code></p>
 </section>

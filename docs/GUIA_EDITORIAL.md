@@ -8,7 +8,7 @@ Eclesiastes é um material de consulta. Ele não afirma que uma atividade foi en
 
 A fonte revisada fica fora do repositório, na pasta `gabarito`. A migração lê somente os arquivos `Gabarito - Roteiro Prático Aula N.md`, `Gabarito - Pausa e Responda Aula N.md` e seus diretórios `codigo/aula-N`.
 
-`npm run migrate:content` nunca escreve na fonte. Ele gera MDX, ZIPs de artefatos e `docs/source-index.json`. Use `ECLESIASTES_SOURCE_DIR` para indicar outra cópia da fonte.
+`npm run migrate:content` nunca escreve na fonte. Ele gera MDX com arquivos de código inline e `docs/source-index.json`. Use `ECLESIASTES_SOURCE_DIR` para indicar outra cópia da fonte.
 
 ## Regras de conteúdo
 

@@ -1,22 +1,40 @@
 ---
-import { comBase } from '../lib/aulas';
 import CopyButton from './CopyButton.astro';
-const { atividade, id } = Astro.props;
+import ContentTypeIcon from './ContentTypeIcon.astro';
+import { markdownToPlainText, renderMarkdown } from '../lib/markdown';
+
+const { atividade, id } = Astro.props as {
+  atividade: { enunciado: string; resposta: string; conteudo: string; fonte: string; arquivos: Array<{ caminho: string; linguagem: string; conteudo: string }> };
+  id: string;
+};
+const responseId = `${id}-response`;
+const promptId = `${id}-prompt`;
+const sourceId = `${id}-source`;
+const promptHtml = await renderMarkdown(atividade.enunciado, id);
+const responseHtml = await renderMarkdown(atividade.resposta, id);
+const sourceHtml = await renderMarkdown(atividade.conteudo, id);
+const fileId = (path: string) => `${id}-arquivo-${path.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 ---
-<section class="activity-card" aria-labelledby={`${id}-title`}>
-  <div class="card-heading">
-    <p class="eyebrow">Roteiro prático</p>
-    <h2 id={`${id}-title`}>Resposta e orientação de consulta</h2>
-  </div>
-  <div class="response" id={`${id}-response`}>{atividade.resposta}</div>
-  <div class="card-actions">
-    <CopyButton targetId={`${id}-response`} />
-    {atividade.artefato && <a class="button button-primary" href={comBase(`/${atividade.artefato.href}`)} download>{atividade.artefato.nome} <span aria-hidden="true">↓</span><span class="sr-only"> ({atividade.artefato.arquivos} arquivos)</span></a>}
-  </div>
+<section class="activity-card content-card content-card--roteiro" aria-labelledby={`${id}-title`}>
+  <header class="content-card__header"><ContentTypeIcon tipo="roteiro" /><CopyButton targetId={responseId} label="Copiar resposta" /></header>
+  <div class="card-heading"><h2 id={`${id}-title`}>Enunciado</h2></div>
+  <div class="prompt markdown-content" id={promptId} set:html={promptHtml} />
+  <div class="card-heading"><h2>Resposta e orientação de consulta</h2></div>
+  <div class="response markdown-content" id={responseId} data-copy-value={markdownToPlainText(atividade.resposta)} set:html={responseHtml} />
   <details class="source-details">
     <summary>Ver conteúdo revisado completo</summary>
-    <div id={`${id}-source`} class="source-text">{atividade.conteudo}</div>
-    <div class="card-actions"><CopyButton targetId={`${id}-source`} label="Copiar conteúdo" /></div>
+    <div class="source-text markdown-content" id={sourceId} data-copy-value={markdownToPlainText(atividade.conteudo)} set:html={sourceHtml} />
+    <div class="card-actions"><CopyButton targetId={sourceId} label="Copiar conteúdo revisado" /></div>
   </details>
+  {atividade.arquivos.length > 0 && <section class="code-files" aria-label="Arquivos de código">
+    <h3>Arquivos da atividade</h3>
+    {atividade.arquivos.map((arquivo, index) => <details class="code-file" open={index === 0}>
+      <summary><span>{arquivo.caminho}</span><small>{arquivo.linguagem}</small></summary>
+      <div class="code-block">
+        <CopyButton targetId={fileId(arquivo.caminho)} label={`Copiar ${arquivo.caminho}`} />
+        <pre id={fileId(arquivo.caminho)} data-copy-value={arquivo.conteudo}><code class={`language-${arquivo.linguagem}`}>{arquivo.conteudo}</code></pre>
+      </div>
+    </details>)}
+  </section>}
   <p class="source-note">Fonte: <code>{atividade.fonte}</code></p>
 </section>

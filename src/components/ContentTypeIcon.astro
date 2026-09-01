@@ -1,0 +1,10 @@
+---
+import type { ContentType } from '../lib/aulas';
+const { tipo, label = true } = Astro.props as { tipo: ContentType; label?: boolean };
+const names: Record<ContentType, string> = { pausa: 'Pausa e Responda', roteiro: 'Roteiro prático', registro: 'Registro', aula: 'Aula' };
+const symbols: Record<ContentType, string> = { pausa: '?', roteiro: '⌘', registro: '✓', aula: '▤' };
+---
+<span class:list={['content-type', `content-type--${tipo}`]}>
+  <span class="content-type__icon" aria-hidden="true">{symbols[tipo]}</span>
+  {label && <span>{names[tipo]}</span>}
+</span>

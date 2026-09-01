@@ -1,68 +1,24 @@
 ---
 import BaseLayout from '../components/BaseLayout.astro';
-import { comBase, rotaDaAula, todasAsAulas } from '../lib/aulas';
+import SubjectIllustration from '../components/SubjectIllustration.astro';
+import { comBase, todasAsAulas } from '../lib/aulas';
 
 const aulas = await todasAsAulas();
 const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, aula.data.materia])).entries()).map(([slug, nome]) => ({
   slug,
   nome,
-  aulas: aulas.filter((aula) => aula.data.materiaSlug === slug),
+  total: aulas.filter((aula) => aula.data.materiaSlug === slug).length,
 }));
 ---
 <BaseLayout title="Eclesiastes · Desenvolvimento de Sistemas" wide>
   <p class="eyebrow">Conhecimento em rede</p>
   <h1>Eclesiastes</h1>
-  <p class="lede">Roteiros, respostas e artefatos organizados para consultar, adaptar e construir em Desenvolvimento de Sistemas.</p>
+  <p class="lede">Roteiros, respostas e conteúdos organizados para consultar, adaptar e construir em Desenvolvimento de Sistemas.</p>
 
-  <section class="subject-grid" aria-label="Matérias">
-    {materias.map((materia) => <a class="subject-card" href={comBase(`/${materia.slug}`)}>
-      <p>Matéria</p>
-      <h2>{materia.nome}</h2>
-      <span>{materia.aulas.length} conteúdos disponíveis</span>
-    </a>)}
+  <section class="subject-grid" data-subject-grid aria-label="Matérias">
+    {materias.map((materia) => <article class="subject-card" data-subject-card data-subject-slug={materia.slug} data-subject-name={materia.nome}>
+      <div class="subject-card__art"><SubjectIllustration subject={materia.slug} /><button class="favorite-toggle" type="button" data-favorite-toggle aria-pressed="false" title="Adicionar aos favoritos"><span aria-hidden="true" data-favorite-icon>☆</span><span class="sr-only" data-favorite-label>Adicionar aos favoritos</span></button><a class="subject-access" href={comBase(`/${materia.slug}`)}>Acessar <span aria-hidden="true">→</span></a></div>
+      <div class="subject-card__body"><p>Matéria</p><h2>{materia.nome}</h2><span>{materia.total} conteúdos disponíveis</span></div>
+    </article>)}
   </section>
-
-  <section class="search-section" aria-labelledby="busca-global">
-    <h2 id="busca-global">Busca global</h2>
-    <form class="filters filters--search" data-filters>
-      <label class="field">Buscar por título ou assunto<input type="search" name="busca" placeholder="Ex.: CORS, Firebase, Kanban" /></label>
-      <button class="button" type="reset">Limpar</button>
-    </form>
-    <p class="result-summary" data-result-count aria-live="polite">Digite um termo para buscar aulas em todas as matérias.</p>
-    <section class="catalog" data-results hidden aria-label="Resultados da busca">
-      {aulas.map((aula) => <a class="catalog-card" href={comBase(rotaDaAula(aula))} data-card data-search={`${aula.data.titulo} ${aula.data.materia}`}>
-        <p>{aula.data.materia} · Semana {aula.data.semana}</p>
-        <h2>{aula.data.titulo}</h2>
-        <span class="tag">{aula.data.atividade ? 'Roteiro prático' : `${aula.data.quizzes.length} ${aula.data.quizzes.length === 1 ? 'questão' : 'questões'}`}</span>
-      </a>)}
-    </section>
-    <p class="empty" data-empty>Nenhuma aula corresponde à busca. Tente outro termo.</p>
-  </section>
-  <script>
-    const form = document.querySelector<HTMLFormElement>('[data-filters]');
-    const cards = [...document.querySelectorAll<HTMLElement>('[data-card]')];
-    const count = document.querySelector('[data-result-count]');
-    const results = document.querySelector<HTMLElement>('[data-results]');
-    const empty = document.querySelector<HTMLElement>('[data-empty]');
-    const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-    const update = () => {
-      const query = normalize(String(new FormData(form ?? undefined).get('busca') ?? ''));
-      if (!query) {
-        results!.hidden = true;
-        empty!.style.display = 'none';
-        count!.textContent = 'Digite um termo para buscar aulas em todas as matérias.';
-        return;
-      }
-      results!.hidden = false;
-      const shown = cards.filter((card) => {
-        const match = normalize(card.dataset.search ?? '').includes(query);
-        card.hidden = !match;
-        return match;
-      }).length;
-      count!.textContent = `${shown} ${shown === 1 ? 'aula encontrada' : 'aulas encontradas'}`;
-      empty!.style.display = shown ? 'none' : 'block';
-    };
-    form?.addEventListener('input', update);
-    form?.addEventListener('reset', () => setTimeout(update));
-  </script>
 </BaseLayout>

@@ -1,22 +1,37 @@
 ---
-const { targetId, label = 'Copiar resposta' } = Astro.props;
+const { targetId, label = 'Copiar conteúdo' } = Astro.props;
 ---
-<button class="button" type="button" data-copy-target={targetId} data-copy-label={label}>{label}</button>
+<button class="copy-button" type="button" data-copy-target={targetId} data-copy-label={label} aria-label={label} title={label}>
+  <svg viewBox="0 0 16 16" aria-hidden="true" data-copy-icon><path d="M5.75 1.5h6.5a1.25 1.25 0 0 1 1.25 1.25v7.5a1.25 1.25 0 0 1-1.25 1.25h-6.5A1.25 1.25 0 0 1 4.5 10.25v-7.5A1.25 1.25 0 0 1 5.75 1.5Z"/><path d="M2.5 4.5v8.75a1.25 1.25 0 0 0 1.25 1.25h6.75"/></svg>
+  <svg viewBox="0 0 16 16" aria-hidden="true" data-check-icon style="display:none"><path d="m3 8 3 3 7-7"/></svg>
+</button>
 <span class="sr-only" data-copy-status aria-live="polite"></span>
 <script>
   document.querySelectorAll<HTMLButtonElement>('[data-copy-target]').forEach((button) => {
+    if (button.dataset.copyBound) return;
+    button.dataset.copyBound = 'true';
     button.addEventListener('click', async () => {
       const target = document.getElementById(button.dataset.copyTarget ?? '');
       const status = button.parentElement?.querySelector<HTMLElement>('[data-copy-status]')
         ?? button.nextElementSibling as HTMLElement | null;
       if (!target) return;
       try {
-        await navigator.clipboard.writeText(target.innerText);
-        button.textContent = 'Copiado';
+        await navigator.clipboard.writeText(target.dataset.copyValue ?? target.textContent ?? '');
+        const copyIcon = button.querySelector<HTMLElement>('[data-copy-icon]');
+        const checkIcon = button.querySelector<HTMLElement>('[data-check-icon]');
+        if (copyIcon) copyIcon.style.display = 'none';
+        if (checkIcon) checkIcon.style.display = 'block';
+        button.setAttribute('aria-label', 'Copiado');
+        button.setAttribute('title', 'Copiado');
         status?.replaceChildren('Conteúdo copiado para a área de transferência.');
-        setTimeout(() => { button.textContent = button.dataset.copyLabel ?? 'Copiar resposta'; }, 1600);
+        setTimeout(() => {
+          if (copyIcon) copyIcon.style.display = 'block';
+          if (checkIcon) checkIcon.style.display = 'none';
+          button.setAttribute('aria-label', button.dataset.copyLabel ?? 'Copiar conteúdo');
+          button.setAttribute('title', button.dataset.copyLabel ?? 'Copiar conteúdo');
+        }, 1600);
       } catch {
-        button.textContent = 'Selecione o texto para copiar';
+        button.setAttribute('aria-label', 'Não foi possível copiar automaticamente');
         status?.replaceChildren('Não foi possível copiar automaticamente. Selecione o texto para copiar.');
       }
     });

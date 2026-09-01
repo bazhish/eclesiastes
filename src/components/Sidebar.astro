@@ -1,24 +1,44 @@
 ---
 import { agruparNavegacao, comBase, rotaDaAula, type Aula } from '../lib/aulas';
-const { aulas, currentPath, materiaAtual, bimestreAtual } = Astro.props as { aulas: Aula[]; currentPath: string; materiaAtual: string; bimestreAtual: number };
+import ContentTypeIcon from './ContentTypeIcon.astro';
+
+const { aulas, currentPath, materiaAtual } = Astro.props as { aulas: Aula[]; currentPath: string; materiaAtual: string };
 const materias = agruparNavegacao(aulas);
 const materia = materias.get(materiaAtual);
 ---
-<aside id="navegacao" class="sidebar" data-open="false" aria-label="Navegação das matérias">
-  <p class="nav-title">{materia?.nome ?? 'Aulas'}</p>
+<aside id="navegacao" class="sidebar" data-open="true" aria-label="Navegação das matérias">
+  <header class="sidebar-header">
+    <p class="nav-title">{materia?.nome ?? 'Aulas'}</p>
+    <div class="sidebar-header__actions">
+      <button class="sidebar-all-toggle" type="button" data-all-weeks-toggle aria-expanded="true">Recolher todas</button>
+      <button class="button button-icon" type="button" data-sidebar-close title="Ocultar navegação"><span aria-hidden="true">×</span><span class="sr-only">Ocultar navegação</span></button>
+    </div>
+  </header>
   <nav class="tree">
-    <a class="tree-back" href={comBase(`/${materiaAtual}`)}>Voltar aos bimestres</a>
-    {materia && Array.from(materia.semanas.entries()).map(([semana, aulasDaSemana]) => (
-      <details class="week" open={currentPath.includes(`/semana-${semana}`)}>
-        <summary>Semana {semana}</summary>
-        <a class="tree-week-link" href={comBase(`/${materiaAtual}/${bimestreAtual}/semana-${semana}`)} aria-current={currentPath === `/${materiaAtual}/${bimestreAtual}/semana-${semana}` ? 'page' : undefined}>Visão da semana</a>
-        {aulasDaSemana.map((aula) => {
-          const href = rotaDaAula(aula);
-          const tipo = aula.data.aula.startsWith('q') ? 'Pausa' : 'Aula';
-          const numero = aula.data.aula.slice(1);
-          return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined}>{tipo} {numero} · {aula.data.titulo}</a>;
-        })}
-      </details>
-    ))}
+    <a class="tree-back" href={comBase(`/${materiaAtual}`)}>Voltar à matéria</a>
+    {materia && Array.from(materia.bimestres.entries()).sort(([a], [b]) => a - b).map(([bimestre, semanas]) => <section class="tree-bimestre" aria-labelledby={`sidebar-bimestre-${bimestre}`}>
+      <p id={`sidebar-bimestre-${bimestre}`}>{bimestre}º Bimestre</p>
+      {Array.from(semanas.entries()).sort(([a], [b]) => a - b).map(([semana, aulasDaSemana]) => (
+        <details class="week" open={currentPath.includes(`/${bimestre}/semana-${semana}`)}>
+          <summary>Semana {semana}</summary>
+          <a class="tree-week-link" href={comBase(`/${materiaAtual}/${bimestre}/semana-${semana}`)} aria-current={currentPath === `/${materiaAtual}/${bimestre}/semana-${semana}` ? 'page' : undefined}>Visão da semana</a>
+          {aulasDaSemana.map((aula) => {
+            const href = rotaDaAula(aula);
+            const numero = aula.data.aula.slice(1);
+            return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined} data-sidebar-route={href}><ContentTypeIcon tipo={aula.data.tipo} label={false} /><span>{numero} · {aula.data.titulo}</span></a>;
+          })}
+        </details>
+      ))}
+    </section>)}
   </nav>
 </aside>
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>('[data-all-weeks-toggle]');
+  toggle?.addEventListener('click', () => {
+    const weeks = [...document.querySelectorAll<HTMLDetailsElement>('#navegacao .week')];
+    const open = !weeks.every((week) => week.open);
+    weeks.forEach((week) => { week.open = open; });
+    toggle.textContent = open ? 'Recolher todas' : 'Expandir todas';
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+</script>

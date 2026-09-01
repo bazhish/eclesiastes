@@ -1,0 +1,24 @@
+---
+const { subject } = Astro.props as { subject: string };
+const motifs: Record<string, { icon: string; nodes: string }> = {
+  'back-end': { icon: '▣', nodes: '24,42 48,28 80,28 104,42 24,86 48,100 80,100 104,86' },
+  'banco-de-dados': { icon: '≋', nodes: '28,36 64,22 100,36 28,92 64,106 100,92' },
+  'front-end': { icon: '⌘', nodes: '28,30 64,30 100,30 28,98 64,98 100,98' },
+  'inteligencia-artificial': { icon: '✦', nodes: '24,64 48,32 48,96 80,32 80,96 104,64' },
+  'programacao-mobile': { icon: '▯', nodes: '44,22 84,22 44,106 84,106 24,64 104,64' },
+  'projeto-multidisciplinar': { icon: '◇', nodes: '24,38 64,20 104,38 24,90 64,108 104,90' },
+  'versionamento-de-codigo': { icon: '⑂', nodes: '26,28 52,48 78,48 102,28 52,84 78,84 102,104' },
+};
+const motif = motifs[subject] ?? motifs['projeto-multidisciplinar'];
+const points = motif.nodes.split(' ').map((point) => point.split(',').map(Number));
+---
+<svg class="subject-illustration" viewBox="0 0 128 128" aria-hidden="true" focusable="false">
+  <defs><linearGradient id={`subject-gradient-${subject}`} x1="0" x2="1" y1="0" y2="1"><stop stop-color="#172756"/><stop offset="1" stop-color="#314b93"/></linearGradient></defs>
+  <rect width="128" height="128" rx="16" fill={`url(#subject-gradient-${subject})`} />
+  <g class="subject-illustration__web" fill="none" stroke="currentColor" stroke-linecap="round">
+    <circle cx="64" cy="64" r="38" /><circle cx="64" cy="64" r="20" />
+    <path d="M64 14v100M14 64h100M29 29l70 70M99 29 29 99" />
+  </g>
+  <g class="subject-illustration__nodes" fill="currentColor">{points.map(([cx, cy]) => <circle cx={cx} cy={cy} r="3.3" />)}</g>
+  <text x="64" y="75" text-anchor="middle" class="subject-illustration__symbol">{motif.icon}</text>
+</svg>

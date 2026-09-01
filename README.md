@@ -6,7 +6,7 @@
 
 **Conhecimento para consultar, adaptar e construir.**
 
-Portal estático de roteiros práticos, respostas de referência e artefatos do 3º bimestre de Desenvolvimento de Sistemas.
+Portal estático de roteiros práticos, respostas de referência e arquivos de código inline do 3º bimestre de Desenvolvimento de Sistemas.
 
 [![Astro](https://img.shields.io/badge/Astro-static-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
@@ -29,10 +29,10 @@ O símbolo central é uma interpretação original de **Ananse Ntentan**, uma te
 ## Funcionalidades
 
 - Navegação por matéria, bimestre, semana, roteiro e bloco “Pausa e Responda”.
-- Busca global, filtros, tema claro/escuro e navegação responsiva por teclado.
+- Cartões de matérias com favoritos locais, checkpoints de visita, tema claro/escuro e navegação responsiva por teclado.
 - Cópia de respostas e do conteúdo revisado, com retorno acessível.
-- Download de um ZIP por aula quando a fonte fornece artefatos de código.
-- 189 documentos rastreáveis: 118 roteiros, 71 blocos de pausa e 141 respostas de referência.
+- Código incorporado nas atividades, com linguagem, caminho e cópia exata do texto exibido.
+- 189 documentos rastreáveis: 118 roteiros, 71 blocos de pausa e 141 respostas de referência; 72 atividades têm código, totalizando 197 arquivos inline (46 entradas técnicas filtradas).
 
 ## Stack
 
@@ -69,7 +69,7 @@ npm run migrate:content
 npm run verify
 ```
 
-O processo recria somente `src/content/aulas`, `public/artefatos` e `docs/source-index.json`; nunca modifica a fonte revisada.
+O processo recria somente `src/content/aulas` e `docs/source-index.json`; nunca modifica a fonte revisada. Quando a fonte externa está disponível, os diretórios `codigo/aula-N` são filtrados e incorporados diretamente ao MDX.
 
 ## Estrutura
 
@@ -84,7 +84,6 @@ scripts/
   validate-content.mjs
   validate-build.mjs
 public/
-  artefatos/        # ZIPs gerados da fonte
   brand.svg         # marca Ananse Ntentan original
 docs/
   source-index.json # rastreabilidade entre fonte e rota publicada

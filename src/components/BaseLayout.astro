@@ -5,7 +5,7 @@ import { comBase, todasAsAulas } from '../lib/aulas';
 
 const {
   title = 'Eclesiastes',
-  description = 'Consulta organizada de roteiros práticos, respostas e artefatos de Desenvolvimento de Sistemas.',
+  description = 'Consulta organizada de roteiros práticos, respostas e arquivos de código inline de Desenvolvimento de Sistemas.',
   currentPath = '',
   wide = false,
   showSidebar = false,
@@ -40,43 +40,148 @@ const socialImage = new URL(comBase('/og-eclesiastes.png'), Astro.site).href;
     <meta name="twitter:image" content={socialImage} />
     <title>{title}</title>
     <script is:inline>
-      const savedTheme = localStorage.getItem('eclesiastes-theme');
-      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+      try {
+        const savedTheme = localStorage.getItem('eclesiastes-theme');
+        if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+      } catch {}
     </script>
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
-    <div class="app-shell">
+    <div class="app-shell" data-sidebar-shell>
       <header class="topbar">
         <a class="brand" href={import.meta.env.BASE_URL} aria-label="Eclesiastes — início">
           <img class="brand-mark" src={comBase('/brand.svg')} alt="" width="40" height="40" />
           <span>Eclesiastes<small>Conhecimento em rede</small></span>
         </a>
         <div class="topbar-actions">
-          {showSidebar && <button class="button button-quiet mobile-only" type="button" data-nav-toggle aria-expanded="false" aria-controls="navegacao">Navegação</button>}
+          {showSidebar && <button class="button button-icon nav-reopen" type="button" data-nav-toggle aria-expanded="true" aria-controls="navegacao" title="Ocultar navegação"><span aria-hidden="true">☰</span><span class="sr-only">Ocultar navegação</span></button>}
           <button class="button button-quiet" type="button" data-theme-toggle aria-label="Alternar entre tema claro e escuro">Tema</button>
         </div>
       </header>
-      <div class:list={['layout', { 'layout--hub': !showSidebar }]}>
+      <div class:list={['layout', { 'layout--hub': !showSidebar }]} data-layout>
         {showSidebar && <Sidebar aulas={aulas} currentPath={currentPath} materiaAtual={currentMateria} bimestreAtual={currentBimestre} />}
+        {showSidebar && <button class="sidebar-backdrop" type="button" data-sidebar-backdrop aria-label="Fechar navegação"></button>}
         <main id="conteudo" class:list={['content', { 'content--wide': wide }]}><slot /></main>
       </div>
-      <footer class="site-footer">Eclesiastes é material de consulta. Adapte os exemplos e registre apenas evidências próprias antes de qualquer entrega avaliativa.</footer>
     </div>
     <script>
+      import { FAVORITES_KEY, VISITS_KEY, readSet, writeSet } from '../scripts/browser-state';
       const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
       toggle?.addEventListener('click', () => {
         const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         document.documentElement.dataset.theme = next;
-        localStorage.setItem('eclesiastes-theme', next);
+        try { localStorage.setItem('eclesiastes-theme', next); } catch {}
       });
-      const nav = document.querySelector('#navegacao');
+      const nav = document.querySelector<HTMLElement>('#navegacao');
       const navToggle = document.querySelector<HTMLButtonElement>('[data-nav-toggle]');
-      navToggle?.addEventListener('click', () => {
-        const open = nav?.getAttribute('data-open') !== 'true';
+      const shell = document.querySelector<HTMLElement>('[data-sidebar-shell]');
+      const layout = document.querySelector<HTMLElement>('[data-layout]');
+      const backdrop = document.querySelector<HTMLButtonElement>('[data-sidebar-backdrop]');
+      const navClose = document.querySelector<HTMLButtonElement>('[data-sidebar-close]');
+      const setSidebarOpen = (open: boolean) => {
         nav?.setAttribute('data-open', String(open));
-        navToggle.setAttribute('aria-expanded', String(open));
+        nav?.toggleAttribute('inert', !open);
+        shell?.toggleAttribute('data-sidebar-closed', !open);
+        layout?.toggleAttribute('data-sidebar-closed', !open);
+        navToggle?.setAttribute('aria-expanded', String(open));
+        navToggle?.setAttribute('title', open ? 'Ocultar navegação' : 'Mostrar navegação');
+        navToggle?.querySelector('.sr-only')?.replaceChildren(open ? 'Ocultar navegação' : 'Mostrar navegação');
+      };
+      navToggle?.addEventListener('click', () => setSidebarOpen(nav?.getAttribute('data-open') !== 'true'));
+      navClose?.addEventListener('click', () => setSidebarOpen(false));
+      backdrop?.addEventListener('click', () => setSidebarOpen(false));
+      if (window.matchMedia('(max-width: 767px)').matches) setSidebarOpen(false);
+      document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && nav?.getAttribute('data-open') === 'true') setSidebarOpen(false); });
+
+      let dragStart: { x: number; y: number; pointerId: number } | undefined;
+      let dragging = false;
+      nav?.addEventListener('pointerdown', (event) => {
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+        dragStart = { x: event.clientX, y: event.clientY, pointerId: event.pointerId };
+        dragging = false;
       });
+      nav?.addEventListener('pointermove', (event) => {
+        if (!dragStart || event.pointerId !== dragStart.pointerId) return;
+        const dx = event.clientX - dragStart.x;
+        const dy = event.clientY - dragStart.y;
+        if (!dragging && dx < -12 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+          dragging = true;
+          nav.setPointerCapture(event.pointerId);
+          nav.dataset.dragging = 'true';
+        }
+        if (dragging) {
+          const width = nav.getBoundingClientRect().width;
+          nav.style.setProperty('--sidebar-drag', `${Math.max(-width, dx)}px`);
+        }
+      });
+      const finishDrag = (event: PointerEvent) => {
+        if (!dragStart || event.pointerId !== dragStart.pointerId) return;
+        const dx = event.clientX - dragStart.x;
+        const width = nav?.getBoundingClientRect().width ?? 0;
+        nav?.style.removeProperty('--sidebar-drag');
+        nav?.removeAttribute('data-dragging');
+        if (dragging && (Math.abs(dx) >= 72 || Math.abs(dx) >= width * .3)) setSidebarOpen(false);
+        dragStart = undefined;
+        dragging = false;
+      };
+      nav?.addEventListener('pointerup', finishDrag);
+      nav?.addEventListener('pointercancel', finishDrag);
+
+      document.querySelectorAll<HTMLElement>('[data-visit-route]').forEach((element) => {
+        const route = element.dataset.visitRoute;
+        if (!route) return;
+        const visits = readSet(VISITS_KEY);
+        visits.add(route);
+        writeSet(VISITS_KEY, visits);
+      });
+
+      const sortSubjects = () => {
+        const grid = document.querySelector<HTMLElement>('[data-subject-grid]');
+        if (!grid) return;
+        const favorites = readSet(FAVORITES_KEY);
+        const cards = [...grid.querySelectorAll<HTMLElement>('[data-subject-card]')];
+        cards.sort((a, b) => Number(favorites.has(b.dataset.subjectSlug ?? '')) - Number(favorites.has(a.dataset.subjectSlug ?? '')) || (a.dataset.subjectName ?? '').localeCompare(b.dataset.subjectName ?? '', 'pt-BR'));
+        cards.forEach((card) => {
+          const active = favorites.has(card.dataset.subjectSlug ?? '');
+          card.toggleAttribute('data-favorite', active);
+          const button = card.querySelector<HTMLButtonElement>('[data-favorite-toggle]');
+          button?.setAttribute('aria-pressed', String(active));
+          button?.setAttribute('title', active ? 'Remover dos favoritos' : 'Adicionar aos favoritos');
+          button?.querySelector('[data-favorite-icon]')?.replaceChildren(active ? '★' : '☆');
+          card.querySelector('[data-favorite-label]')?.replaceChildren(active ? 'Remover dos favoritos' : 'Adicionar aos favoritos');
+          grid.append(card);
+        });
+      };
+      document.querySelectorAll<HTMLButtonElement>('[data-favorite-toggle]').forEach((button) => button.addEventListener('click', () => {
+        const slug = button.closest<HTMLElement>('[data-subject-card]')?.dataset.subjectSlug;
+        if (!slug) return;
+        const favorites = readSet(FAVORITES_KEY);
+        favorites.has(slug) ? favorites.delete(slug) : favorites.add(slug);
+        writeSet(FAVORITES_KEY, favorites);
+        sortSubjects();
+      }));
+      sortSubjects();
+
+      const updateCheckpoints = () => {
+        const visits = readSet(VISITS_KEY);
+        document.querySelectorAll<HTMLElement>('[data-week-checkpoint]').forEach((checkpoint) => {
+          const paths = JSON.parse(checkpoint.dataset.weekCheckpoint ?? '[]') as string[];
+          const completed = paths.filter((path) => visits.has(path)).length;
+          const total = paths.length;
+          const percentage = total ? Math.round((completed / total) * 100) : 0;
+          checkpoint.dataset.progress = String(percentage);
+          checkpoint.querySelector<HTMLElement>('.checkpoint')?.style.setProperty('--progress', `${percentage}%`);
+          checkpoint.toggleAttribute('data-complete', percentage === 100);
+          const value = checkpoint.querySelector<HTMLElement>('[data-checkpoint-value]');
+          if (value) value.textContent = percentage === 100 ? '✓' : percentage ? String(percentage) : '';
+          const description = checkpoint.querySelector<HTMLElement>('[data-checkpoint-description]');
+          if (description) description.textContent = percentage === 100 ? `Concluída: ${total} de ${total} páginas visitadas.` : `${percentage}% concluída: ${completed} de ${total} páginas visitadas.`;
+        });
+      };
+      updateCheckpoints();
+      window.addEventListener('pageshow', updateCheckpoints);
+      window.addEventListener('storage', (event) => { if (event.key === VISITS_KEY) updateCheckpoints(); });
     </script>
   </body>
 </html>

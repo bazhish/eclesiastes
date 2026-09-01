@@ -21,7 +21,7 @@ O Eclesiastes é uma ferramenta de consulta acadêmica serena e precisa. A naveg
 ## Acessibilidade e movimento
 
 - Foco perceptível de 3 px em cobre, com offset de 3 px.
-- Landmarks semânticos e nomes acessíveis para controles, downloads e marca decorativa.
+- Landmarks semânticos e nomes acessíveis para controles, cópia e marca decorativa.
 - Cópia anuncia sucesso ou instrução alternativa em região `aria-live`.
 - `prefers-reduced-motion: reduce` remove transições e rolagem animada.
 - A navegação mobile continua operável por teclado e informa seu estado com `aria-expanded`.

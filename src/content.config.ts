@@ -2,10 +2,12 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-const artifactSchema = z.object({
-  nome: z.string().min(1),
-  href: z.string().regex(/^artefatos\/.+\.zip$/),
-  arquivos: z.number().int().positive(),
+const contentTypeSchema = z.enum(['pausa', 'roteiro', 'registro', 'aula']);
+
+const codeFileSchema = z.object({
+  caminho: z.string().min(1),
+  linguagem: z.string().min(1),
+  conteudo: z.string(),
 });
 
 const quizSchema = z.object({
@@ -19,7 +21,7 @@ const atividadeSchema = z.object({
   resposta: z.string().min(1),
   conteudo: z.string().min(1),
   fonte: z.string().min(1),
-  artefato: artifactSchema.optional(),
+  arquivos: z.array(codeFileSchema).default([]),
 });
 
 const aulas = defineCollection({
@@ -35,6 +37,7 @@ const aulas = defineCollection({
       semana: z.number().int().positive(),
       ordem: z.number().int().positive(),
       aula: z.string().regex(/^(?:a|q)\d+$/),
+      tipo: contentTypeSchema,
       titulo: z.string().min(1),
       atividade: atividadeSchema.optional(),
       quizzes: z.array(quizSchema).default([]),

@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/BaseLayout.astro';
-import { comBase } from '../../lib/aulas';
+import WeekCheckpointList from '../../components/WeekCheckpointList.astro';
+import { comBase, semanasPorBimestre } from '../../lib/aulas';
 
 export async function getStaticPaths() {
   const aulas = await getCollection('aulas');
@@ -11,22 +12,12 @@ export async function getStaticPaths() {
 }
 
 const { materia, bimestre, nome, aulas } = Astro.props;
-const aulasDoBimestre = aulas.filter((aula) => aula.data.materiaSlug === materia && aula.data.bimestre === bimestre);
-const semanas = [...new Set(aulasDoBimestre.map((aula) => aula.data.semana))].sort().map((semana) => {
-  const itens = aulasDoBimestre.filter((aula) => aula.data.semana === semana);
-  return { semana, total: itens.length, praticas: itens.filter((aula) => aula.data.atividade).length, questoes: itens.reduce((total, aula) => total + aula.data.quizzes.length, 0) };
-});
+const grupos = semanasPorBimestre(aulas.filter((aula) => aula.data.materiaSlug === materia && aula.data.bimestre === bimestre));
 ---
 <BaseLayout title={`${nome} · Bimestre ${bimestre} · Eclesiastes`} wide>
-  <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><a href={comBase(`/${materia}`)}>{nome}</a></li><li><span aria-current="page">Bimestre {bimestre}</span></li></ol></nav>
+  <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><a href={comBase(`/${materia}`)}>{nome}</a></li><li><span aria-current="page">{bimestre}º Bimestre</span></li></ol></nav>
   <p class="eyebrow">{nome}</p>
-  <h1>Bimestre {bimestre}</h1>
-  <p class="lede">Abra uma semana para ver as aulas e usar a navegação lateral contextual.</p>
-  <section class="week-grid" aria-label="Semanas do bimestre">
-    {semanas.map((semana) => <a class="week-card" href={comBase(`/${materia}/${bimestre}/semana-${semana.semana}`)}>
-      <span>Semana {semana.semana}</span>
-      <h2>{semana.praticas} roteiros práticos</h2>
-      <p>{semana.questoes ? `${semana.questoes} questões de revisão` : `${semana.total} aulas disponíveis`}</p>
-    </a>)}
-  </section>
+  <h1>{bimestre}º Bimestre</h1>
+  <p class="lede">Semanas disponíveis para consulta e acompanhamento local.</p>
+  <WeekCheckpointList materia={materia} grupos={grupos} />
 </BaseLayout>
