@@ -8,16 +8,23 @@ const semanas = materia?.bimestres.get(bimestreAtual);
 ---
 <aside id="navegacao" class="course-drawer" data-open="true" aria-label="Sumário da disciplina">
   <header class="course-drawer__head">
-    <button class="drawer-close" type="button" data-sidebar-close aria-label="Fechar sumário da disciplina">×</button>
+    <button class="drawer-close" type="button" data-sidebar-close aria-label="Fechar sumário da disciplina"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
     <span>Sumário da disciplina</span>
+    <details class="drawer-options">
+      <summary aria-label="Opções do sumário" title="Opções do sumário"><i class="fa-solid fa-ellipsis-vertical" aria-hidden="true"></i><span class="sr-only">Opções do sumário</span></summary>
+      <div class="drawer-options__menu" role="menu" aria-label="Opções das semanas">
+        <button type="button" role="menuitem" data-sidebar-expand><i class="fa-solid fa-angles-down" aria-hidden="true"></i> Expandir todas as semanas</button>
+        <button type="button" role="menuitem" data-sidebar-collapse><i class="fa-solid fa-angles-up" aria-hidden="true"></i> Retrair todas as semanas</button>
+      </div>
+    </details>
   </header>
   <nav class="course-index" aria-label="Semanas da disciplina">
-    <a class="course-index__back" href={comBase(`/${materiaAtual}/${bimestreAtual}`)}>‹ {materia?.nome ?? 'Disciplina'}</a>
+    <a class="course-index__back" href={comBase(`/${materiaAtual}`)}><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> {materia?.nome ?? 'Disciplina'}</a>
     {semanas && Array.from(semanas.entries()).sort(([a], [b]) => a - b).map(([semana, itens]) => {
       const weekPath = `/${materiaAtual}/${bimestreAtual}/semana-${semana}`;
       const active = currentPath.startsWith(weekPath);
       return <details class="course-index__week" open={active}>
-        <summary class:list={{ active }}><span>Semana {semana} (S{semana})</span></summary>
+        <summary class:list={{ active }}><i class="course-index__chevron fa-solid fa-chevron-right" aria-hidden="true"></i><span>Semana {semana} (S{semana})</span></summary>
         <a class="course-index__overview" href={comBase(weekPath)} aria-current={currentPath === weekPath ? 'page' : undefined}>Visão da semana</a>
         {itens.sort((a, b) => a.data.ordem - b.data.ordem).map((aula) => {
           const href = rotaDaAula(aula);

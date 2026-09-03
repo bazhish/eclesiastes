@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../components/BaseLayout.astro';
+import SubjectIcon from '../components/SubjectIcon.astro';
 import { comBase, semanasPorBimestre } from '../lib/aulas';
 
 export async function getStaticPaths() {
@@ -11,13 +12,25 @@ export async function getStaticPaths() {
 
 const { materia, nome, aulas } = Astro.props;
 const grupos = semanasPorBimestre(aulas.filter((aula) => aula.data.materiaSlug === materia));
+const totalConteudos = aulas.filter((aula) => aula.data.materiaSlug === materia).length;
 ---
 <BaseLayout title={`${nome} · Eclesiastes`} wide>
-  <section class="discipline-hero"><div class="container"><nav class="breadcrumbs" aria-label="Trilha de navegação"><a href={comBase('/')}>Página inicial</a><span>/</span><span aria-current="page">{nome}</span></nav><h1>{nome}</h1></div></section>
-  <section class="discipline-content container" aria-label="Bimestres">
-    <h2>Selecione um bimestre</h2>
-    <div class="bimestre-grid">
-      {grupos.map((grupo) => <a class="bimestre-card" href={comBase(`/${materia}/${grupo.bimestre}`)}><h3>{nome} – {grupo.bimestre}º Bimestre</h3><span>{grupo.semanas.length} semanas <b>→</b></span></a>)}
-    </div>
+  <article class="course-hub">
+  <header class="discipline-hero">
+    <div class="container discipline-hero__content"><div><nav class="breadcrumbs" aria-label="Trilha de navegação"><a href={comBase('/')}>Página inicial</a><span>/</span><span aria-current="page">{nome}</span></nav><h1>{nome}</h1><p>Conteúdos organizados para uma navegação simples e contínua.</p></div><SubjectIcon subject={materia} /></div>
+  </header>
+  <section class="discipline-overview container" aria-label="Guia da disciplina">
+    <div class="discipline-overview__main"><i class="fa-solid fa-route" aria-hidden="true"></i><div><h2>Como navegar pela disciplina</h2><p>Escolha uma semana abaixo para acessar as aulas e os recursos disponíveis.</p></div></div>
+    <dl><div><dt>{grupos.reduce((total, grupo) => total + grupo.semanas.length, 0)}</dt><dd>semanas</dd></div><div><dt>{totalConteudos}</dt><dd>conteúdos</dd></div></dl>
   </section>
+  <section class="course-roadmap container" aria-labelledby="semanas-disponiveis">
+    <div class="section-heading"><div><p class="section-kicker">Percurso da disciplina</p><h2 id="semanas-disponiveis">Semanas disponíveis</h2></div></div>
+    {grupos.map((grupo) => <section class="bimestre-panel" aria-labelledby={`bimestre-${grupo.bimestre}`}>
+      <header><span>{grupo.bimestre}º Bimestre</span><small>{grupo.semanas.length} semanas</small></header>
+      <div class="week-stack">
+        {grupo.semanas.map((semana) => <article class="week-card"><a class="timeline-item" href={comBase(`/${materia}/${grupo.bimestre}/semana-${semana.semana}`)}><span class="timeline-item__mark"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span><span><strong>Semana {semana.semana} (S{semana.semana})</strong><small>{semana.tema || 'Aulas disponíveis'}</small></span><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></article>)}
+      </div>
+    </section>)}
+  </section>
+  </article>
 </BaseLayout>

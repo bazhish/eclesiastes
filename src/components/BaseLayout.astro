@@ -45,27 +45,37 @@ const socialImage = new URL(comBase('/og-eclesiastes.png'), Astro.site).href;
   <body>
     <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
     <header class="topbar">
-      <a class="brand" href={comBase('/')} aria-label="Eclesiastes — Minhas disciplinas">
-        <img class="brand-mark" src={comBase('/brand.svg')} alt="" width="42" height="42" />
-        <span>Eclesiastes<small>Desenvolvimento de Sistemas</small></span>
+      <a class="brand" href={comBase('/')} aria-label="Eclesiastes — Página inicial">
+        <img class="brand-mark" src={comBase('/brand.svg')} alt="" width="52" height="52" />
+        <span class="brand-copy"><strong>Eclesiastes</strong><small>Desenvolvimento de Sistemas</small></span>
       </a>
-      <nav class="primary-nav" aria-label="Navegação principal"><a href={comBase('/')} aria-current={currentPath === '' ? 'page' : undefined}><span aria-hidden="true">▰</span> Minhas disciplinas</a></nav>
       <div class="topbar-actions">
-        {showSidebar && <button class="drawer-toggle" type="button" data-nav-toggle aria-expanded="true" aria-controls="navegacao"><span aria-hidden="true">☰</span><span class="sr-only">Abrir ou fechar sumário da disciplina</span></button>}
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar entre tema claro e escuro">Tema</button>
+        {showSidebar && <button class="drawer-toggle" type="button" data-nav-toggle aria-expanded="true" aria-controls="navegacao" title="Abrir ou fechar sumário da disciplina"><i class="fa-solid fa-bars" aria-hidden="true"></i><span class="sr-only">Abrir ou fechar sumário da disciplina</span></button>}
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar tema escuro" title="Ativar tema escuro"><i class="fa-solid fa-moon" aria-hidden="true" data-theme-icon></i><span class="sr-only">Alternar entre tema claro e escuro</span></button>
       </div>
     </header>
-    <div class:list={['app-layout', { 'app-layout--drawer': showSidebar, 'app-layout--wide': wide }]} data-layout data-sidebar-shell>
+    <div class:list={['app-layout', { 'app-layout--drawer': showSidebar, 'app-layout--wide': wide }]} data-layout data-sidebar-shell data-drawer-open={showSidebar ? 'true' : undefined}>
       {showSidebar && <Sidebar aulas={aulas} currentPath={currentPath} materiaAtual={currentMateria} bimestreAtual={currentBimestre} />}
       {showSidebar && <button class="drawer-backdrop" type="button" data-sidebar-backdrop aria-label="Fechar sumário da disciplina"></button>}
       <main id="conteudo" class="main-content"><slot /></main>
     </div>
+    {showSidebar && <button class="drawer-reopen" type="button" data-sidebar-reopen aria-controls="navegacao" aria-expanded="true" title="Abrir sumário da disciplina"><i class="fa-solid fa-list" aria-hidden="true"></i><span class="sr-only">Abrir sumário da disciplina</span></button>}
     <script>
       const toggle = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+      const themeIcon = document.querySelector<HTMLElement>('[data-theme-icon]');
+      const syncThemeToggle = () => {
+        const dark = document.documentElement.dataset.theme === 'dark';
+        themeIcon?.classList.toggle('fa-moon', !dark);
+        themeIcon?.classList.toggle('fa-sun', dark);
+        toggle?.setAttribute('aria-label', dark ? 'Ativar tema claro' : 'Ativar tema escuro');
+        toggle?.setAttribute('title', dark ? 'Ativar tema claro' : 'Ativar tema escuro');
+      };
+      syncThemeToggle();
       toggle?.addEventListener('click', () => {
         const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
         document.documentElement.dataset.theme = next;
         try { localStorage.setItem('eclesiastes-theme', next); } catch {}
+        syncThemeToggle();
       });
 
       const nav = document.querySelector<HTMLElement>('#navegacao');
@@ -73,14 +83,45 @@ const socialImage = new URL(comBase('/og-eclesiastes.png'), Astro.site).href;
       const layout = document.querySelector<HTMLElement>('[data-layout]');
       const backdrop = document.querySelector<HTMLButtonElement>('[data-sidebar-backdrop]');
       const close = document.querySelector<HTMLButtonElement>('[data-sidebar-close]');
+      const reopen = document.querySelector<HTMLButtonElement>('[data-sidebar-reopen]');
+      const expand = document.querySelector<HTMLButtonElement>('[data-sidebar-expand]');
+      const collapse = document.querySelector<HTMLButtonElement>('[data-sidebar-collapse]');
+      const options = document.querySelector<HTMLDetailsElement>('.drawer-options');
       const setDrawer = (open: boolean) => {
         nav?.setAttribute('data-open', String(open));
         layout?.toggleAttribute('data-drawer-open', open);
         navToggle?.setAttribute('aria-expanded', String(open));
+        reopen?.setAttribute('aria-expanded', String(open));
       };
       navToggle?.addEventListener('click', () => setDrawer(nav?.getAttribute('data-open') !== 'true'));
       backdrop?.addEventListener('click', () => setDrawer(false));
       close?.addEventListener('click', () => setDrawer(false));
+      reopen?.addEventListener('click', () => setDrawer(true));
+      expand?.addEventListener('click', () => {
+        nav?.querySelectorAll<HTMLDetailsElement>('.course-index__week').forEach((week) => { week.open = true; });
+        if (options) options.open = false;
+      });
+      collapse?.addEventListener('click', () => {
+        nav?.querySelectorAll<HTMLDetailsElement>('.course-index__week').forEach((week) => { week.open = false; });
+        if (options) options.open = false;
+      });
+      let dragStartX: number | null = null;
+      nav?.addEventListener('pointerdown', (event) => {
+        if (event.pointerType !== 'mouse' || event.button !== 0 || (event.target as HTMLElement).closest('a, button, summary')) return;
+        dragStartX = event.clientX;
+        nav.setPointerCapture?.(event.pointerId);
+        nav.classList.add('course-drawer--dragging');
+      });
+      nav?.addEventListener('pointermove', (event) => {
+        if (dragStartX !== null && event.clientX - dragStartX < -88) {
+          dragStartX = null;
+          nav.classList.remove('course-drawer--dragging');
+          setDrawer(false);
+        }
+      });
+      const finishDrawerDrag = () => { dragStartX = null; nav?.classList.remove('course-drawer--dragging'); };
+      nav?.addEventListener('pointerup', finishDrawerDrag);
+      nav?.addEventListener('pointercancel', finishDrawerDrag);
       if (window.matchMedia('(max-width: 767px)').matches) setDrawer(false);
       document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setDrawer(false); });
     </script>

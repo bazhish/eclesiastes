@@ -17,13 +17,13 @@ const itens = aulas.filter((aula) => aula.data.materiaSlug === materia && aula.d
 ---
 <BaseLayout title={`${nome} · Semana ${semana} · Eclesiastes`} currentPath={currentPath} showSidebar>
   <section class="course-page">
-    <nav class="breadcrumbs" aria-label="Trilha de navegação"><a href={comBase('/')}>Página inicial</a><span>/</span><a href={comBase(`/${materia}/${bimestre}`)}>{nome} – {bimestre}º Bimestre</a><span>/</span><span aria-current="page">Semana {semana} (S{semana})</span></nav>
+    <nav class="breadcrumbs" aria-label="Trilha de navegação"><a href={comBase('/')}>Página inicial</a><span>/</span><a href={comBase(`/${materia}`)}>{nome}</a><span>/</span><span aria-current="page">Semana {semana} (S{semana})</span></nav>
     <h1>Semana {semana} (S{semana})</h1>
     <p class="week-introduction">A resposta ainda não foi divulgada.</p>
     <section class="lesson-accordions" aria-label={`Aulas da semana ${semana}`}>
       {itens.map((aula) => <details class="lesson-accordion" open>
-        <summary><span class="lesson-accordion__chevron" aria-hidden="true">⌄</span><strong>{aula.data.titulo}</strong></summary>
-        <a class="learning-resource" href={comBase(rotaDaAula(aula))}><ContentTypeIcon tipo={aula.data.tipo} label={false} /><span>{aula.data.tipo === 'pausa' ? 'Pause e Responda' : aula.data.tipo === 'registro' ? 'Registro da Aula' : 'Material da Aula'} (S{semana}{aula.data.aula.toUpperCase()})</span><span class="resource-state">Acessar <b>›</b></span></a>
+        <summary><span class="lesson-accordion__chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span><strong>{aula.data.titulo}</strong></summary>
+        <a class="learning-resource" href={comBase(rotaDaAula(aula))}><ContentTypeIcon tipo={aula.data.tipo} label={false} /><span>{aula.data.tipo === 'pausa' ? 'Pause e Responda' : aula.data.tipo === 'registro' ? 'Registro da Aula' : 'Material da Aula'} (S{semana}{aula.data.aula.toUpperCase()})</span><span class="resource-state">Acessar <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span></a>
       </details>)}
     </section>
   </section>

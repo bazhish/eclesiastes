@@ -1,0 +1,17 @@
+---
+const { subject, label = false } = Astro.props as { subject: string; label?: boolean };
+const icons: Record<string, { icon: string; name: string }> = {
+  'back-end': { icon: 'fa-server', name: 'Back-End' },
+  'banco-de-dados': { icon: 'fa-database', name: 'Banco de dados' },
+  'front-end': { icon: 'fa-code', name: 'Front-End' },
+  'inteligencia-artificial': { icon: 'fa-brain', name: 'Inteligência Artificial' },
+  'programacao-mobile': { icon: 'fa-mobile-screen-button', name: 'Programação Mobile' },
+  'projeto-multidisciplinar': { icon: 'fa-diagram-project', name: 'Projeto Multidisciplinar' },
+  'versionamento-de-codigo': { icon: 'fa-code-branch', name: 'Versionamento de Código' },
+};
+const item = icons[subject] ?? { icon: 'fa-book-open', name: 'Disciplina' };
+---
+<span class:list={['subject-icon', `subject-icon--${subject}`]} aria-hidden={label ? undefined : 'true'}>
+  <i class:list={['fa-solid', item.icon]}></i>
+  {label && <span class="sr-only">{item.name}</span>}
+</span>

@@ -14,8 +14,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "@astrojs/mdx": "^7.0.8",
     "@astrojs/markdown-remark": "^7.2.4",
+    "@astrojs/mdx": "^7.0.8",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "astro": "^7.2.8",
     "typescript": "^5.9.3"
   },

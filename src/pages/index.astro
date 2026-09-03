@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../components/BaseLayout.astro';
+import SubjectIcon from '../components/SubjectIcon.astro';
 import { comBase, todasAsAulas } from '../lib/aulas';
 
 const aulas = await todasAsAulas();
@@ -9,17 +10,18 @@ const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, 
   total: aulas.filter((aula) => aula.data.materiaSlug === slug).length,
 }));
 ---
-<BaseLayout title="Minhas disciplinas · Eclesiastes" wide>
-  <section class="dashboard" aria-labelledby="minhas-disciplinas">
-    <h1 id="minhas-disciplinas">Minhas disciplinas</h1>
-    <div class="course-tabs" aria-label="Filtro de disciplinas">
-      <span class="course-tabs__selected">★ Todos <b>{materias.length}</b></span>
-    </div>
+<BaseLayout title="Página inicial · Eclesiastes" wide>
+  <section class="home-intro" aria-labelledby="inicio">
+    <div class="home-intro__copy"><p class="section-kicker"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Ambiente de aprendizagem</p><h1 id="inicio">Página inicial</h1><p>Escolha uma disciplina para consultar os conteúdos organizados por bimestre, semana e aula.</p></div>
+    <div class="home-intro__guide" aria-label="Guia de navegação"><i class="fa-solid fa-compass" aria-hidden="true"></i><span><strong>Seu percurso</strong><small>Disciplina · Semana · Aula</small></span></div>
+  </section>
+  <section class="subject-section" aria-labelledby="disciplinas">
+    <div class="section-heading"><div><p class="section-kicker">Conteúdos disponíveis</p><h2 id="disciplinas">Disciplinas</h2></div><span>{materias.length} áreas de estudo</span></div>
     <div class="subject-grid" aria-label="Disciplinas disponíveis">
-      {materias.map((materia) => <article class="subject-card">
+      {materias.map((materia) => <article class="subject-card" data-subject={materia.slug}>
         <a class="subject-card__link" href={comBase(`/${materia.slug}`)}>
-          <div class="subject-card__visual" aria-hidden="true"><span>★</span><strong>Acessar <b>→</b></strong></div>
-          <div class="subject-card__body"><h2>{materia.nome}</h2><small>{materia.total} conteúdos</small></div>
+          <div class="subject-card__visual"><SubjectIcon subject={materia.slug} /><span class="subject-card__glow" aria-hidden="true"></span></div>
+          <div class="subject-card__body"><div><h3>{materia.nome}</h3><small>{materia.total} conteúdos organizados</small></div><span class="subject-card__action">Abrir disciplina <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span></div>
         </a>
       </article>)}
     </div>

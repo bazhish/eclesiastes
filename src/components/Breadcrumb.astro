@@ -4,7 +4,6 @@ const { aula } = Astro.props;
 const items = [
   { label: 'Início', href: comBase('/') },
   { label: aula.data.materia, href: comBase(`/${aula.data.materiaSlug}`) },
-  { label: `3º bimestre`, href: comBase(`/${aula.data.materiaSlug}/${aula.data.bimestre}`) },
   { label: `Semana ${aula.data.semana}`, href: comBase(`/${aula.data.materiaSlug}/${aula.data.bimestre}/semana-${aula.data.semana}`) },
   { label: aula.data.titulo },
 ];

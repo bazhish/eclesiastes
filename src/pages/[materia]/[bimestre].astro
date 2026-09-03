@@ -1,21 +1,20 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/BaseLayout.astro';
-import { comBase, semanasPorBimestre } from '../../lib/aulas';
+import { comBase } from '../../lib/aulas';
 
 export async function getStaticPaths() {
   const aulas = await getCollection('aulas');
-  const paths = new Map<string, { materia: string; bimestre: string; nome: string; aulas: typeof aulas }>();
-  for (const aula of aulas) paths.set(`${aula.data.materiaSlug}/${aula.data.bimestre}`, { materia: aula.data.materiaSlug, bimestre: String(aula.data.bimestre), nome: aula.data.materia, aulas });
-  return Array.from(paths.values()).map(({ materia, bimestre, nome, aulas }) => ({ params: { materia, bimestre }, props: { materia, bimestre: Number(bimestre), nome, aulas } }));
+  const paths = new Set(aulas.map((aula) => `${aula.data.materiaSlug}/${aula.data.bimestre}`));
+  return [...paths].map((path) => {
+    const [materia, bimestre] = path.split('/');
+    return { params: { materia, bimestre } };
+  });
 }
 
-const { materia, bimestre, nome, aulas } = Astro.props;
-const grupo = semanasPorBimestre(aulas.filter((aula) => aula.data.materiaSlug === materia && aula.data.bimestre === bimestre))[0];
+const destination = comBase(`/${Astro.params.materia}`);
 ---
-<BaseLayout title={`${nome} · ${bimestre}º Bimestre · Eclesiastes`} wide>
-  <section class="discipline-hero"><div class="container"><nav class="breadcrumbs" aria-label="Trilha de navegação"><a href={comBase('/')}>Página inicial</a><span>/</span><a href={comBase(`/${materia}`)}>{nome}</a><span>/</span><span aria-current="page">{bimestre}º Bimestre</span></nav><h1>{nome} – {bimestre}º Bimestre</h1></div></section>
-  <section class="timeline-panel container" aria-label="Semanas do bimestre">
-    {grupo?.semanas.map((semana) => <a class="timeline-item" href={comBase(`/${materia}/${bimestre}/semana-${semana.semana}`)}><span class="timeline-item__mark">✓</span><span>Semana {semana.semana} (S{semana.semana}) — {semana.tema || 'Aulas disponíveis'}</span></a>)}
-  </section>
+<BaseLayout title="Eclesiastes">
+  <script is:inline define:vars={{ destination }}>window.location.replace(destination);</script>
+  <section class="redirect-notice"><p>As semanas desta disciplina agora estão reunidas em uma única página.</p><a href={destination}>Continuar para a disciplina</a></section>
 </BaseLayout>

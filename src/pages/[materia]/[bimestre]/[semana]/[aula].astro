@@ -21,6 +21,6 @@ const resourceName = aula.data.tipo === 'pausa' ? 'Pause e Responda' : aula.data
     <header class="resource-page__head"><p>{resourceName}</p><h1>{aula.data.titulo}</h1></header>
     {aula.data.atividade && <AtividadeCard atividade={aula.data.atividade} id={aula.id.replaceAll('/', '-')} />}
     {aula.data.quizzes.map((quiz, index) => <QuizBlock quiz={quiz} index={`${aula.id}-${index}`} />)}
-    <a class="back-to-week" href={`../`}>← Voltar à semana</a>
+    <a class="back-to-week" href={`../`}><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Voltar à semana</a>
   </section>
 </BaseLayout>
