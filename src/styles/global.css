@@ -69,16 +69,11 @@ h1, h2, h3, h4, summary, button, .brand, .section-kicker, .section-heading, .tim
 .app-layout--drawer .main-content { width: min(100% - 48px, 965px); margin: 0 auto; padding: 36px 0 62px; }
 .container { width: min(100% - 40px, 1120px); margin: 0 auto; }
 
-.home-intro { display: flex; align-items: stretch; justify-content: space-between; gap: 28px; margin-bottom: 40px; padding: clamp(28px, 4vw, 48px); border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(115deg, var(--surface) 0%, var(--surface) 62%, color-mix(in srgb, var(--ava-blue) 11%, var(--surface)) 100%); box-shadow: var(--shadow); overflow: hidden; }
+.home-intro { display: block; margin-bottom: 40px; padding: clamp(28px, 4vw, 48px); border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(115deg, var(--surface) 0%, var(--surface) 62%, color-mix(in srgb, var(--ava-blue) 11%, var(--surface)) 100%); box-shadow: var(--shadow); overflow: hidden; }
 .home-intro__copy { max-width: 650px; }
 .section-kicker { display: flex; align-items: center; gap: 8px; margin: 0 0 9px; color: var(--ava-blue); font-size: .72rem; font-weight: 800; letter-spacing: .095em; text-transform: uppercase; }
 .home-intro h1 { margin: 0; font-size: clamp(2rem, 4vw, 3.1rem); font-weight: 800; letter-spacing: -.055em; line-height: 1.05; }
 .home-intro p:not(.section-kicker) { max-width: 55ch; margin: 16px 0 0; color: var(--muted); font-size: 1.08rem; }
-.home-intro__guide { display: flex; align-self: center; align-items: center; gap: 13px; min-width: 245px; padding: 18px; border: 1px solid color-mix(in srgb, var(--ava-blue) 22%, var(--line)); border-radius: 15px; background: color-mix(in srgb, var(--surface) 80%, transparent); }
-.home-intro__guide > i { display: grid; width: 45px; height: 45px; place-items: center; border-radius: 12px; background: var(--ava-blue); color: #fff; font-size: 1.1rem; }
-.home-intro__guide span { display: grid; gap: 2px; }
-.home-intro__guide strong { font-family: "Inter", sans-serif; font-size: .9rem; }
-.home-intro__guide small { color: var(--muted); font-size: .8rem; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
 .section-heading .section-kicker { margin-bottom: 5px; }
 .section-heading h2 { margin: 0; font-size: 1.45rem; font-weight: 800; letter-spacing: -.035em; }
@@ -118,7 +113,7 @@ h1, h2, h3, h4, summary, button, .brand, .section-kicker, .section-heading, .tim
 .breadcrumbs li:not(:last-child)::after { content: "/"; }
 .breadcrumbs a { text-decoration: none; }
 .breadcrumbs a:hover { text-decoration: underline; }
-.discipline-overview { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: -28px; padding: 22px 25px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); }
+.discipline-overview { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 20px auto 0; padding: 22px 25px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); }
 .discipline-overview__main { display: flex; align-items: center; gap: 15px; }
 .discipline-overview__main > i { display: grid; width: 44px; height: 44px; place-items: center; border-radius: 12px; background: color-mix(in srgb, var(--ava-blue) 13%, var(--surface)); color: var(--ava-blue); font-size: 1.1rem; }
 .discipline-overview h2 { margin: 0; font-size: 1rem; font-weight: 800; }
@@ -222,7 +217,6 @@ h1, h2, h3, h4, summary, button, .brand, .section-kicker, .section-heading, .tim
   .home-intro { display: grid; gap: 22px; margin-bottom: 29px; padding: 25px; border-radius: 16px; }
   .home-intro h1 { font-size: 2.15rem; }
   .home-intro p:not(.section-kicker) { font-size: 1rem; }
-  .home-intro__guide { min-width: 0; }
   .section-heading { align-items: start; }
   .section-heading > span { padding-top: 4px; font-size: .75rem; text-align: right; }
   .subject-grid { grid-template-columns: 1fr; gap: 15px; }
@@ -233,7 +227,7 @@ h1, h2, h3, h4, summary, button, .brand, .section-kicker, .section-heading, .tim
   .discipline-hero__content { align-items: end; }
   .discipline-hero h1 { font-size: 1.9rem; }
   .discipline-hero .subject-icon { width: 58px; height: 58px; border-radius: 15px; font-size: 1.45rem; }
-  .discipline-overview { display: grid; gap: 16px; margin-top: -23px; padding: 18px; }
+  .discipline-overview { display: grid; gap: 16px; margin-top: 16px; padding: 18px; }
   .discipline-overview dl { justify-content: flex-start; gap: 25px; }
   .course-roadmap { padding-top: 31px; }
   .week-stack { gap: 8px; padding: 12px; }

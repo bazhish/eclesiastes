@@ -6,7 +6,7 @@ O portal replica a linguagem funcional do AVA oficial apenas no fluxo de discipl
 
 ## Componentes
 
-- Catálogo: abertura “Página inicial”, guia rápido do percurso e cartões de disciplina em duas colunas no desktop e uma coluna no celular. Cada disciplina recebe ícone e cor próprios, sem estado fictício de favorito.
+- Catálogo: abertura “Página inicial” identificada como repositório de respostas e cartões de disciplina em duas colunas no desktop e uma coluna no celular. Cada disciplina recebe ícone e cor próprios, sem estado fictício de favorito.
 - Disciplina: cabeçalho próprio azul-petróleo no topo do conteúdo, guia de navegação sem backend, totais reais e bimestres/semanas reunidos em painéis estruturados. As rotas antigas de bimestre redirecionam para essa visão unificada.
 - Semana: painel branco com trilha, grupos expansíveis de aula, setas estáveis e recursos tipados com bloco visual para PDF, H5P e registro.
 - Recurso: cabeçalho do item, cartão de conteúdo e o aviso único de indisponibilidade.
