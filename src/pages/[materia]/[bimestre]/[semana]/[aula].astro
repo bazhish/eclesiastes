@@ -13,13 +13,13 @@ export async function getStaticPaths() {
 
 const { aula } = Astro.props;
 const currentPath = rotaDaAula(aula);
-const resourceName = aula.data.tipo === 'pausa' ? 'Pause e Responda' : aula.data.tipo === 'registro' ? 'Registro da Aula' : 'Material da Aula';
+const resourceName = aula.data.tipo === 'pausa' ? 'Pause e Responda' : aula.data.tipo === 'registro' ? 'Registro da Aula' : aula.data.tipo === 'observacao' ? 'Observações' : 'Material da Aula';
 ---
 <BaseLayout title={`${aula.data.titulo} · Eclesiastes`} currentPath={currentPath} showSidebar>
   <section class="course-page resource-page">
     <Breadcrumb aula={aula} />
     <header class="resource-page__head"><p>{resourceName}</p><h1>{aula.data.titulo}</h1></header>
-    {aula.data.atividade && <AtividadeCard atividade={aula.data.atividade} id={aula.id.replaceAll('/', '-')} />}
+    {aula.data.atividade && <AtividadeCard atividade={aula.data.atividade} id={aula.id.replaceAll('/', '-')} title={resourceName} tipo={aula.data.tipo} />}
     {aula.data.quizzes.map((quiz, index) => <QuizBlock quiz={quiz} index={`${aula.id}-${index}`} />)}
     <a class="back-to-week" href={`../`}><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Voltar à semana</a>
   </section>

@@ -1,8 +1,19 @@
 ---
+import AnswerBlock from './AnswerBlock.astro';
 import ContentTypeIcon from './ContentTypeIcon.astro';
-const { id } = Astro.props as { atividade: unknown; id: string };
+import type { ContentType } from '../lib/aulas';
+const { atividade, id, title = 'Material da Aula' } = Astro.props as {
+  atividade: { titulo?: string; conteudo?: string; resposta?: string; enunciado?: string };
+  id: string;
+  title?: string;
+  tipo?: ContentType;
+};
+const { tipo = 'roteiro' } = Astro.props as { tipo?: ContentType };
+const content = atividade.conteudo ?? atividade.resposta ?? atividade.enunciado ?? '';
 ---
 <section class="resource-detail" aria-labelledby={`${id}-title`}>
-  <header><ContentTypeIcon tipo="roteiro" label={false} /><h2 id={`${id}-title`}>Material da Aula</h2></header>
-  <div class="resource-detail__message">A resposta ainda não foi divulgada.</div>
+  <header><ContentTypeIcon tipo={tipo} label={false} /><h2 id={`${id}-title`}>{title}</h2></header>
+  <div class="resource-detail__body">
+    <AnswerBlock title={atividade.titulo ?? title} content={content} id={`${id}-resposta`} />
+  </div>
 </section>

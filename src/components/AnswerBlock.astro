@@ -1,0 +1,14 @@
+---
+import CopyButton from './CopyButton.astro';
+import { renderMarkdown } from '../lib/markdown';
+
+const { title, content, id } = Astro.props as { title: string; content: string; id: string };
+const html = await renderMarkdown(content, id);
+---
+<article class="answer-block" aria-labelledby={`${id}-title`}>
+  <header class="answer-block__header">
+    <h3 id={`${id}-title`}>{title}</h3>
+    <CopyButton targetId={id} label={`Copiar ${title}`} />
+  </header>
+  <div id={id} class="answer-block__content" data-copy-value={content} set:html={html} />
+</article>

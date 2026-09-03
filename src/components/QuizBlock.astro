@@ -1,8 +1,12 @@
 ---
+import AnswerBlock from './AnswerBlock.astro';
 import ContentTypeIcon from './ContentTypeIcon.astro';
-const { index } = Astro.props as { quiz: unknown; index: string };
+const { quiz, index } = Astro.props as { quiz: { pergunta: string; resposta: string; titulo?: string; conteudo?: string }; index: string };
+const content = quiz.conteudo ?? quiz.resposta;
 ---
 <section class="resource-detail" aria-labelledby={`quiz-${index}`}>
   <header><ContentTypeIcon tipo="pausa" label={false} /><h2 id={`quiz-${index}`}>Pause e Responda</h2></header>
-  <div class="resource-detail__message">A resposta ainda não foi divulgada.</div>
+  <div class="resource-detail__body">
+    <AnswerBlock title={quiz.titulo ?? quiz.pergunta} content={content} id={`quiz-${index}-resposta`} />
+  </div>
 </section>

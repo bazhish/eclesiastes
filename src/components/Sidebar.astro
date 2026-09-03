@@ -6,7 +6,7 @@ const { aulas, currentPath, materiaAtual, bimestreAtual } = Astro.props as { aul
 const materia = agruparNavegacao(aulas).get(materiaAtual);
 const semanas = materia?.bimestres.get(bimestreAtual);
 ---
-<aside id="navegacao" class="course-drawer" data-open="true" aria-label="Sumário da disciplina">
+<aside id="navegacao" class="course-drawer" data-open="false" aria-label="Sumário da disciplina">
   <header class="course-drawer__head">
     <button class="drawer-close" type="button" data-sidebar-close aria-label="Fechar sumário da disciplina"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
     <span>Sumário da disciplina</span>

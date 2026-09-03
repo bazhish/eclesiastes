@@ -1,1337 +1,2366 @@
 {
-  "fonte": "conteudo-pendente",
+  "fonte": "C:\\Users\\MAX\\Desktop\\Gabarito",
   "contagens": {
     "pausas": 71,
-    "questoes": 71,
-    "documentos": 189,
-    "roteiros": 118,
+    "questoes": 99,
+    "documentos": 269,
+    "roteiros": 111,
+    "registros": 40,
+    "observacoes": 47,
     "atividadesComCodigo": 0,
     "arquivosCodigo": 0,
-    "entradasTecnicasExcluidas": 46,
-    "entradasExcluidas": 46
+    "entradasTecnicasExcluidas": 0,
+    "entradasExcluidas": 0
   },
   "registros": [
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-15/q1.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-15/q1.mdx",
       "rota": "/back-end/3/semana-15/q1",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-15/a2.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-2-criacao-de-apis-seguras",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-15/a2.mdx",
       "rota": "/back-end/3/semana-15/a2",
+      "conteudoSha256": "74121a55e1529b2dd55c333fd23fc786d1bccc1fd554c888d415d5e6ac9c9e38",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-15/a3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-3-testes-de-seguranca-em-aplicacoes",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-15/a3.mdx",
       "rota": "/back-end/3/semana-15/a3",
+      "conteudoSha256": "0372d5b9b6154f13986566095252c4de3185be9804d0c6b20490e0609c8ae2e5",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-16/a1.md",
-      "pagina": "src/content/aulas/back-end/semana-16/a1.mdx",
-      "rota": "/back-end/3/semana-16/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-15/r1.mdx",
+      "rota": "/back-end/3/semana-15/r1",
+      "conteudoSha256": "deb954abcf2ba1354fdc7d53489d16cf8d3b0a14bb1df1fe827b04336ade9fa6",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-16/a2.md",
-      "pagina": "src/content/aulas/back-end/semana-16/a2.mdx",
-      "rota": "/back-end/3/semana-16/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-15/o1.mdx",
+      "rota": "/back-end/3/semana-15/o1",
+      "conteudoSha256": "2e12e98936852f993a1002709fc1ed66b488312788e76ff496b0b41860adb99a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-16/q3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-16/q3.mdx",
       "rota": "/back-end/3/semana-16/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-17/a1.md",
-      "pagina": "src/content/aulas/back-end/semana-17/a1.mdx",
-      "rota": "/back-end/3/semana-17/a1",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-1-implementacao-de-cors",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-16/a1.mdx",
+      "rota": "/back-end/3/semana-16/a1",
+      "conteudoSha256": "3a99b0726b1c9d6bf4a70f478148690bc48dcbf645155cffd24f8965b7a2bfc3",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-17/a2.md",
-      "pagina": "src/content/aulas/back-end/semana-17/a2.mdx",
-      "rota": "/back-end/3/semana-17/a2",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-2-seguranca-em-autenticacao-e-autorizacao",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-16/a2.mdx",
+      "rota": "/back-end/3/semana-16/a2",
+      "conteudoSha256": "cb3a7d17f7eff3dbcea387799ccb04a156fb6e233c2ccc47772f12001057a66e",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-16/r1.mdx",
+      "rota": "/back-end/3/semana-16/r1",
+      "conteudoSha256": "c4a528a53514f94ca8baee8201d4c868b8c24b10290d590a32e16b5e9eba0a6d",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-16/o1.mdx",
+      "rota": "/back-end/3/semana-16/o1",
+      "conteudoSha256": "9d69a1965b809a3787f554459b85005f18a9337ddebba408ebdcb4ec7f0ebb09",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-17/q3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-17/q3.mdx",
       "rota": "/back-end/3/semana-17/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-17/a3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-3-gerenciamento-de-dependencias",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-17/a3.mdx",
       "rota": "/back-end/3/semana-17/a3",
+      "conteudoSha256": "f400b15287932bf40779f58ba5e01f343e569a3f67fe96632c12a149ba1af0f0",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-18/a1.md",
-      "pagina": "src/content/aulas/back-end/semana-18/a1.mdx",
-      "rota": "/back-end/3/semana-18/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 17/semana-17-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-17/r1.mdx",
+      "rota": "/back-end/3/semana-17/r1",
+      "conteudoSha256": "c64c3f4c027426b642cde604f30b8d4fb7b0ae2bdb986a340a80e9b9e3edd7b7",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 17/semana-17-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-17/o1.mdx",
+      "rota": "/back-end/3/semana-17/o1",
+      "conteudoSha256": "0fae636002070738009c2febf8a8dc6081d32f80c0606f2cc7219c6e1c652434",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-18/q3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-18/q3.mdx",
       "rota": "/back-end/3/semana-18/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-18/a3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-3-automacao-de-tarefas",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-18/a3.mdx",
       "rota": "/back-end/3/semana-18/a3",
+      "conteudoSha256": "4f9fff0327193f56948c8a15e56f6956b4febf52242ab1be1552d0574f22d4ce",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-19/a1.md",
-      "pagina": "src/content/aulas/back-end/semana-19/a1.mdx",
-      "rota": "/back-end/3/semana-19/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 18/semana-18-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-18/r1.mdx",
+      "rota": "/back-end/3/semana-18/r1",
+      "conteudoSha256": "a882ff0416cea50dbaf6254f0817772670892786f027dd475dcc21ddd7b2d0cf",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-19/a2.md",
-      "pagina": "src/content/aulas/back-end/semana-19/a2.mdx",
-      "rota": "/back-end/3/semana-19/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 18/semana-18-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-18/o1.mdx",
+      "rota": "/back-end/3/semana-18/o1",
+      "conteudoSha256": "fd198b469852f51cc1ed52a6879e55c0463c7a2d96b7f6305b593320b5c7fb6a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-19/q3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-19/q3.mdx",
       "rota": "/back-end/3/semana-19/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-19/a3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-3-seguranca-em-banco-de-dados",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-19/a3.mdx",
       "rota": "/back-end/3/semana-19/a3",
+      "conteudoSha256": "5cbfa57af566681edec96b1d867a03469696887c4441f833b4db89829528f9cd",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-20/a2.md",
-      "pagina": "src/content/aulas/back-end/semana-20/a2.mdx",
-      "rota": "/back-end/3/semana-20/a2",
+      "tipo": "registro",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 19/semana-19-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-19/r1.mdx",
+      "rota": "/back-end/3/semana-19/r1",
+      "conteudoSha256": "1f4ff04561de208d7947e67028228d9a7c8c2c030aba3810a9421ba370886794",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 19/semana-19-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-19/o1.mdx",
+      "rota": "/back-end/3/semana-19/o1",
+      "conteudoSha256": "13900c6cd0899be16639295ec3d3ec457262b236f376fbdf0dcf5f765237c48a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-20/q3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-20/q3.mdx",
       "rota": "/back-end/3/semana-20/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-20/a3.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-2-arquitetura-serverless",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-20/a2.mdx",
+      "rota": "/back-end/3/semana-20/a2",
+      "conteudoSha256": "ae9d5d3136306d6ec2eab2e967731be5ef096dcf87ecbcfe97b1eb6219d3b037",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-3-integracao-com-servicos-de-pagamento",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-20/a3.mdx",
       "rota": "/back-end/3/semana-20/a3",
+      "conteudoSha256": "7e0b67de52210923010cc8079eeb9b6b69377ece5729d3449f4ad561baa52e1e",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-20/r1.mdx",
+      "rota": "/back-end/3/semana-20/r1",
+      "conteudoSha256": "d409996314081551d745fd473f9aed743464b482ad1923471be189aeacc715ea",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-20/o1.mdx",
+      "rota": "/back-end/3/semana-20/o1",
+      "conteudoSha256": "2e12e98936852f993a1002709fc1ed66b488312788e76ff496b0b41860adb99a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-21/q1.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-21/q1.mdx",
       "rota": "/back-end/3/semana-21/q1",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-21/a1.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-1-gestao-de-configuracoes-e-segredos",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-21/a1.mdx",
       "rota": "/back-end/3/semana-21/a1",
+      "conteudoSha256": "20f2292b9bf37a8005529cf4a02edc9e6fa01c13d5c5dffd1fd0e3a50b3ff655",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/back-end/semana-21/a2.md",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-2-monitoramento-e-logs",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/back-end/semana-21/a2.mdx",
       "rota": "/back-end/3/semana-21/a2",
+      "conteudoSha256": "4a416c6f13bfd13545077334a9e5523004a7d4594d77e937ab8c9dafe7e9a906",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-15/a1.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-15/a1.mdx",
-      "rota": "/banco-de-dados/3/semana-15/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-21/r1.mdx",
+      "rota": "/back-end/3/semana-21/r1",
+      "conteudoSha256": "5e3001cda9d2d4a8fa25bd2e3f84e89fca81acbf6bf7e1c92161fedefb745d58",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-15/a2.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-15/a2.mdx",
-      "rota": "/banco-de-dados/3/semana-15/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Back-End/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/back-end/semana-21/o1.mdx",
+      "rota": "/back-end/3/semana-21/o1",
+      "conteudoSha256": "cb63cadaaf13dbe13c28f842011b6d40eae80b05d2e63fada0db75f7b3d16c84",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-15/q3.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-15/q3.mdx",
       "rota": "/banco-de-dados/3/semana-15/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-15/a4.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-15/a4.mdx",
-      "rota": "/banco-de-dados/3/semana-15/a4",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-1-vantagens-dos-sgbds-relacionais-com-mysql",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/a1.mdx",
+      "rota": "/banco-de-dados/3/semana-15/a1",
+      "conteudoSha256": "b801db86f6bb3880ca0f6ef80b307c3e867bfcf70e90b7b73225e1566803a29a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-16/a1.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-16/a1.mdx",
-      "rota": "/banco-de-dados/3/semana-16/a1",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-2-diagramas-er-e-normalizacao",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/a2.mdx",
+      "rota": "/banco-de-dados/3/semana-15/a2",
+      "conteudoSha256": "2959f93770426bb7887feac9cc3e4ff486f460c7829c49f7e8a4ab39b2d3b201",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-3-normalizacao",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/a3.mdx",
+      "rota": "/banco-de-dados/3/semana-15/a3",
+      "conteudoSha256": "47e62d58b37af7518c71f350cf437e1c34877ace78cd2914e8b83bb21fbfa0ce",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-4-operacoes-crud",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/a4.mdx",
+      "rota": "/banco-de-dados/3/semana-15/a4",
+      "conteudoSha256": "39eb2c5af08fe24d90fe1050cb21d95a929325c48a08217f0cf818ff094daa28",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/r1.mdx",
+      "rota": "/banco-de-dados/3/semana-15/r1",
+      "conteudoSha256": "73e31ff96b319306c43e6b1fb86e321dc5dacb7ea01bc9acb05b3e8fac29c62b",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-15/o1.mdx",
+      "rota": "/banco-de-dados/3/semana-15/o1",
+      "conteudoSha256": "52b9735c57d7837504742c7af456e303786051c87396160269bfbb6bcba3ff35",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-16/q2.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-16/q2.mdx",
       "rota": "/banco-de-dados/3/semana-16/q2",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-16/a3.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-16/a3.mdx",
-      "rota": "/banco-de-dados/3/semana-16/a3",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 16/semana-16-respostas.md#atividades-praticas",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/a1.mdx",
+      "rota": "/banco-de-dados/3/semana-16/a1",
+      "conteudoSha256": "2224bdf63d1b23aab8da809e43a7188fdcc737569f62f11397f2d6c525e1d49a",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-16/a4.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-16/a4.mdx",
-      "rota": "/banco-de-dados/3/semana-16/a4",
+      "tipo": "registro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 16/semana-16-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/r1.mdx",
+      "rota": "/banco-de-dados/3/semana-16/r1",
+      "conteudoSha256": "aa4deb5a430607132bf872c0f6669f6a97a22fc874b9a752faa46089ebf40db8",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 16/semana-16-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-16/o1.mdx",
+      "rota": "/banco-de-dados/3/semana-16/o1",
+      "conteudoSha256": "0d91a66dc9b0c80b50530508fa13d83b3a3c064f2b2c120f08a9d9923dbf8a3e",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-17/q1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-17/q1.mdx",
       "rota": "/banco-de-dados/3/semana-17/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-17/a2.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 17/semana-17-respostas.md#atividades-praticas",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-17/a2.mdx",
       "rota": "/banco-de-dados/3/semana-17/a2",
+      "conteudoSha256": "6347d9cb3c42b81e756cac98a9f6f5ce7ec9d4923fc8a1071d3af7f0c462edff",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-17/a3.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-17/a3.mdx",
-      "rota": "/banco-de-dados/3/semana-17/a3",
+      "tipo": "registro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 17/semana-17-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-17/r1.mdx",
+      "rota": "/banco-de-dados/3/semana-17/r1",
+      "conteudoSha256": "6d7003f1b31471c20e35ca40f02d8f5654a7ae9eeff3cc266ae12cf8ad9628da",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-17/a4.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-17/a4.mdx",
-      "rota": "/banco-de-dados/3/semana-17/a4",
+      "tipo": "observacao",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 17/semana-17-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-17/o1.mdx",
+      "rota": "/banco-de-dados/3/semana-17/o1",
+      "conteudoSha256": "7c9fb0096056b51bc50d4ac2324ded757b8578c5e1d9b9c75f664111967e5406",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-18/q1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-18/q1.mdx",
       "rota": "/banco-de-dados/3/semana-18/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-18/a1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 18/semana-18-respostas.md#atividades-praticas",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-18/a1.mdx",
       "rota": "/banco-de-dados/3/semana-18/a1",
+      "conteudoSha256": "3f49a0a7e1496c1774b297efe280e5b9dc2d86ad76329a7e71b3a4ed299d572f",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-18/a2.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-18/a2.mdx",
-      "rota": "/banco-de-dados/3/semana-18/a2",
+      "tipo": "registro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 18/semana-18-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/r1.mdx",
+      "rota": "/banco-de-dados/3/semana-18/r1",
+      "conteudoSha256": "b57603e70fa244d89867a5d937e3f5dfafe6ff74d441df6b1ccc0b3287056e16",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-18/a3.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-18/a3.mdx",
-      "rota": "/banco-de-dados/3/semana-18/a3",
-      "arquivosCodigo": 0
-    },
-    {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-18/a4.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-18/a4.mdx",
-      "rota": "/banco-de-dados/3/semana-18/a4",
+      "tipo": "observacao",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 18/semana-18-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-18/o1.mdx",
+      "rota": "/banco-de-dados/3/semana-18/o1",
+      "conteudoSha256": "cc1fc2cbdedf7316bc70d2205cc60780f2240bb53853fd6c9b217e2a0aa5ea38",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-19/q1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-19/q1.mdx",
       "rota": "/banco-de-dados/3/semana-19/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-19/a1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 19/semana-19-respostas.md#atividades-praticas",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-19/a1.mdx",
       "rota": "/banco-de-dados/3/semana-19/a1",
+      "conteudoSha256": "b8ebf372fff2f969de5ca9a60ce095afab80bd6aacdd1c57d7ad20edf21cbd80",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-19/a2.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-19/a2.mdx",
-      "rota": "/banco-de-dados/3/semana-19/a2",
+      "tipo": "registro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 19/semana-19-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/r1.mdx",
+      "rota": "/banco-de-dados/3/semana-19/r1",
+      "conteudoSha256": "623bfec0bee62af1c750e432cd723d344f36a45a0326d43624bcaf84ee0057a7",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-19/a3.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-19/a3.mdx",
-      "rota": "/banco-de-dados/3/semana-19/a3",
-      "arquivosCodigo": 0
-    },
-    {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-19/a4.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-19/a4.mdx",
-      "rota": "/banco-de-dados/3/semana-19/a4",
+      "tipo": "observacao",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 19/semana-19-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-19/o1.mdx",
+      "rota": "/banco-de-dados/3/semana-19/o1",
+      "conteudoSha256": "1cb850b3ec95b17cd3061ae51108aae192ed692f3fb60c43ba316fbbe4027ca0",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-20/q1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-20/q1.mdx",
       "rota": "/banco-de-dados/3/semana-20/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-20/a1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 20/semana-20-respostas.md#atividades-praticas",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-20/a1.mdx",
       "rota": "/banco-de-dados/3/semana-20/a1",
+      "conteudoSha256": "bfce600b5b8c4dea862b5f64e828537daf9037c4ca2f25d7fd7db4cabae6d3a5",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-20/a2.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-20/a2.mdx",
-      "rota": "/banco-de-dados/3/semana-20/a2",
+      "tipo": "registro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 20/semana-20-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-20/r1.mdx",
+      "rota": "/banco-de-dados/3/semana-20/r1",
+      "conteudoSha256": "6240351a7757e2998e71b3c96bbfbd1f6e3ec0f5dfc75703c29ed07fd259cf54",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-20/a3.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-20/a3.mdx",
-      "rota": "/banco-de-dados/3/semana-20/a3",
+      "tipo": "observacao",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 20/semana-20-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-20/o1.mdx",
+      "rota": "/banco-de-dados/3/semana-20/o1",
+      "conteudoSha256": "1cda01ee3e798de62906abe8df47901e5a8c6b06869fb66b3b5ab6723a87f11c",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-21/q1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 21/semana-21-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-21/q1.mdx",
       "rota": "/banco-de-dados/3/semana-21/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-21/a1.md",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 21/semana-21-respostas.md#atividades-praticas",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/banco-de-dados/semana-21/a1.mdx",
       "rota": "/banco-de-dados/3/semana-21/a1",
+      "conteudoSha256": "e73fd624d863fc2f039ee9731f921d37519edc39d55548d23e0329133ced4f34",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-21/a2.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-21/a2.mdx",
-      "rota": "/banco-de-dados/3/semana-21/a2",
+      "tipo": "registro",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 21/semana-21-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-21/r1.mdx",
+      "rota": "/banco-de-dados/3/semana-21/r1",
+      "conteudoSha256": "1e807a01f1a5ed3252bf2998ee6d34108af4b6dfc1649e12a9852484c1285adf",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/banco-de-dados/semana-21/a4.md",
-      "pagina": "src/content/aulas/banco-de-dados/semana-21/a4.mdx",
-      "rota": "/banco-de-dados/3/semana-21/a4",
-      "arquivosCodigo": 0
-    },
-    {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-15/a1.md",
-      "pagina": "src/content/aulas/front-end/semana-15/a1.mdx",
-      "rota": "/front-end/3/semana-15/a1",
-      "arquivosCodigo": 0
-    },
-    {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-15/a2.md",
-      "pagina": "src/content/aulas/front-end/semana-15/a2.mdx",
-      "rota": "/front-end/3/semana-15/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Banco de dados/3° bimestre/Semana 21/semana-21-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Banco de dados/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/banco-de-dados/semana-21/o1.mdx",
+      "rota": "/banco-de-dados/3/semana-21/o1",
+      "conteudoSha256": "54ce704098a8ec4ea1d0811442b38db922d6e69fbb57cc3332aea5177d032641",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-15/q3.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-15/q3.mdx",
       "rota": "/front-end/3/semana-15/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-15/a3.md",
-      "pagina": "src/content/aulas/front-end/semana-15/a3.mdx",
-      "rota": "/front-end/3/semana-15/a3",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-1-css-grid-e-layouts-responsivos",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-15/a1.mdx",
+      "rota": "/front-end/3/semana-15/a1",
+      "conteudoSha256": "4f508f8bbeed73ac30f0ec5a28a382694e89d89a47417cacb65821c3afb2f8a1",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-16/a1.md",
-      "pagina": "src/content/aulas/front-end/semana-16/a1.mdx",
-      "rota": "/front-end/3/semana-16/a1",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-2-ferramentas-de-desenvolvimento-front-end",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-15/a2.mdx",
+      "rota": "/front-end/3/semana-15/a2",
+      "conteudoSha256": "9135cfba8565193ebf4d853e10224bb29d48306bad0ff803fc5d73031d4d4f43",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-3-performance-de-aplicacoes-web",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-15/a3.mdx",
+      "rota": "/front-end/3/semana-15/a3",
+      "conteudoSha256": "459e8250ddf81151388e9729d045724db1d376ead9314dbd6c644150c9fa8bde",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-15/o1.mdx",
+      "rota": "/front-end/3/semana-15/o1",
+      "conteudoSha256": "33fe0e32573aa5a46a71c61d6a741922853f955c480c072f74dd587640f5b683",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-16/q2.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-16/q2.mdx",
       "rota": "/front-end/3/semana-16/q2",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-16/a2.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-1-animacoes-avancadas-com-css-e-javascript",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-16/a1.mdx",
+      "rota": "/front-end/3/semana-16/a1",
+      "conteudoSha256": "10c9f50e56faab8b407128ddc3959ee807f854b1952e338dccc0de10c6ce3ab6",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-2-pre-processadores-css",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-16/a2.mdx",
       "rota": "/front-end/3/semana-16/a2",
+      "conteudoSha256": "a0374a50712a860f789ead58c0cc76e1a1b09694076d378328b19cebddd6d8d1",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md#aula-3-ferramentas-de-build-e-automacao",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-16/a3.mdx",
+      "rota": "/front-end/3/semana-16/a3",
+      "conteudoSha256": "dc4bc202588caf4786ced569edc42f46068693a07750f4be9046ff9cc70b427e",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-16/o1.mdx",
+      "rota": "/front-end/3/semana-16/o1",
+      "conteudoSha256": "e17b88f9f444d533fa37e6c0d9bc46c400ac2cb47eadc47a09c367819ed791bd",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-17/q1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-17/q1.mdx",
       "rota": "/front-end/3/semana-17/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-17/a1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-1-consumindo-uma-api-de-dados-climaticos",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-17/a1.mdx",
       "rota": "/front-end/3/semana-17/a1",
+      "conteudoSha256": "76c0ba5407c08479b8a06d9a73d4157b0284388f967475981bf353e866f6e332",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-17/a2.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-2-criando-um-aplicativo-de-chat-com-websockets",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-17/a2.mdx",
       "rota": "/front-end/3/semana-17/a2",
+      "conteudoSha256": "d980212fecc5796e268736e9ee9a3417d1d9a79a2e05c26b31914c36168148c8",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-17/a3.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-3-consultas-eficientes-com-graphql-em-apis",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-17/a3.mdx",
       "rota": "/front-end/3/semana-17/a3",
+      "conteudoSha256": "b979f90231529a7796fe2488be8d6782bef817b61efd944ce2306ed15901a8dd",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-17/o1.mdx",
+      "rota": "/front-end/3/semana-17/o1",
+      "conteudoSha256": "00abf75d60a0e3c971d613aa7b1a45555c8834fa4c57c4e60f77377a1b629dc4",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-18/q1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-18/q1.mdx",
       "rota": "/front-end/3/semana-18/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-18/a1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-1-configurando-e-utilizando-pipelines-de-ci-cd-para-aplicacoes-front-end",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-18/a1.mdx",
       "rota": "/front-end/3/semana-18/a1",
+      "conteudoSha256": "e4db72f3b1218f7b7e077471823a8a2a81d91c7b8d76178c4a3b29599eebbadc",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-18/a3.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md#aula-2-testes-automatizados-para-front-end",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-18/a2.mdx",
+      "rota": "/front-end/3/semana-18/a2",
+      "conteudoSha256": "dfa39351e58d0c6cff82a7f03545e1158e014ef8c29923e1ef625d2321e733dc",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-3-testes-de-performance-para-front-end",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-18/a3.mdx",
       "rota": "/front-end/3/semana-18/a3",
+      "conteudoSha256": "13eb52649b4a4dfb9eed91006ec742fb0bfa639f2632ffab870816f9e7341dfa",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-18/o1.mdx",
+      "rota": "/front-end/3/semana-18/o1",
+      "conteudoSha256": "ead8d2dc078623dddde0b22589e171bb3f0884f015d9004abf8cca96a7411532",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-19/q1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-19/q1.mdx",
       "rota": "/front-end/3/semana-19/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-19/a1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-1-criacao-de-um-perfil-de-usuario-responsivo-com-css-moderno",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-19/a1.mdx",
       "rota": "/front-end/3/semana-19/a1",
+      "conteudoSha256": "66834e9de618df5c771e8dd7dcae341fbae846b423d7314a5a9d77d7844023c5",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-19/a2.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-2-criando-uma-pagina-responsiva-mobile-first-com-media-queries",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-19/a2.mdx",
       "rota": "/front-end/3/semana-19/a2",
+      "conteudoSha256": "6ef79b6f42d5a083c17a474a073b5ccdb8a4fd12cc27bdb9a8b43c8abc696745",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-19/a3.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-3-gerenciamento-de-estado-com-redux",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-19/a3.mdx",
       "rota": "/front-end/3/semana-19/a3",
+      "conteudoSha256": "7b8cbe749e3ff05acd62479942038ab040a4c1ec1143df0803da5190d92d11dd",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-19/o1.mdx",
+      "rota": "/front-end/3/semana-19/o1",
+      "conteudoSha256": "30ae76f341d48544ece3d3ab478776731bede7d1f9b31429c9b6b8f7a46a6518",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-20/q1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-20/q1.mdx",
       "rota": "/front-end/3/semana-20/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-20/a1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-1-avaliando-e-melhorando-a-acessibilidade-de-um-site",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-20/a1.mdx",
       "rota": "/front-end/3/semana-20/a1",
+      "conteudoSha256": "04cd2abb11b1916e615816ac2e8813ff641eaa4ea51f12420812d1b4895d3b0a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-20/a2.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-2-pagina-de-apresentacao-de-produto-com-animacoes-interativas",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-20/a2.mdx",
       "rota": "/front-end/3/semana-20/a2",
+      "conteudoSha256": "315ae7be75d20db27835aae018d81377a090557c413a3bfd88a92b6f4946c121",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-20/a3.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-3-analise-de-acessibilidade-do-portal-do-sus",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-20/a3.mdx",
       "rota": "/front-end/3/semana-20/a3",
+      "conteudoSha256": "f5a7a9db721cf55ee0d71f5c8b01bb56022aa34574de053e8016daf073725b96",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-20/o1.mdx",
+      "rota": "/front-end/3/semana-20/o1",
+      "conteudoSha256": "a5575c3f0c40f08063a92c8a3f22b5db347b9d784de92f55629d8fe5442618ae",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-21/q1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-21/q1.mdx",
       "rota": "/front-end/3/semana-21/q1",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-21/a1.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-1-integracao-de-servicos-de-autenticacao-em-uma-aplicacao-front-end",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-21/a1.mdx",
       "rota": "/front-end/3/semana-21/a1",
+      "conteudoSha256": "5e99780b176033d8d5b51e1064dad33af5395e8989ef3657cf7e0188898628e9",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/front-end/semana-21/a2.md",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-2-implementacao-de-monitoramento-e-logging-em-aplicacoes-front-end",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/front-end/semana-21/a2.mdx",
       "rota": "/front-end/3/semana-21/a2",
+      "conteudoSha256": "e09312345981f81714eb9023a7dc4731dd8859fb292923676636bf4d94347c4f",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md#aula-3-progressive-web-apps-pwa",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-21/a3.mdx",
+      "rota": "/front-end/3/semana-21/a3",
+      "conteudoSha256": "1c05b500a5544e23d80764dc1c02c9c60b3ea37a6dfc512b3403da429f841c20",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Front-End/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/front-end/semana-21/o1.mdx",
+      "rota": "/front-end/3/semana-21/o1",
+      "conteudoSha256": "ea46ba7a1785f356c9d7cfc63281fc2131e08cdf49fa874f34dc3e7ea9e0bb28",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-15/q1.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-15/q1.mdx",
       "rota": "/inteligencia-artificial/3/semana-15/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-15/q2.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-15/q2.mdx",
       "rota": "/inteligencia-artificial/3/semana-15/q2",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-15/q3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-15/q3.mdx",
       "rota": "/inteligencia-artificial/3/semana-15/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-15/a3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-3-desenvolvimento-de-modulo-de-triagem-regras-vs-llm",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-15/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-15/a3",
+      "conteudoSha256": "3e3d2b30faa3363659732e16066c4c59d598058930fd9826c3a4f3ba401317bd",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-15/r1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-15/r1",
+      "conteudoSha256": "072d452f1dd894c68868d9d18a43df23eef52652227ac95d23c4a428c28864ee",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-15/o1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-15/o1",
+      "conteudoSha256": "06bce757f07559ca9aa94eff9f9fa36cbef386cacaf685eca26703c42d22e52b",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-16/q1.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-16/q1.mdx",
       "rota": "/inteligencia-artificial/3/semana-16/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-16/q2.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-16/q2.mdx",
       "rota": "/inteligencia-artificial/3/semana-16/q2",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-16/q3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-16/q3.mdx",
       "rota": "/inteligencia-artificial/3/semana-16/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-16/a3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-3-ferramenta-scikit-learn-fluxo-basico",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-16/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-16/a3",
+      "conteudoSha256": "5d68b3fb50ea2ed1ed72ab87656b4b504beb568bffa6a40ea77a8e9a9c5ada1b",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-16/r1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-16/r1",
+      "conteudoSha256": "f83b19e6728ab3cbb998a39b2bf953b7fe6003eb9ea1530552e0e678165a2d66",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-16/o1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-16/o1",
+      "conteudoSha256": "2a45fe99a6abfc37046862820995cc92891676f599c293e6eab65960d6f9dd62",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-17/q1.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-17/q1.mdx",
       "rota": "/inteligencia-artificial/3/semana-17/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-17/q2.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-17/q2.mdx",
       "rota": "/inteligencia-artificial/3/semana-17/q2",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-17/q3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-17/q3.mdx",
       "rota": "/inteligencia-artificial/3/semana-17/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-17/a3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-3-selecao-e-criacao-de-features",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-17/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-17/a3",
+      "conteudoSha256": "69719cd45d4ec12f62a8c8e5ba80f67b999d303239f8ffe7b4a646c20388006a",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-17/r1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-17/r1",
+      "conteudoSha256": "23e988d06fdf68e8f8f260472202414c0f646126a484110a2c167983d25a8ab7",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-17/o1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-17/o1",
+      "conteudoSha256": "71307b4acc70ba89a60f1cc241f6de88a960c4f8f7292a66e58b475caa5a2aba",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-18/q1.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-18/q1.mdx",
       "rota": "/inteligencia-artificial/3/semana-18/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-18/q2.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-18/q2.mdx",
       "rota": "/inteligencia-artificial/3/semana-18/q2",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-18/q3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-18/q3.mdx",
       "rota": "/inteligencia-artificial/3/semana-18/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-18/a3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-3-projetando-agentes-reativo-ou-deliberativo",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-18/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-18/a3",
+      "conteudoSha256": "cb52d97a86fe7ee783adff1c43d10c148d1c1bd8d4cb3e0cf5c138a11d7925ea",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-18/r1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-18/r1",
+      "conteudoSha256": "7af04f876a7cfdaec77728e9900fc71fdcc86ab5a45a87238b734af6749f6e95",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-18/o1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-18/o1",
+      "conteudoSha256": "eae7378eb2595a64af7474cabd523c4bafc7a05ff5dae984516ecd7db09582b3",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-19/q1.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-19/q1.mdx",
       "rota": "/inteligencia-artificial/3/semana-19/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-19/q2.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-19/q2.mdx",
       "rota": "/inteligencia-artificial/3/semana-19/q2",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-19/q3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-19/q3.mdx",
       "rota": "/inteligencia-artificial/3/semana-19/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-19/a3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-1-autonomia-e-responsabilidade-juridica",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-19/a1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-19/a1",
+      "conteudoSha256": "fe292977c4a39a0a80c5f8b669d96d105cbb2b921b67c370c6b0a508165a446e",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-2-vieses-em-acoes-autonomas",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-19/a2.mdx",
+      "rota": "/inteligencia-artificial/3/semana-19/a2",
+      "conteudoSha256": "ae243e089f557dacfa700a4c2eb8800dbbad6d7bfebdaf97f33176c61c6e13ff",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-3-alinhamento-de-objetivos-goal-alignment",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-19/a3.mdx",
       "rota": "/inteligencia-artificial/3/semana-19/a3",
+      "conteudoSha256": "07658389cb357375a9f8a5ae51f06ac2fe3c5cb985bbf4ff2c60eae1456e881e",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-19/r1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-19/r1",
+      "conteudoSha256": "81c246d9cd17588494458fcffedcf0ee9ada7386a280cf4c3a242c6d380a285e",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-19/o1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-19/o1",
+      "conteudoSha256": "8f6427ab21bd456aab2fcc34617f84ae99b90a5c9319120677c72b4c82ed91e2",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-20/q1.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-20/q1.mdx",
       "rota": "/inteligencia-artificial/3/semana-20/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-20/q2.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-20/q2.mdx",
       "rota": "/inteligencia-artificial/3/semana-20/q2",
       "questoes": 1
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-20/a2.md",
-      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/a2.mdx",
-      "rota": "/inteligencia-artificial/3/semana-20/a2",
-      "arquivosCodigo": 0
-    },
-    {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-20/q3.md",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/inteligencia-artificial/semana-20/q3.mdx",
       "rota": "/inteligencia-artificial/3/semana-20/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/inteligencia-artificial/semana-20/a3.md",
-      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/a3.mdx",
-      "rota": "/inteligencia-artificial/3/semana-20/a3",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-2-bancos-de-vetores",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/a2.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/a2",
+      "conteudoSha256": "f2c22dc6768aab495b943f402ee01018447516dcf01bfb12ccf222e801db1b8a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-15/a2.md",
-      "pagina": "src/content/aulas/programacao-mobile/semana-15/a2.mdx",
-      "rota": "/programacao-mobile/3/semana-15/a2",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-3-persistencia-de-memoria",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/a3.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/a3",
+      "conteudoSha256": "cfe5f9357040e89bb3beb2fbf0df88a9864e6c9638271209b0ef9956037d9fe5",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/r1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/r1",
+      "conteudoSha256": "8ad59402e441eb5415732685c2467b226cb206cc87bb1da6eff75a369671f1f9",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Inteligência Artificial/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/inteligencia-artificial/semana-20/o1.mdx",
+      "rota": "/inteligencia-artificial/3/semana-20/o1",
+      "conteudoSha256": "efa0878173be908cbe501eac352ae8d1f24ef3ca926a5f8d684f68130ffa57c3",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-15/q3.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-15/q3.mdx",
       "rota": "/programacao-mobile/3/semana-15/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-15/a3.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-1-componentes-personalizados",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-15/a1",
+      "conteudoSha256": "d132eb372f63973072779f27aa1952b5bae668d94d0b7511128eed4dcc732955",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-2-animacoes-avancadas",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-15/a2",
+      "conteudoSha256": "6a42a7f0ae370ac5aa25b41d8fa75ed4c727090cbacfd2b8f5c2a59bbddb3e99",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-3-gerenciamento-de-estados-complexos",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-15/a3.mdx",
       "rota": "/programacao-mobile/3/semana-15/a3",
+      "conteudoSha256": "68d2a06926f7316fdf45c4183b133fa982707b6a1236725bfd32c2a3d6e3d165",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-15/a4.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-4-integracao-com-apis-graficas",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-15/a4.mdx",
       "rota": "/programacao-mobile/3/semana-15/a4",
+      "conteudoSha256": "f536e0f87000534ba1ad0a231ff4348b0c341a2b00b97d1a599daa00a41f6654",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-16/a1.md",
-      "pagina": "src/content/aulas/programacao-mobile/semana-16/a1.mdx",
-      "rota": "/programacao-mobile/3/semana-16/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/r1.mdx",
+      "rota": "/programacao-mobile/3/semana-15/r1",
+      "conteudoSha256": "71e4b5a21ce6d3fa9e6264007fb14805fe264eb37ce6c36fed7a49842ffd9ad0",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-15/o1.mdx",
+      "rota": "/programacao-mobile/3/semana-15/o1",
+      "conteudoSha256": "207ada24e7ac9d9187503fabc639320203da9e18265eb8226be31413d25a3ba4",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-16/q3.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-16/q3.mdx",
       "rota": "/programacao-mobile/3/semana-16/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-16/a3.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-1-principios-de-acessibilidade",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-16/a1",
+      "conteudoSha256": "f7a392f829d2a4e507ee7a86ed566ca0535b71b44df73cc5d8a63cb378cc3582",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md#aula-2-testes-de-usabilidade",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-16/a2",
+      "conteudoSha256": "4e12cab1c118d24c07bcad0d185302bd0f8add2c4e498efe59318f5943438164",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-3-ferramentas-de-acessibilidade",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-16/a3.mdx",
       "rota": "/programacao-mobile/3/semana-16/a3",
+      "conteudoSha256": "7b100f220f1cee3cb2a839f3d44a6d6d00c3714355fb6ac041913d2dbb648506",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-16/a4.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-4-interface-adaptativa",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-16/a4.mdx",
       "rota": "/programacao-mobile/3/semana-16/a4",
+      "conteudoSha256": "89cfb4f21e7aefc6c503fb5cbd67d7c6c447c2aa9beca953a78f4df0e7c5fd2f",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-17/a1.md",
-      "pagina": "src/content/aulas/programacao-mobile/semana-17/a1.mdx",
-      "rota": "/programacao-mobile/3/semana-17/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/r1.mdx",
+      "rota": "/programacao-mobile/3/semana-16/r1",
+      "conteudoSha256": "c0db0628b5b12494b9f2d00fa2e12cd24b7497656c6bb104329fe63e955786cf",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-16/o1.mdx",
+      "rota": "/programacao-mobile/3/semana-16/o1",
+      "conteudoSha256": "5c51286360ed0128498f28d435bdf6a789235eb3f6166c9e30cb37f50f064e2a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-17/q2.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-17/q2.mdx",
       "rota": "/programacao-mobile/3/semana-17/q2",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-17/a2.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-1-entre-relacional-e-nosql-qual-escolher",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-17/a1",
+      "conteudoSha256": "b6ac84cb7892bf8005cb96ba8b0689534cc864881b1081562a2f894de6d92440",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-2-explorando-o-firebase-armazenamento-dinamico-em-acao",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-17/a2.mdx",
       "rota": "/programacao-mobile/3/semana-17/a2",
+      "conteudoSha256": "f060dbced059b75626cb9fae282f2dc4cdd71c50ab17ead02f18b8390839f12d",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-17/a4.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md#aula-3-sincronizacao-de-dados-off-line",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/a3.mdx",
+      "rota": "/programacao-mobile/3/semana-17/a3",
+      "conteudoSha256": "90b6cd27d504e5fb2888a1572248a6b484b95405b198d5a9cc4af506b2a32282",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-4-proteja-seus-dados-criptografia-em-foco",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-17/a4.mdx",
       "rota": "/programacao-mobile/3/semana-17/a4",
+      "conteudoSha256": "3933a8e73eb1b0a348c53962545f7cfcfa96f212fe39bc20bf3f1835c91b7281",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-18/a1.md",
-      "pagina": "src/content/aulas/programacao-mobile/semana-18/a1.mdx",
-      "rota": "/programacao-mobile/3/semana-18/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/r1.mdx",
+      "rota": "/programacao-mobile/3/semana-17/r1",
+      "conteudoSha256": "ae2afc5c0ab32c2798339b7aa994f1fd77e47d617af54db602cf209b6c620e3a",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-18/a2.md",
-      "pagina": "src/content/aulas/programacao-mobile/semana-18/a2.mdx",
-      "rota": "/programacao-mobile/3/semana-18/a2",
-      "arquivosCodigo": 0
-    },
-    {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-18/a3.md",
-      "pagina": "src/content/aulas/programacao-mobile/semana-18/a3.mdx",
-      "rota": "/programacao-mobile/3/semana-18/a3",
+      "tipo": "observacao",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-17/o1.mdx",
+      "rota": "/programacao-mobile/3/semana-17/o1",
+      "conteudoSha256": "5172aa59ab9b8dfeb9b31fbed9747e53f667e2ae09ab6618f6373b7954966ad3",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-18/q4.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-4",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-18/q4.mdx",
       "rota": "/programacao-mobile/3/semana-18/q4",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-19/a1.md",
-      "pagina": "src/content/aulas/programacao-mobile/semana-19/a1.mdx",
-      "rota": "/programacao-mobile/3/semana-19/a1",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-1-explorando-integracoes-dominando-apis-externas",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-18/a1",
+      "conteudoSha256": "0d52f2d711c8259a4b42cdf2e6eb61e7d7830343748f679eef8ee0a98b3c1823",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-2-baas-em-foco-acelerando-o-desenvolvimento-mobile",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-18/a2",
+      "conteudoSha256": "4a1164fa4f618bdecdd26f7a0ad025e2d6f8604396012394e409633d72aefc66",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-3-mensagens-conectadas-integracao-com-servicos-de-mensageria",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/a3.mdx",
+      "rota": "/programacao-mobile/3/semana-18/a3",
+      "conteudoSha256": "b139c73caec8301929919c4304bb9dcc919a2cfc22e8d6a037e0da7156d9cdc3",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md#aula-4-monitoramento-e-logs",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/a4.mdx",
+      "rota": "/programacao-mobile/3/semana-18/a4",
+      "conteudoSha256": "7c39d5c311d71208b5802f32fb4101f8a50cd7579645876b9b7a0e9704aeb329",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/r1.mdx",
+      "rota": "/programacao-mobile/3/semana-18/r1",
+      "conteudoSha256": "ec48e1ff60f77a7f1f25f3557001fdb7ba98a260dadb5d9110f7269c88c5158b",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-18/o1.mdx",
+      "rota": "/programacao-mobile/3/semana-18/o1",
+      "conteudoSha256": "ae93f7fe6b345ddae01c9e923fcb4119cd48cf2d3e35f1eb0907ce5aa2c23b98",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-19/q2.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-19/q2.mdx",
       "rota": "/programacao-mobile/3/semana-19/q2",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-19/a2.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-1-explorando-o-armazenamento-em-nuvem-com-buckets",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-19/a1",
+      "conteudoSha256": "74242bd6ad9372b352203ff6d8db1ecac1936dfbf601ab10c47cf138d6978ac9",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-2-integracao-com-aws-s3-uploads-e-downloads",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-19/a2.mdx",
       "rota": "/programacao-mobile/3/semana-19/a2",
+      "conteudoSha256": "30f2b24f99cae5328e64e439674260a4c970ce25ed1acc706487224b55bdd0ab",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-19/a3.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-3-garantindo-a-seguranca-de-dados-em-nuvem",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-19/a3.mdx",
       "rota": "/programacao-mobile/3/semana-19/a3",
+      "conteudoSha256": "2cec4e90306e958d999bd949c55dbea39c9c6d8bb0df6139e7d90182296d98e5",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-19/a4.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-4-backup-e-recuperacao-de-dados-na-nuvem",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-19/a4.mdx",
       "rota": "/programacao-mobile/3/semana-19/a4",
+      "conteudoSha256": "478506556179c86a669cbf922f17edd04eb200d825dac134f5b7ebe48ae9caf9",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/r1.mdx",
+      "rota": "/programacao-mobile/3/semana-19/r1",
+      "conteudoSha256": "d5ac544acb4b7199d2298ed8b5bcfddde7de7d3412caf42b6d6e7489ab330332",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-19/o1.mdx",
+      "rota": "/programacao-mobile/3/semana-19/o1",
+      "conteudoSha256": "3fad7eeb5bce3391256600ac62192760b78a3953c7f29152e683ebb07708cd14",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-20/q2.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-20/q2.mdx",
       "rota": "/programacao-mobile/3/semana-20/q2",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-20/a2.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-2-prototipagem-e-wireframes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-20/a2.mdx",
       "rota": "/programacao-mobile/3/semana-20/a2",
+      "conteudoSha256": "02bd504e1b12e3b88a1a26eaba20bfa964b76a28929213f3828e84339ef110f6",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-20/a3.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-3-design-de-interacao",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-20/a3.mdx",
       "rota": "/programacao-mobile/3/semana-20/a3",
+      "conteudoSha256": "fc3be30df81581411d1cb479d68a2e3b526bb85589431a9f16638dc43ea7be79",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-20/a4.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-4-testes-de-usabilidade-com-usuarios-reais",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-20/a4.mdx",
       "rota": "/programacao-mobile/3/semana-20/a4",
+      "conteudoSha256": "3056eb6de02004d713e0b309950190809cbf5b76ab401f2ddea007cf4f88679e",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-21/a1.md",
-      "pagina": "src/content/aulas/programacao-mobile/semana-21/a1.mdx",
-      "rota": "/programacao-mobile/3/semana-21/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-20/r1.mdx",
+      "rota": "/programacao-mobile/3/semana-20/r1",
+      "conteudoSha256": "af999bccbd186a3a5c2612f5fb04a84f570d76684ec91574e9a6d3a623f5e524",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-20/o1.mdx",
+      "rota": "/programacao-mobile/3/semana-20/o1",
+      "conteudoSha256": "24d0bf5e35d3f75863b8ca65850bd8ea4cc9499ecfe8e2fdf62f5cc058635d27",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-21/q3.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-21/q3.mdx",
       "rota": "/programacao-mobile/3/semana-21/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-21/a3.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-1-identificando-e-refatorando-codigos-ineficientes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/a1.mdx",
+      "rota": "/programacao-mobile/3/semana-21/a1",
+      "conteudoSha256": "0a23d1f96deaf5d856a5541056c392caa35112a5a50037955178d9399ff89e06",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md#aula-2-otimizacao-de-performance-de-interface",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/a2.mdx",
+      "rota": "/programacao-mobile/3/semana-21/a2",
+      "conteudoSha256": "ce30f32e373cbfe8fe9fcca25d1731ac78be486c55a82b683086b0a62ea75772",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-3-iterando-com-base-em-feedback",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-21/a3.mdx",
       "rota": "/programacao-mobile/3/semana-21/a3",
+      "conteudoSha256": "3986fbe40d5d2d2a1278cd306e6a33787a9b028d431646e219244883a2ce2cbd",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/programacao-mobile/semana-21/a4.md",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-4-planejando-e-documentando-projetos-de-interface",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/programacao-mobile/semana-21/a4.mdx",
       "rota": "/programacao-mobile/3/semana-21/a4",
+      "conteudoSha256": "1a3cc888ff965949d095e7d8a4cdcf1b9d3d38d179c9ac69ed711ae92eccd073",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-15/a2.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/a2.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-15/a2",
+      "tipo": "registro",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/r1.mdx",
+      "rota": "/programacao-mobile/3/semana-21/r1",
+      "conteudoSha256": "f04375dd45a96557627f15ea1efc6c6bbc07d6eb4e14fa975861b2f8ba2db30c",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Programação Mobile/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/programacao-mobile/semana-21/o1.mdx",
+      "rota": "/programacao-mobile/3/semana-21/o1",
+      "conteudoSha256": "add1e48e34a0eb9e93dc23598d50c95c4b06a52e3e3f0cfacb7d8a84c1a3865a",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-15/q3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/q3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-15/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-15/a3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md#aula-1-introducao-ao-mvp-registro-e-reflexao",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/a1",
+      "conteudoSha256": "4c2c5cce5b227b37597ba982266d320c3950293948e83d6403e069cf449f0f7f",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-2-planejamento-do-mvp",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/a2",
+      "conteudoSha256": "9b734d518391daa6e3e9842ca426ee9a546d3978dfd215fbea5e5d22af149dc0",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-3-desenvolvimento-do-mvp-parte-1",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-15/a3",
+      "conteudoSha256": "afeb2de64d5d01ab3f7927abeb5f4a3d20834b7e689c70aeab8b8eda61c85fce",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-16/a1.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a1.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-16/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/r1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/r1",
+      "conteudoSha256": "606b000108f3205b9226523edd67fb818b58eb24606b61fc10043e6b4b7542b0",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-16/a2.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a2.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-16/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-15/o1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-15/o1",
+      "conteudoSha256": "c77de7cb2e33bba3a8f8ddf4c7b3df55c25f6eb3b3542be74f3cd7eed7739975",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-16/q3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/q3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-16/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-16/a3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-1-desenvolvimento-do-mvp-parte-2",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/a1",
+      "conteudoSha256": "f99dfac1d97553f6f799a4f90b4704c647886ab684396942f3e7ccdf6fb98f40",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-2-desenvolvimento-do-mvp-parte-3",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/a2",
+      "conteudoSha256": "6c8f208d4273a8428fe4c8aaa51e0546f1735a81f571fa54c02944abef5e767e",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-3-retrospectiva",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-16/a3",
+      "conteudoSha256": "bcfd3954428e6d53ca5f485c7fd2f1737ed51c0b95c6d94ce1b1704f0fe1344f",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-17/a1.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a1.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-17/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/r1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/r1",
+      "conteudoSha256": "c23f18f02fbb573c6435c5be926da601b81e8ed0f49964fc70b3fda1064f15fe",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-17/a2.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a2.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-17/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-16/o1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-16/o1",
+      "conteudoSha256": "82c01899721bdbf92f1595b4ea18eac70adb9189f94649020280185975a37cfa",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-17/q3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/q3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-17/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-17/a3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-1-coleta-de-feedback",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/a1",
+      "conteudoSha256": "2ee8f44ee5efcc43e1dc562fdfd4a0378f773b158bd0c08566b8ee069258fe9c",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-2-analise-de-feedback",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/a2",
+      "conteudoSha256": "303fb61f1cb94a39aa209232bd9ede8383fe7e026fd7656c150c47b56e3d6a57",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-3-desempenho-de-produto-processo-e-pessoas",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-17/a3",
+      "conteudoSha256": "3c889fe40407c29e82ed55511cbce7e1be854ba3798abdd344a5ff3ac8a2379b",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-18/a1.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a1.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-18/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/r1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/r1",
+      "conteudoSha256": "b86dbbae145ce24dd012e1839fe0e78d981b8c68fa8770e59049f517e5e80a77",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-18/a2.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a2.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-18/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-17/o1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-17/o1",
+      "conteudoSha256": "d292630dbe8e26219c2e462ada9e89a99adbc50e00e36952c1b3cef86575eccf",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-18/q3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/q3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-18/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-18/a3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-1-inovando-com-sustentabilidade-ods",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/a1",
+      "conteudoSha256": "8b9ed48a180eedee37407f5706585929fcf75ffba328465c8b6fa2285e10b916",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-2-sustentabilidade-aplicada-ao-mvp",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/a2",
+      "conteudoSha256": "5f7f6ffdfc9ed295e176e7f14801cfdd640638d4db85bc75348189b9ebdf1061",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-3-retrospectiva",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-18/a3",
+      "conteudoSha256": "250a13dd43cd4bd0f23a98ebca1ec27b97009375807c994ba6b072bdcdc87940",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-19/a1.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a1.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-19/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/r1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/r1",
+      "conteudoSha256": "59de28ca6c5279400772ca6df21955d7772e289a03c262cbaf157d3b3a250309",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-19/a2.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a2.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-19/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-18/o1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-18/o1",
+      "conteudoSha256": "b6c4a84801929056055953ffd6a34d97ca23ba7a24a0ce947276db85924e6cd0",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-19/q3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/q3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-19/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-19/a3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-1-metodologias-inovadoras",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/a1",
+      "conteudoSha256": "3a25f386a381bbf721d02e51b6973f421985e88148cc5fa821da6baf646ddb29",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-2-ferramentas-de-inovacao-parte-1",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/a2",
+      "conteudoSha256": "38ad9f9361777db4e334768e1fc9c53aa94acaf6dab5dde36f611fb900c3ac41",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-3-ferramentas-de-inovacao-parte-2",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-19/a3",
+      "conteudoSha256": "9046aa720632f50ff8596047b61497869274c060470b8a0b247fef4f8261464f",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-20/a1.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a1.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-20/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/r1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/r1",
+      "conteudoSha256": "97c919f54d1ab1e00a78b6b7214c9b52c8f69f1efc70f284ff55b73ab1201e03",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-19/o1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-19/o1",
+      "conteudoSha256": "c90c4e8fcad8f1002ea6b14e0811ff9a95870662a5ff73c9211d6a13c59b5462",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-20/q2.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/q2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-20/q2",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-20/a2.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-1-refinamento-do-mvp",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/a1",
+      "conteudoSha256": "6bc05b0c6fa9a50692fe793d03fc1e66dd7af51e14f50a933b47199c4a56324a",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-2-ajustes-finais-do-mvp",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a2.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-20/a2",
+      "conteudoSha256": "3e8120f582fc87dc43585faa895c8c7bd59a154f45a7b131fa2b5c79e150bbd8",
       "arquivosCodigo": 0
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-20/a3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-3-retrospectiva",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-20/a3",
+      "conteudoSha256": "b3c594c22bb9ee692dbc413f6d5e65968b7b44efbabfba0a99e17a8822b9dcfb",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-21/a1.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a1.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-21/a1",
+      "tipo": "registro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/r1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/r1",
+      "conteudoSha256": "83ae10d85461269c7907f5a83f2004f8b516af8a3d2ff01a92ef68110aa19083",
       "arquivosCodigo": 0
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-21/a2.md",
-      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a2.mdx",
-      "rota": "/projeto-multidisciplinar/3/semana-21/a2",
+      "tipo": "observacao",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-20/o1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-20/o1",
+      "conteudoSha256": "7bf1768ce4c22c93ea14787eae4dce39fb5ed57293717cf216580f5841690fcf",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-21/q3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/q3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-21/q3",
-      "questoes": 1
+      "questoes": 3
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/projeto-multidisciplinar/semana-21/a3.md",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-1-revisao-completa-do-mvp",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/a1",
+      "conteudoSha256": "8c6983d279292ff81ce8fe862480da3dd4379ebd7ef2757bc57ced20a8100d3c",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-2-acompanhamento-e-monitoramento-do-mvp",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a2.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/a2",
+      "conteudoSha256": "5b212676d192b4c05096309c45a7893d0d18eb058b6fd1d5f92254ab633e4858",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md#atividade-pratica-aula-3-avaliacao-final-e-documentacao-do-mvp",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md",
       "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/a3.mdx",
       "rota": "/projeto-multidisciplinar/3/semana-21/a3",
+      "conteudoSha256": "2311814bcf473ac10fc23b07a9cc763b5fc471c4afac87dfa51ff026326446c2",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/r1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/r1",
+      "conteudoSha256": "b0eb322ea27a694aba588b3500ec6a0679e1908383be1198328081e148718dd5",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Projeto Multidisciplinar/3° bimestre/Semana 21/semana-21-respostas.md",
+      "pagina": "src/content/aulas/projeto-multidisciplinar/semana-21/o1.mdx",
+      "rota": "/projeto-multidisciplinar/3/semana-21/o1",
+      "conteudoSha256": "9d47572311b90a91d277c874a6b7b5263d6d795410f3ba1a28848dc2ae2f5680",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-15/q1.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/q1.mdx",
       "rota": "/versionamento-de-codigo/3/semana-15/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-15/q2.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/q2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-15/q2",
       "questoes": 1
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-15/a2.md",
-      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/a2.mdx",
-      "rota": "/versionamento-de-codigo/3/semana-15/a2",
-      "arquivosCodigo": 0
-    },
-    {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-15/q3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/q3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-15/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-15/a3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-2-visualizacao-de-historico-e-reversao",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-15/a2",
+      "conteudoSha256": "f6096d164519b27db358ab81099b62b9806e00f996d8de33b37e20e3ed71c27f",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md#atividade-pratica-aula-3-gitignore-e-boas-praticas",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-15/a3",
+      "conteudoSha256": "437e56d29e6ef4e5952389532bc21f160169ecd08b2bf2300f1e4ac14af36c5d",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/r1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-15/r1",
+      "conteudoSha256": "d6b6f5df5a0793a6e4324c6bb4a1c27669ebd08dba2aed6bc71caf7177db65a9",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 15/semana-15-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-15/o1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-15/o1",
+      "conteudoSha256": "a005548a438af2d3e7bd22b7a4846993544fa41fce3bf8d77be1a0a81cc0ac2e",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-16/q1.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/q1.mdx",
       "rota": "/versionamento-de-codigo/3/semana-16/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-16/q2.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/q2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-16/q2",
       "questoes": 1
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-16/a2.md",
-      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/a2.mdx",
-      "rota": "/versionamento-de-codigo/3/semana-16/a2",
-      "arquivosCodigo": 0
-    },
-    {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-16/q3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/q3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-16/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-16/a3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-2-estrategia-git-flow",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-16/a2",
+      "conteudoSha256": "18eb0c3895f3b2723a34ba4904371e71222d69aaae8ee7aa7c81b075034d319f",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md#atividade-pratica-aula-3-trunk-based-development",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-16/a3",
+      "conteudoSha256": "fcc634c166f2335fa6fbb00a9f5f175f884cca494b3f5821df4183d544732496",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/r1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-16/r1",
+      "conteudoSha256": "d2fa83fe066c1f1d54163bbbd074e68090ef4a203cf425ecbf1bfc784461f008",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 16/semana-16-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-16/o1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-16/o1",
+      "conteudoSha256": "ce0086e3f96d6c1826ac3d89b2f639383261117a6eeb225df006304322842898",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-17/q1.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/q1.mdx",
       "rota": "/versionamento-de-codigo/3/semana-17/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-17/q2.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/q2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-17/q2",
       "questoes": 1
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-17/a2.md",
-      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/a2.mdx",
-      "rota": "/versionamento-de-codigo/3/semana-17/a2",
-      "arquivosCodigo": 0
-    },
-    {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-17/q3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/q3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-17/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-17/a3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-2-tecnicas-de-code-review",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-17/a2",
+      "conteudoSha256": "848c63cc2e0c8d09da3429f9bea3dc762eee6b1b5cc6894ebc3591f64941dcf2",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md#atividade-pratica-aula-3-resolvendo-conflitos-complexos",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-17/a3",
+      "conteudoSha256": "1ab8dbcbc3635cf47b69ae69b63a961bf779a19d1238aa38cabebc61e2fc394a",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/r1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-17/r1",
+      "conteudoSha256": "f602e6d4f31e961d799cf885464dc86cca7a1c938dfaea697fea0ce69671f97b",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 17/semana-17-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-17/o1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-17/o1",
+      "conteudoSha256": "4ef46531320f496fe70e74468b440a9fd4cfa610d85c1f99e43e0cf7b66f9193",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-18/q1.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/q1.mdx",
       "rota": "/versionamento-de-codigo/3/semana-18/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-18/q2.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/q2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-18/q2",
       "questoes": 1
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-18/a2.md",
-      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/a2.mdx",
-      "rota": "/versionamento-de-codigo/3/semana-18/a2",
-      "arquivosCodigo": 0
-    },
-    {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-18/q3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/q3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-18/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-18/a3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-2-versionamento-semantico-semver",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-18/a2",
+      "conteudoSha256": "ae9754194a2af8452a6e6099d531578492782fa24d7289442dd5f810a1edd3ae",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md#atividade-pratica-aula-3-changelog-release-v1-3-0",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-18/a3",
+      "conteudoSha256": "0bd5480aaf27d9ed10f29dbd92a55aea885640d3476021a2b8a4cfc0843abdaf",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/r1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-18/r1",
+      "conteudoSha256": "3a357f92968b5b3234349eb2306f6097de1e8da5a12f19320722f8ab036e424a",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 18/semana-18-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-18/o1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-18/o1",
+      "conteudoSha256": "ec268df827df78d5c34a8df5d04d99292e43d5452375b40c32e3ab1e36fdb140",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-19/q1.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/q1.mdx",
       "rota": "/versionamento-de-codigo/3/semana-19/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-19/q2.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/q2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-19/q2",
       "questoes": 1
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-19/a2.md",
-      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/a2.mdx",
-      "rota": "/versionamento-de-codigo/3/semana-19/a2",
-      "arquivosCodigo": 0
-    },
-    {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-19/q3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/q3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-19/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-19/a3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-2-comparacao-rabbitmq-kafka-sqs",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-19/a2",
+      "conteudoSha256": "865db19fe04a98bf2948fa700ceaf6634ec55043cc66bf0fa9d0aa5ab5e6eb64",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md#atividade-pratica-aula-3-modelagem-de-dominio-orientada-a-eventos",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-19/a3",
+      "conteudoSha256": "73608fd8234e2f64e28df494119b6478e51d2416ef8026aa0aca19069c11712c",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/r1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-19/r1",
+      "conteudoSha256": "014686ff5ff654644c02d859f2527f78b88ed03ad266c1d2002c4eb1c548507c",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 19/semana-19-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-19/o1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-19/o1",
+      "conteudoSha256": "4ef46531320f496fe70e74468b440a9fd4cfa610d85c1f99e43e0cf7b66f9193",
       "arquivosCodigo": 0
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-20/q1.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-1",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/q1.mdx",
       "rota": "/versionamento-de-codigo/3/semana-20/q1",
       "questoes": 1
     },
     {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-20/q2.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-2",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/q2.mdx",
       "rota": "/versionamento-de-codigo/3/semana-20/q2",
       "questoes": 1
     },
     {
-      "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-20/a2.md",
-      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/a2.mdx",
-      "rota": "/versionamento-de-codigo/3/semana-20/a2",
-      "arquivosCodigo": 0
-    },
-    {
       "tipo": "pausa",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-20/q3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md#pause-e-responda-aula-3",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/q3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-20/q3",
       "questoes": 1
     },
     {
       "tipo": "roteiro",
-      "fonte": "gabarito/conteudo-pendente/versionamento-de-codigo/semana-20/a3.md",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-2-ack-nack-e-redrive-policy",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/a2.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-20/a2",
+      "conteudoSha256": "9570505cae7df353c72ccd2c6c87d33346b128fc519f65bb270804f9ae051377",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "roteiro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md#atividade-pratica-aula-3-management-ui",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md",
       "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/a3.mdx",
       "rota": "/versionamento-de-codigo/3/semana-20/a3",
+      "conteudoSha256": "8c2f84609a82a94a10391fd1fe6a3b2431842cf8b7a3c311e8b82a5c83236c6f",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "registro",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md#registro-de-aula",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/r1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-20/r1",
+      "conteudoSha256": "51266288baaea3118145b8ece27d19e367b3eb839477118efe8c09579740676d",
+      "arquivosCodigo": 0
+    },
+    {
+      "tipo": "observacao",
+      "fonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md#observacoes",
+      "arquivoFonte": "gabarito/Versionamento de Código/3° bimestre/Semana 20/semana-20-respostas.md",
+      "pagina": "src/content/aulas/versionamento-de-codigo/semana-20/o1.mdx",
+      "rota": "/versionamento-de-codigo/3/semana-20/o1",
+      "conteudoSha256": "2a21feca149fe85b546db324bbeb46b27d66eff106b99ff62cd3a9cdff5c0ac5",
       "arquivosCodigo": 0
     }
   ]

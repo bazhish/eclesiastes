@@ -19,7 +19,7 @@ export function rewriteCodeLinks(markdown: string, anchorPrefix?: string) {
 }
 
 export async function renderMarkdown(markdown: string, anchorPrefix?: string) {
-  processor ??= await createMarkdownProcessor({ gfm: true, smartypants: false, syntaxHighlight: false });
+  processor ??= await createMarkdownProcessor({ gfm: true, smartypants: false, syntaxHighlight: 'shiki' });
   const result = await processor.render(rewriteCodeLinks(markdown, anchorPrefix));
   return result.code;
 }

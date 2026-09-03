@@ -19,7 +19,7 @@ const itens = aulas.filter((aula) => aula.data.materiaSlug === materia && aula.d
   <section class="course-page">
     <nav class="breadcrumbs" aria-label="Trilha de navegação"><a href={comBase('/')}>Página inicial</a><span>/</span><a href={comBase(`/${materia}`)}>{nome}</a><span>/</span><span aria-current="page">Semana {semana} (S{semana})</span></nav>
     <h1>Semana {semana} (S{semana})</h1>
-    <p class="week-introduction">A resposta ainda não foi divulgada.</p>
+    <p class="week-introduction">Conteúdos da semana organizados conforme o gabarito disponível.</p>
     <section class="lesson-accordions" aria-label={`Aulas da semana ${semana}`}>
       {itens.map((aula) => <details class="lesson-accordion" open>
         <summary><span class="lesson-accordion__chevron" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span><strong>{aula.data.titulo}</strong></summary>
