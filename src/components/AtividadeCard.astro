@@ -1,40 +1,8 @@
 ---
-import CopyButton from './CopyButton.astro';
 import ContentTypeIcon from './ContentTypeIcon.astro';
-import { markdownToPlainText, renderMarkdown } from '../lib/markdown';
-
-const { atividade, id } = Astro.props as {
-  atividade: { enunciado: string; resposta: string; conteudo: string; fonte: string; arquivos: Array<{ caminho: string; linguagem: string; conteudo: string }> };
-  id: string;
-};
-const responseId = `${id}-response`;
-const promptId = `${id}-prompt`;
-const sourceId = `${id}-source`;
-const promptHtml = await renderMarkdown(atividade.enunciado, id);
-const responseHtml = await renderMarkdown(atividade.resposta, id);
-const sourceHtml = await renderMarkdown(atividade.conteudo, id);
-const fileId = (path: string) => `${id}-arquivo-${path.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+const { id } = Astro.props as { atividade: unknown; id: string };
 ---
-<section class="activity-card content-card content-card--roteiro" aria-labelledby={`${id}-title`}>
-  <header class="content-card__header"><ContentTypeIcon tipo="roteiro" /><CopyButton targetId={responseId} label="Copiar aviso" /></header>
-  <div class="card-heading"><h2 id={`${id}-title`}>Estrutura da aula</h2></div>
-  <div class="prompt markdown-content" id={promptId} set:html={promptHtml} />
-  <div class="card-heading"><h2>Resposta</h2></div>
-  <div class="response markdown-content" id={responseId} data-copy-value={markdownToPlainText(atividade.resposta)} set:html={responseHtml} />
-  <details class="source-details">
-    <summary>Ver área para conteúdo novo</summary>
-    <div class="source-text markdown-content" id={sourceId} data-copy-value={markdownToPlainText(atividade.conteudo)} set:html={sourceHtml} />
-    <div class="card-actions"><CopyButton targetId={sourceId} label="Copiar aviso" /></div>
-  </details>
-  {atividade.arquivos.length > 0 && <section class="code-files" aria-label="Arquivos de código">
-    <h3>Arquivos da atividade</h3>
-    {atividade.arquivos.map((arquivo, index) => <details class="code-file" open={index === 0}>
-      <summary><span>{arquivo.caminho}</span><small>{arquivo.linguagem}</small></summary>
-      <div class="code-block">
-        <CopyButton targetId={fileId(arquivo.caminho)} label={`Copiar ${arquivo.caminho}`} />
-        <pre id={fileId(arquivo.caminho)} data-copy-value={arquivo.conteudo}><code class={`language-${arquivo.linguagem}`}>{arquivo.conteudo}</code></pre>
-      </div>
-    </details>)}
-  </section>}
-  <p class="source-note">Conteúdo preparado para nova divulgação.</p>
+<section class="resource-detail" aria-labelledby={`${id}-title`}>
+  <header><ContentTypeIcon tipo="roteiro" label={false} /><h2 id={`${id}-title`}>Material da Aula</h2></header>
+  <div class="resource-detail__message">A resposta ainda não foi divulgada.</div>
 </section>

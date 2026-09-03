@@ -8,25 +8,19 @@ import { rotaDaAula } from '../../../../lib/aulas';
 
 export async function getStaticPaths() {
   const aulas = await getCollection('aulas');
-  return aulas.map((aula) => ({
-    params: { materia: aula.data.materiaSlug, bimestre: String(aula.data.bimestre), semana: `semana-${aula.data.semana}`, aula: aula.data.aula },
-    props: { aula },
-  }));
+  return aulas.map((aula) => ({ params: { materia: aula.data.materiaSlug, bimestre: String(aula.data.bimestre), semana: `semana-${aula.data.semana}`, aula: aula.data.aula }, props: { aula } }));
 }
 
 const { aula } = Astro.props;
 const currentPath = rotaDaAula(aula);
-const tipo = aula.data.tipo === 'pausa' ? 'Pausa e Responda' : aula.data.tipo === 'roteiro' ? 'Roteiro prático' : aula.data.tipo === 'registro' ? 'Registro' : 'Aula';
-const numero = aula.data.aula.slice(1);
+const resourceName = aula.data.tipo === 'pausa' ? 'Pause e Responda' : aula.data.tipo === 'registro' ? 'Registro da Aula' : 'Material da Aula';
 ---
 <BaseLayout title={`${aula.data.titulo} · Eclesiastes`} currentPath={currentPath} showSidebar>
-  <span class="sr-only" data-visit-route={currentPath}>Página visitada</span>
-  <Breadcrumb aula={aula} />
-  <header class="lesson-head">
-    <p class="eyebrow">{aula.data.materia} · Semana {aula.data.semana}</p>
-    <h1>{aula.data.titulo}</h1>
-    <p class="meta">{tipo} · Aula {numero} · {aula.data.bimestre}º bimestre</p>
-  </header>
-  {aula.data.atividade && <AtividadeCard atividade={aula.data.atividade} id={aula.id.replaceAll('/', '-')} />}
-  {aula.data.quizzes.map((quiz, index) => <QuizBlock quiz={quiz} index={`${aula.id}-${index}`} />)}
+  <section class="course-page resource-page">
+    <Breadcrumb aula={aula} />
+    <header class="resource-page__head"><p>{resourceName}</p><h1>{aula.data.titulo}</h1></header>
+    {aula.data.atividade && <AtividadeCard atividade={aula.data.atividade} id={aula.id.replaceAll('/', '-')} />}
+    {aula.data.quizzes.map((quiz, index) => <QuizBlock quiz={quiz} index={`${aula.id}-${index}`} />)}
+    <a class="back-to-week" href={`../`}>← Voltar à semana</a>
+  </section>
 </BaseLayout>

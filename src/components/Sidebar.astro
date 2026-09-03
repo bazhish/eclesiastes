@@ -2,43 +2,28 @@
 import { agruparNavegacao, comBase, rotaDaAula, type Aula } from '../lib/aulas';
 import ContentTypeIcon from './ContentTypeIcon.astro';
 
-const { aulas, currentPath, materiaAtual } = Astro.props as { aulas: Aula[]; currentPath: string; materiaAtual: string };
-const materias = agruparNavegacao(aulas);
-const materia = materias.get(materiaAtual);
+const { aulas, currentPath, materiaAtual, bimestreAtual } = Astro.props as { aulas: Aula[]; currentPath: string; materiaAtual: string; bimestreAtual: number };
+const materia = agruparNavegacao(aulas).get(materiaAtual);
+const semanas = materia?.bimestres.get(bimestreAtual);
 ---
-<aside id="navegacao" class="sidebar" data-open="true" aria-label="Navegação das matérias">
-  <header class="sidebar-header">
-    <p class="nav-title">{materia?.nome ?? 'Aulas'}</p>
-    <div class="sidebar-header__actions">
-      <button class="sidebar-all-toggle" type="button" data-all-weeks-toggle aria-expanded="true">Recolher todas</button>
-      <button class="button button-icon" type="button" data-sidebar-close title="Ocultar navegação"><span aria-hidden="true">×</span><span class="sr-only">Ocultar navegação</span></button>
-    </div>
+<aside id="navegacao" class="course-drawer" data-open="true" aria-label="Sumário da disciplina">
+  <header class="course-drawer__head">
+    <button class="drawer-close" type="button" data-sidebar-close aria-label="Fechar sumário da disciplina">×</button>
+    <span>Sumário da disciplina</span>
   </header>
-  <nav class="tree">
-    <a class="tree-back" href={comBase(`/${materiaAtual}`)}>Voltar à matéria</a>
-    {materia && Array.from(materia.bimestres.entries()).sort(([a], [b]) => a - b).map(([bimestre, semanas]) => <section class="tree-bimestre" aria-labelledby={`sidebar-bimestre-${bimestre}`}>
-      <p id={`sidebar-bimestre-${bimestre}`}>{bimestre}º Bimestre</p>
-      {Array.from(semanas.entries()).sort(([a], [b]) => a - b).map(([semana, aulasDaSemana]) => (
-        <details class="week" open={currentPath.includes(`/${bimestre}/semana-${semana}`)}>
-          <summary>Semana {semana}</summary>
-          <a class="tree-week-link" href={comBase(`/${materiaAtual}/${bimestre}/semana-${semana}`)} aria-current={currentPath === `/${materiaAtual}/${bimestre}/semana-${semana}` ? 'page' : undefined}>Visão da semana</a>
-          {aulasDaSemana.map((aula) => {
-            const href = rotaDaAula(aula);
-            const numero = aula.data.aula.slice(1);
-            return <a href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined} data-sidebar-route={href}><ContentTypeIcon tipo={aula.data.tipo} label={false} /><span>{numero} · {aula.data.titulo}</span></a>;
-          })}
-        </details>
-      ))}
-    </section>)}
+  <nav class="course-index" aria-label="Semanas da disciplina">
+    <a class="course-index__back" href={comBase(`/${materiaAtual}/${bimestreAtual}`)}>‹ {materia?.nome ?? 'Disciplina'}</a>
+    {semanas && Array.from(semanas.entries()).sort(([a], [b]) => a - b).map(([semana, itens]) => {
+      const weekPath = `/${materiaAtual}/${bimestreAtual}/semana-${semana}`;
+      const active = currentPath.startsWith(weekPath);
+      return <details class="course-index__week" open={active}>
+        <summary class:list={{ active }}><span>Semana {semana} (S{semana})</span></summary>
+        <a class="course-index__overview" href={comBase(weekPath)} aria-current={currentPath === weekPath ? 'page' : undefined}>Visão da semana</a>
+        {itens.sort((a, b) => a.data.ordem - b.data.ordem).map((aula) => {
+          const href = rotaDaAula(aula);
+          return <a class="course-index__item" href={comBase(href)} aria-current={href === currentPath ? 'page' : undefined}><ContentTypeIcon tipo={aula.data.tipo} label={false} /><span>{aula.data.titulo}</span></a>;
+        })}
+      </details>;
+    })}
   </nav>
 </aside>
-<script>
-  const toggle = document.querySelector<HTMLButtonElement>('[data-all-weeks-toggle]');
-  toggle?.addEventListener('click', () => {
-    const weeks = [...document.querySelectorAll<HTMLDetailsElement>('#navegacao .week')];
-    const open = !weeks.every((week) => week.open);
-    weeks.forEach((week) => { week.open = open; });
-    toggle.textContent = open ? 'Recolher todas' : 'Expandir todas';
-    toggle.setAttribute('aria-expanded', String(open));
-  });
-</script>

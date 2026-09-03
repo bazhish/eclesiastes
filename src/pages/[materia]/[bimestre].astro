@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../components/BaseLayout.astro';
-import WeekCheckpointList from '../../components/WeekCheckpointList.astro';
 import { comBase, semanasPorBimestre } from '../../lib/aulas';
 
 export async function getStaticPaths() {
@@ -12,12 +11,11 @@ export async function getStaticPaths() {
 }
 
 const { materia, bimestre, nome, aulas } = Astro.props;
-const grupos = semanasPorBimestre(aulas.filter((aula) => aula.data.materiaSlug === materia && aula.data.bimestre === bimestre));
+const grupo = semanasPorBimestre(aulas.filter((aula) => aula.data.materiaSlug === materia && aula.data.bimestre === bimestre))[0];
 ---
-<BaseLayout title={`${nome} · Bimestre ${bimestre} · Eclesiastes`} wide>
-  <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><a href={comBase(`/${materia}`)}>{nome}</a></li><li><span aria-current="page">{bimestre}º Bimestre</span></li></ol></nav>
-  <p class="eyebrow">{nome}</p>
-  <h1>{bimestre}º Bimestre</h1>
-  <p class="lede">Semanas disponíveis para consulta e acompanhamento local.</p>
-  <WeekCheckpointList materia={materia} grupos={grupos} />
+<BaseLayout title={`${nome} · ${bimestre}º Bimestre · Eclesiastes`} wide>
+  <section class="discipline-hero"><div class="container"><nav class="breadcrumbs" aria-label="Trilha de navegação"><a href={comBase('/')}>Página inicial</a><span>/</span><a href={comBase(`/${materia}`)}>{nome}</a><span>/</span><span aria-current="page">{bimestre}º Bimestre</span></nav><h1>{nome} – {bimestre}º Bimestre</h1></div></section>
+  <section class="timeline-panel container" aria-label="Semanas do bimestre">
+    {grupo?.semanas.map((semana) => <a class="timeline-item" href={comBase(`/${materia}/${bimestre}/semana-${semana.semana}`)}><span class="timeline-item__mark">✓</span><span>Semana {semana.semana} (S{semana.semana}) — {semana.tema || 'Aulas disponíveis'}</span></a>)}
+  </section>
 </BaseLayout>

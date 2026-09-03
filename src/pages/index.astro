@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../components/BaseLayout.astro';
-import SubjectIllustration from '../components/SubjectIllustration.astro';
 import { comBase, todasAsAulas } from '../lib/aulas';
 
 const aulas = await todasAsAulas();
@@ -10,15 +9,19 @@ const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, 
   total: aulas.filter((aula) => aula.data.materiaSlug === slug).length,
 }));
 ---
-<BaseLayout title="Eclesiastes · Desenvolvimento de Sistemas" wide>
-  <p class="eyebrow">Conhecimento em rede</p>
-  <h1>Eclesiastes</h1>
-  <p class="lede">Estrutura organizada por matéria, semana e aula, pronta para receber novos conteúdos de Desenvolvimento de Sistemas.</p>
-
-  <section class="subject-grid" data-subject-grid aria-label="Matérias">
-    {materias.map((materia) => <article class="subject-card" data-subject-card data-subject-slug={materia.slug} data-subject-name={materia.nome}>
-      <div class="subject-card__art"><SubjectIllustration subject={materia.slug} /><button class="favorite-toggle" type="button" data-favorite-toggle aria-pressed="false" title="Adicionar aos favoritos"><span aria-hidden="true" data-favorite-icon>☆</span><span class="sr-only" data-favorite-label>Adicionar aos favoritos</span></button><a class="subject-access" href={comBase(`/${materia.slug}`)}>Acessar <span aria-hidden="true">→</span></a></div>
-      <div class="subject-card__body"><p>Matéria</p><h2>{materia.nome}</h2><span>{materia.total} conteúdos disponíveis</span></div>
-    </article>)}
+<BaseLayout title="Minhas disciplinas · Eclesiastes" wide>
+  <section class="dashboard" aria-labelledby="minhas-disciplinas">
+    <h1 id="minhas-disciplinas">Minhas disciplinas</h1>
+    <div class="course-tabs" aria-label="Filtro de disciplinas">
+      <span class="course-tabs__selected">★ Todos <b>{materias.length}</b></span>
+    </div>
+    <div class="subject-grid" aria-label="Disciplinas disponíveis">
+      {materias.map((materia) => <article class="subject-card">
+        <a class="subject-card__link" href={comBase(`/${materia.slug}`)}>
+          <div class="subject-card__visual" aria-hidden="true"><span>★</span><strong>Acessar <b>→</b></strong></div>
+          <div class="subject-card__body"><h2>{materia.nome}</h2><small>{materia.total} conteúdos</small></div>
+        </a>
+      </article>)}
+    </div>
   </section>
 </BaseLayout>

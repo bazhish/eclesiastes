@@ -1,8 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../components/BaseLayout.astro';
-import WeekCheckpointList from '../components/WeekCheckpointList.astro';
-import { semanasPorBimestre } from '../lib/aulas';
+import { comBase, semanasPorBimestre } from '../lib/aulas';
 
 export async function getStaticPaths() {
   const aulas = await getCollection('aulas');
@@ -14,9 +13,11 @@ const { materia, nome, aulas } = Astro.props;
 const grupos = semanasPorBimestre(aulas.filter((aula) => aula.data.materiaSlug === materia));
 ---
 <BaseLayout title={`${nome} · Eclesiastes`} wide>
-  <nav class="breadcrumbs" aria-label="Caminho da página"><ol><li><a href={import.meta.env.BASE_URL}>Início</a></li><li><span aria-current="page">{nome}</span></li></ol></nav>
-  <p class="eyebrow">Matéria</p>
-  <h1>{nome}</h1>
-  <p class="lede">Escolha uma semana para consultar as aulas e acompanhar seu progresso local.</p>
-  <WeekCheckpointList materia={materia} grupos={grupos} />
+  <section class="discipline-hero"><div class="container"><nav class="breadcrumbs" aria-label="Trilha de navegação"><a href={comBase('/')}>Página inicial</a><span>/</span><span aria-current="page">{nome}</span></nav><h1>{nome}</h1></div></section>
+  <section class="discipline-content container" aria-label="Bimestres">
+    <h2>Selecione um bimestre</h2>
+    <div class="bimestre-grid">
+      {grupos.map((grupo) => <a class="bimestre-card" href={comBase(`/${materia}/${grupo.bimestre}`)}><h3>{nome} – {grupo.bimestre}º Bimestre</h3><span>{grupo.semanas.length} semanas <b>→</b></span></a>)}
+    </div>
+  </section>
 </BaseLayout>
