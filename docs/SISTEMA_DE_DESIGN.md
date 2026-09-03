@@ -9,7 +9,7 @@ O portal replica a linguagem funcional do AVA oficial apenas no fluxo de discipl
 - Catálogo: abertura “Página inicial” identificada como repositório de respostas e cartões de disciplina em três colunas no desktop, duas em telas intermediárias e uma no celular. Cada disciplina recebe ícone e cor próprios, sem estado fictício de favorito.
 - Disciplina: cabeçalho próprio azul-marinho no topo do conteúdo, guia de navegação sem backend, totais reais e bimestres/semanas reunidos em painéis estruturados. As rotas antigas de bimestre redirecionam para essa visão unificada.
 - Semana: painel branco com trilha, grupos expansíveis de aula, setas estáveis e recursos tipados com bloco visual para PDF, H5P e registro.
-- Recurso: cabeçalho do item, cartão de conteúdo e o aviso único de indisponibilidade.
+- Recurso: cabeçalho do item, cartão de conteúdo e bloco de resposta copiável com título, ícone de cópia e destaque visual coerente com o tema claro ou escuro.
 - Sumário: lateral contextual com semanas, itens da semana atual, estados ativos e opções para expandir ou retrair tudo. Pode ser fechado por botão, arrasto horizontal com mouse ou Escape; o controle flutuante fixo à esquerda o reabre. No celular inicia fechado.
 
 ## Acessibilidade e tema
