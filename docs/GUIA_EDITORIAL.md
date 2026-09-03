@@ -2,20 +2,20 @@
 
 ## Papel do site
 
-Eclesiastes é um material de consulta. Ele não afirma que uma atividade foi enviada, aceita, corrigida ou executada por uma pessoa específica. Respostas de referência ajudam no estudo; a evidência própria continua sendo responsabilidade de quem realiza a atividade.
+Eclesiastes é um material de consulta. Ele não afirma que uma atividade foi enviada, aceita, corrigida ou executada por uma pessoa específica. A versão atual está limpa e exibe apenas aviso de conteúdo pendente nas áreas de resposta.
 
 ## Fonte de verdade e migração
 
-A fonte revisada fica fora do repositório, na pasta `gabarito`. A migração lê somente os arquivos `Gabarito - Roteiro Prático Aula N.md`, `Gabarito - Pausa e Responda Aula N.md` e seus diretórios `codigo/aula-N`.
+A fonte revisada fica fora do repositório, na pasta `gabarito`, quando houver conteúdo novo autorizado. A migração lê somente os arquivos `Gabarito - Roteiro Prático Aula N.md`, `Gabarito - Pausa e Responda Aula N.md` e seus diretórios `codigo/aula-N`.
 
-`npm run migrate:content` nunca escreve na fonte. Ele gera MDX com arquivos de código inline e `docs/source-index.json`. Use `ECLESIASTES_SOURCE_DIR` para indicar outra cópia da fonte.
+`npm run migrate:content` nunca escreve na fonte. Ele gera MDX e `docs/source-index.json`. Use `ECLESIASTES_SOURCE_DIR` para indicar outra cópia da fonte.
 
 ## Regras de conteúdo
 
-- Preserve o texto revisado e a associação entre matéria, semana, aula e arquivo de origem.
+- Preserve a associação entre matéria, semana, aula e arquivo de origem.
 - Não invente alternativas, resultados de execução, notas, autoria, credenciais ou dados pessoais.
 - Cada arquivo “Pausa e Responda” é uma página independente, mesmo quando houver mais de um na mesma semana.
-- Artefatos só podem ser publicados quando vierem de um diretório `codigo/aula-N` correspondente ao roteiro.
+- Artefatos só podem ser publicados quando vierem de um diretório `codigo/aula-N` correspondente ao roteiro e quando a divulgação estiver autorizada.
 - Uma mudança de fonte deve terminar com `npm run verify` sem erros.
 
 ## Publicação

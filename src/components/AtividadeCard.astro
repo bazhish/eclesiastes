@@ -16,15 +16,15 @@ const sourceHtml = await renderMarkdown(atividade.conteudo, id);
 const fileId = (path: string) => `${id}-arquivo-${path.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
 ---
 <section class="activity-card content-card content-card--roteiro" aria-labelledby={`${id}-title`}>
-  <header class="content-card__header"><ContentTypeIcon tipo="roteiro" /><CopyButton targetId={responseId} label="Copiar resposta" /></header>
-  <div class="card-heading"><h2 id={`${id}-title`}>Enunciado</h2></div>
+  <header class="content-card__header"><ContentTypeIcon tipo="roteiro" /><CopyButton targetId={responseId} label="Copiar aviso" /></header>
+  <div class="card-heading"><h2 id={`${id}-title`}>Estrutura da aula</h2></div>
   <div class="prompt markdown-content" id={promptId} set:html={promptHtml} />
-  <div class="card-heading"><h2>Resposta e orientação de consulta</h2></div>
+  <div class="card-heading"><h2>Resposta</h2></div>
   <div class="response markdown-content" id={responseId} data-copy-value={markdownToPlainText(atividade.resposta)} set:html={responseHtml} />
   <details class="source-details">
-    <summary>Ver conteúdo revisado completo</summary>
+    <summary>Ver área para conteúdo novo</summary>
     <div class="source-text markdown-content" id={sourceId} data-copy-value={markdownToPlainText(atividade.conteudo)} set:html={sourceHtml} />
-    <div class="card-actions"><CopyButton targetId={sourceId} label="Copiar conteúdo revisado" /></div>
+    <div class="card-actions"><CopyButton targetId={sourceId} label="Copiar aviso" /></div>
   </details>
   {atividade.arquivos.length > 0 && <section class="code-files" aria-label="Arquivos de código">
     <h3>Arquivos da atividade</h3>
@@ -36,5 +36,5 @@ const fileId = (path: string) => `${id}-arquivo-${path.normalize('NFD').replace(
       </div>
     </details>)}
   </section>}
-  <p class="source-note">Fonte: <code>{atividade.fonte}</code></p>
+  <p class="source-note">Conteúdo preparado para nova divulgação.</p>
 </section>

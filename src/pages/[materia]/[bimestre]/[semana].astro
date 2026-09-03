@@ -22,7 +22,7 @@ const itens = aulas.filter((aula) => aula.data.materiaSlug === materia && aula.d
   <p class="lede">Escolha uma aula. A navegação lateral mantém as semanas desta matéria acessíveis durante a consulta.</p>
   <section class="lesson-list" data-scroll-spy aria-label={`Aulas da semana ${semana}`}>
     {itens.map((aula) => <article class="lesson-list__item" id={`secao-${aula.data.aula}`} data-scroll-section={aula.data.aula} data-scroll-route={rotaDaAula(aula)}>
-      <a href={comBase(rotaDaAula(aula))}><span class="lesson-list__badge"><ContentTypeIcon tipo={aula.data.tipo} label={false} />{aula.data.aula.toUpperCase()}</span><div><strong>{aula.data.titulo}</strong><small>{aula.data.atividade ? 'Roteiro prático' : `${aula.data.quizzes.length} questões de revisão`}</small></div><span class="lesson-list__arrow" aria-hidden="true">→</span></a>
+      <a href={comBase(rotaDaAula(aula))}><span class="lesson-list__badge"><ContentTypeIcon tipo={aula.data.tipo} label={false} />{aula.data.aula.toUpperCase()}</span><div><strong>{aula.data.titulo}</strong><small>{aula.data.atividade ? 'Roteiro prático pendente' : 'Pause e Responda pendente'}</small></div><span class="lesson-list__arrow" aria-hidden="true">→</span></a>
     </article>)}
   </section>
 </BaseLayout>

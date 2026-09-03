@@ -11,11 +11,11 @@ const answerId = `quiz-answer-${index}`;
 const renderedAnswer = await renderMarkdown(quiz.resposta);
 ---
 <section class="quiz-card content-card content-card--pausa" aria-labelledby={`quiz-${index}`}>
-  <header class="content-card__header"><ContentTypeIcon tipo="pausa" /><CopyButton targetId={answerId} label="Copiar resposta" /></header>
+  <header class="content-card__header"><ContentTypeIcon tipo="pausa" /><CopyButton targetId={answerId} label="Copiar aviso" /></header>
   <h2 id={`quiz-${index}`}>{quiz.pergunta}</h2>
   <div class="answer-reveal" id={answerId} data-copy-value={markdownToPlainText(quiz.resposta)}>
-    <strong>Resposta de referência</strong>
+    <strong>Resposta</strong>
     <div set:html={renderedAnswer} />
   </div>
-  <p class="source-note">Fonte: <code>{quiz.fonte}</code></p>
+  <p class="source-note">Conteúdo preparado para nova divulgação.</p>
 </section>

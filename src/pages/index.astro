@@ -13,7 +13,7 @@ const materias = Array.from(new Map(aulas.map((aula) => [aula.data.materiaSlug, 
 <BaseLayout title="Eclesiastes · Desenvolvimento de Sistemas" wide>
   <p class="eyebrow">Conhecimento em rede</p>
   <h1>Eclesiastes</h1>
-  <p class="lede">Roteiros, respostas e conteúdos organizados para consultar, adaptar e construir em Desenvolvimento de Sistemas.</p>
+  <p class="lede">Estrutura organizada por matéria, semana e aula, pronta para receber novos conteúdos de Desenvolvimento de Sistemas.</p>
 
   <section class="subject-grid" data-subject-grid aria-label="Matérias">
     {materias.map((materia) => <article class="subject-card" data-subject-card data-subject-slug={materia.slug} data-subject-name={materia.nome}>

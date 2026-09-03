@@ -6,7 +6,7 @@
 
 **Conhecimento para consultar, adaptar e construir.**
 
-Portal estático de roteiros práticos, respostas de referência e arquivos de código inline do 3º bimestre de Desenvolvimento de Sistemas.
+Portal estático com estrutura de matérias, semanas e aulas do 3º bimestre de Desenvolvimento de Sistemas, preparado para receber novo conteúdo.
 
 [![Astro](https://img.shields.io/badge/Astro-static-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
@@ -22,7 +22,7 @@ Portal estático de roteiros práticos, respostas de referência e arquivos de c
 
 ## Sobre
 
-Eclesiastes organiza material revisado de sete matérias do 3º bimestre em uma navegação por matéria, bimestre, semana e aula. O site é uma ferramenta de consulta: não simula entregas, notas ou evidências que precisem ser produzidas por cada estudante.
+Eclesiastes organiza sete matérias do 3º bimestre em uma navegação por matéria, bimestre, semana e aula. O conteúdo antigo de respostas foi removido; as páginas permanecem com aviso de conteúdo pendente para facilitar uma nova publicação.
 
 O símbolo central é uma interpretação original de **Ananse Ntentan**, uma teia associada à sabedoria, criatividade e à complexidade do conhecimento.
 
@@ -30,9 +30,9 @@ O símbolo central é uma interpretação original de **Ananse Ntentan**, uma te
 
 - Navegação por matéria, bimestre, semana, roteiro e bloco “Pausa e Responda”.
 - Cartões de matérias com favoritos locais, checkpoints de visita, tema claro/escuro e navegação responsiva por teclado.
-- Cópia de respostas e do conteúdo revisado, com retorno acessível.
-- Código incorporado nas atividades, com linguagem, caminho e cópia exata do texto exibido.
-- 189 documentos rastreáveis: 118 roteiros, 71 blocos de pausa e 141 respostas de referência; 72 atividades têm código, totalizando 197 arquivos inline (46 entradas técnicas filtradas).
+- Páginas mantidas com o aviso “Essa resposta ainda não divulgada”.
+- Estrutura pronta para reinserção futura de enunciados, respostas e arquivos quando o novo conteúdo for autorizado.
+- 189 documentos rastreáveis: 118 roteiros e 71 blocos de pausa, todos sem respostas antigas nem arquivos de código inline.
 
 ## Stack
 
@@ -61,7 +61,7 @@ npm run verify
 
 ## Atualizando o conteúdo
 
-A fonte de verdade padrão é a pasta local `C:\Users\MAX\Desktop\Desenvolvimento de Sistemas - Gabarito\gabarito`. Em outro computador, defina `ECLESIASTES_SOURCE_DIR` com o caminho da pasta `gabarito` antes de migrar.
+A fonte de verdade padrão, quando houver novo conteúdo, é uma pasta local de gabarito. Em outro computador, defina `ECLESIASTES_SOURCE_DIR` com o caminho da pasta `gabarito` antes de migrar.
 
 ```powershell
 $env:ECLESIASTES_SOURCE_DIR = 'D:\materiais\gabarito'
@@ -69,7 +69,7 @@ npm run migrate:content
 npm run verify
 ```
 
-O processo recria somente `src/content/aulas` e `docs/source-index.json`; nunca modifica a fonte revisada. Quando a fonte externa está disponível, os diretórios `codigo/aula-N` são filtrados e incorporados diretamente ao MDX.
+O processo recria somente `src/content/aulas` e `docs/source-index.json`; nunca modifica a fonte revisada. A versão atual está higienizada e não mantém arquivos de código inline.
 
 ## Estrutura
 
@@ -86,9 +86,9 @@ scripts/
 public/
   brand.svg         # marca Ananse Ntentan original
 docs/
-  source-index.json # rastreabilidade entre fonte e rota publicada
+  source-index.json # rastreabilidade entre conteúdo pendente e rota publicada
 ```
 
 ## Licença
 
-[MIT](./LICENSE). O conteúdo acadêmico continua sujeito às regras de uso da fonte que o originou.
+[MIT](./LICENSE).
